@@ -1,0 +1,19 @@
+[
+  "ARCHITECTURE.md",
+  "README.md",
+  "app/DESIGN.md",
+  "app/README.md",
+  "app/app/Http/Controllers/Api/V1/CourseController.php",
+  "app/app/Http/Middleware/SecurityHeaders.php",
+  "app/app/Http/Requests/StoreTeacherRequest.php",
+  "app/app/Http/Requests/UpdateAccountPasswordRequest.php",
+  "app/app/Providers/FortifyServiceProvider.php",
+  "app/app/Services/Api/ApiErrors.php",
+  "app/public/build/manifest.json",
+  "app/resources/css/app.css",
+  "app/resources/views/auth/login.blade.php",
+  "app/resources/views/auth/register.blade.php",
+  "app/resources/views/courses/index.blade.php",
+  "app/resources/views/layouts/guest.blade.php",
+  "app/resources/views/learning/course-report.blade.php"
+]

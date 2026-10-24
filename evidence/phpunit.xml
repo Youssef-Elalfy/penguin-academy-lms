@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/phpunit.xml" tests="7" assertions="16" errors="0" failures="0" skipped="0" time="0.166913">
+    <testsuite name="Feature" tests="7" assertions="16" errors="0" failures="0" skipped="0" time="0.166913">
+      <testsuite name="Tests\Feature\FoundationTest" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/FoundationTest.php" tests="7" assertions="16" errors="0" failures="0" skipped="0" time="0.166913">
+        <testcase name="test_foundation_page_renders_built_assets" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/FoundationTest.php" line="13" class="Tests\Feature\FoundationTest" classname="Tests.Feature.FoundationTest" assertions="3" time="0.097029"/>
+        <testcase name="test_health_endpoint_is_available" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/FoundationTest.php" line="21" class="Tests\Feature\FoundationTest" classname="Tests.Feature.FoundationTest" assertions="1" time="0.007658"/>
+        <testcase name="test_database_uses_mysql_utf8mb4_innodb_and_utc" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/FoundationTest.php" line="26" class="Tests\Feature\FoundationTest" classname="Tests.Feature.FoundationTest" assertions="6" time="0.010634"/>
+        <testcase name="test_record_survives_a_database_reconnection" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/FoundationTest.php" line="39" class="Tests\Feature\FoundationTest" classname="Tests.Feature.FoundationTest" assertions="2" time="0.027362"/>
+        <testcase name="test_failed_transaction_rolls_back_a_write" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/FoundationTest.php" line="53" class="Tests\Feature\FoundationTest" classname="Tests.Feature.FoundationTest" assertions="2" time="0.009176"/>
+        <testcase name="test_test_account_cannot_read_the_development_database" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/FoundationTest.php" line="70" class="Tests\Feature\FoundationTest" classname="Tests.Feature.FoundationTest" assertions="1" time="0.005979"/>
+        <testcase name="test_database_rejects_duplicate_email_addresses" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/FoundationTest.php" line="80" class="Tests\Feature\FoundationTest" classname="Tests.Feature.FoundationTest" assertions="1" time="0.009075"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

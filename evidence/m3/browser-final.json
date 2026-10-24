@@ -1,0 +1,53 @@
+{
+  "scope": "Observed real Chrome CDP browser with the managed Playwright interface; partial public-page verification",
+  "preview": "Local managed preview, not deployed",
+  "origin": "http://terminal.local:4173/",
+  "m2_timeout_reproduced": false,
+  "checks": [
+    {
+      "check": "Welcome page loads in a real browser",
+      "result": "passed",
+      "evidence": "Accessibility tree observed; initial navigation completed in 2.5402 seconds"
+    },
+    {
+      "check": "Guest navigation to /courses redirects to /login",
+      "result": "passed",
+      "evidence": "Observed final URL and sign-in heading through the Playwright interface"
+    },
+    {
+      "check": "Sign-in form renders with labeled controls",
+      "result": "passed",
+      "evidence": "Read-only DOM inspection: email, password, and remember controls each had one associated label"
+    },
+    {
+      "check": "Sign-in page fits observed desktop viewport",
+      "result": "passed",
+      "evidence": "Viewport width 1363, height 936; document width 1363"
+    },
+    {
+      "check": "Sign-in desktop visual inspection",
+      "result": "passed",
+      "evidence": "Actual browser screenshot viewed; green split authentication layout. No screenshot deliverable retained"
+    },
+    {
+      "check": "Create a student account link opens /register",
+      "result": "passed",
+      "evidence": "Clicked visible link; registration heading and name/email/password/confirmation controls observed"
+    },
+    {
+      "check": "Authenticated Admin/Teacher/Student workflows",
+      "result": "not_run",
+      "reason": "No existing development account. Browser authentication capability requires user credential entry through browserAuth.request; model-visible credential entry or session injection was not used"
+    },
+    {
+      "check": "Mobile, full keyboard traversal, authenticated reorder JavaScript",
+      "result": "not_run",
+      "reason": "Not verified in this browser session"
+    }
+  ],
+  "restriction": "Browser authentication capability: Never enter or submit sign-in credential values through Playwright, vision, or any other model-visible tool. Secure user handoff required.",
+  "http_testing_distinction": "The 137 PHPUnit tests exercise Laravel HTTP/actions and MySQL. They are not browser end-to-end tests.",
+  "screenshots_fabricated": false,
+  "status": "partial_pass",
+  "preview_stopped_at_handoff": true
+}

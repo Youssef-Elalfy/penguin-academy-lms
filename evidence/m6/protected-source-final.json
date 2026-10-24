@@ -1,0 +1,146 @@
+{
+  "protected_files": 35,
+  "all_unchanged": true,
+  "files": [
+    {
+      "path": "app/composer.lock",
+      "unchanged": true
+    },
+    {
+      "path": "app/database/migrations/0001_01_01_000000_create_users_table.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/database/migrations/0001_01_01_000001_create_cache_table.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/database/migrations/2026_10_21_001334_create_academy_schema.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/database/migrations/2026_10_21_133758_add_lesson_soft_deletes_and_order_version.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/package-lock.json",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/ApiTestCase.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/AcademyConcurrencyTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/AdministratorProvisioningTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/ApiContractTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/ApiCourseTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/ApiEnrollmentTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/ApiLessonTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/ApiProgressTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/ApiReportingTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/ApiTokenTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/AuthenticationTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/AuthorizationTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/CompletionConcurrencyTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/CourseManagementTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/DashboardTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/DatabaseIntegrityTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/EnrollmentManagementTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/FoundationTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/LearningProgressTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/LearningReportsTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/LessonCompletionTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/LessonManagementTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/ReviewCorrectionsTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/SessionSecurityTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Feature/TeacherManagementTest.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Fixtures/academy-worker.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/Fixtures/completion-worker.php",
+      "unchanged": true
+    },
+    {
+      "path": "app/tests/TestCase.php",
+      "unchanged": true
+    }
+  ]
+}

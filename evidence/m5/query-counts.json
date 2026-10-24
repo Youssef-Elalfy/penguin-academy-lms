@@ -1,0 +1,41 @@
+{
+    "method": "Real bearer-authenticated Laravel HTTP tests; all SQL statements included, fixture creation excluded.",
+    "responses": {
+        "\/courses": {
+            "one_row": {
+                "rows": 1,
+                "queries": 6,
+                "selects": 5
+            },
+            "twelve_rows": {
+                "rows": 12,
+                "queries": 6,
+                "selects": 5
+            }
+        },
+        "\/enrollments": {
+            "one_row": {
+                "rows": 1,
+                "queries": 7,
+                "selects": 6
+            },
+            "twelve_rows": {
+                "rows": 12,
+                "queries": 7,
+                "selects": 6
+            }
+        },
+        "\/reports\/overview": {
+            "one_row": {
+                "rows": 1,
+                "queries": 11,
+                "selects": 10
+            },
+            "twelve_rows": {
+                "rows": 12,
+                "queries": 11,
+                "selects": 10
+            }
+        }
+    }
+}

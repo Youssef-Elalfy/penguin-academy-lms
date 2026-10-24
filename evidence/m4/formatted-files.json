@@ -1,0 +1,20 @@
+[
+  "app/Actions/Academy/CompletionActions.php",
+  "app/Http/Controllers/CourseController.php",
+  "app/Http/Controllers/DashboardController.php",
+  "app/Http/Controllers/EnrollmentController.php",
+  "app/Http/Controllers/LearningReportController.php",
+  "app/Http/Controllers/LessonCompletionController.php",
+  "app/Http/Controllers/LessonController.php",
+  "app/Http/Requests/ChangeLessonCompletionRequest.php",
+  "app/Http/Requests/ProgressReportRequest.php",
+  "app/Services/Learning/AcademyAnalytics.php",
+  "app/Services/Learning/ProgressService.php",
+  "app/Services/Learning/ProgressSummary.php",
+  "routes/web.php",
+  "tests/Feature/CompletionConcurrencyTest.php",
+  "tests/Feature/LearningProgressTest.php",
+  "tests/Feature/LearningReportsTest.php",
+  "tests/Feature/LessonCompletionTest.php",
+  "tests/Fixtures/completion-worker.php"
+]

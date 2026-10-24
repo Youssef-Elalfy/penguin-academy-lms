@@ -1,0 +1,74 @@
+{
+  "run": "m6-37ad860bfc7a",
+  "started_at": "2026-10-23T19:20:43.485Z",
+  "transport": "Real loopback HTTP; operation paths/methods and response schemas read from OpenAPI",
+  "cases": [
+    {
+      "name": "Accounts provisioned through administrator, Fortify and teacher-management flows",
+      "status": "passed",
+      "duration_ms": 1002
+    },
+    {
+      "name": "Token issuance uses role-limited abilities and explicit expiry",
+      "status": "passed",
+      "duration_ms": 903
+    },
+    {
+      "name": "Course CRUD, teacher assignment, filtering and pagination match the contract",
+      "status": "failed",
+      "error": "AssertionError [ERR_ASSERTION]: createCourse response schema: [{\"instancePath\":\"/data/lesson_order_version\",\"schemaPath\":\"urn:penguin:contract#/components/schemas/Course/properties/lesson_order_version/type\",\"keyword\":\"type\",\"params\":{\"type\":\"integer\"},\"message\":\"must be integer\"}]\n    at call (file:///workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/qa/api-contract.mjs:42:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/qa/api-contract.mjs:81:11\n    at async step (file:///workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/qa/api-contract.mjs:47:65)\n    at async file:///workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/qa/api-contract.mjs:80:2"
+    }
+  ],
+  "responses": [
+    {
+      "operation": "issueToken",
+      "method": "POST",
+      "path": "/api/v1/tokens",
+      "status": 201,
+      "schema_checked": true,
+      "duration_ms": 236.64
+    },
+    {
+      "operation": "issueToken",
+      "method": "POST",
+      "path": "/api/v1/tokens",
+      "status": 201,
+      "schema_checked": true,
+      "duration_ms": 223.74
+    },
+    {
+      "operation": "issueToken",
+      "method": "POST",
+      "path": "/api/v1/tokens",
+      "status": 201,
+      "schema_checked": true,
+      "duration_ms": 222.47
+    },
+    {
+      "operation": "issueToken",
+      "method": "POST",
+      "path": "/api/v1/tokens",
+      "status": 201,
+      "schema_checked": true,
+      "duration_ms": 219.82
+    }
+  ],
+  "persistence": [
+    {
+      "name": "Supported account flows persist intended roles",
+      "status": "passed"
+    }
+  ],
+  "outcome": "failed",
+  "error": "AssertionError [ERR_ASSERTION]: createCourse response schema: [{\"instancePath\":\"/data/lesson_order_version\",\"schemaPath\":\"urn:penguin:contract#/components/schemas/Course/properties/lesson_order_version/type\",\"keyword\":\"type\",\"params\":{\"type\":\"integer\"},\"message\":\"must be integer\"}]\n    at call (file:///workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/qa/api-contract.mjs:42:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/qa/api-contract.mjs:81:11\n    at async step (file:///workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/qa/api-contract.mjs:47:65)\n    at async file:///workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/qa/api-contract.mjs:80:2",
+  "cleanup": {
+    "database": "penguin_academy_test",
+    "cleanup": "Only this run’s synthetic users and course records removed."
+  },
+  "finished_at": "2026-10-23T19:20:46.301Z",
+  "summary": {
+    "passed": 2,
+    "failed": 1,
+    "responses": 4
+  }
+}

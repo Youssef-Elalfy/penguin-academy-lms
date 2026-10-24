@@ -1,0 +1,26 @@
+{
+    "phase": "after",
+    "database": "penguin_academy",
+    "tables": {
+        "users": {
+            "count": 0,
+            "all_rows_unchanged": true
+        },
+        "courses": {
+            "count": 0,
+            "all_rows_unchanged": true
+        },
+        "lessons": {
+            "count": 0,
+            "all_rows_unchanged": true
+        },
+        "enrollments": {
+            "count": 0,
+            "all_rows_unchanged": true
+        },
+        "lesson_completions": {
+            "count": 0,
+            "all_rows_unchanged": true
+        }
+    }
+}

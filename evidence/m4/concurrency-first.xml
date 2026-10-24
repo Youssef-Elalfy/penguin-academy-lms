@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Tests\Feature\CompletionConcurrencyTest" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CompletionConcurrencyTest.php" tests="5" assertions="37" errors="0" failures="0" skipped="0" time="1.186502">
+    <testcase name="test_simultaneous_completions_return_one_persisted_record" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CompletionConcurrencyTest.php" line="89" class="Tests\Feature\CompletionConcurrencyTest" classname="Tests.Feature.CompletionConcurrencyTest" assertions="10" time="0.399644"/>
+    <testcase name="test_simultaneous_undo_requests_succeed_without_duplicate_changes" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CompletionConcurrencyTest.php" line="101" class="Tests\Feature\CompletionConcurrencyTest" classname="Tests.Feature.CompletionConcurrencyTest" assertions="9" time="0.284607"/>
+    <testsuite name="Tests\Feature\CompletionConcurrencyTest::test_withdrawal_before_queued_completion_mutations_prevents_changes" tests="2" assertions="12" errors="0" failures="0" skipped="0" time="0.310583">
+      <testcase name="test_withdrawal_before_queued_completion_mutations_prevents_changes with data set #0" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CompletionConcurrencyTest.php" line="115" class="Tests\Feature\CompletionConcurrencyTest" classname="Tests.Feature.CompletionConcurrencyTest" assertions="6" time="0.144288"/>
+      <testcase name="test_withdrawal_before_queued_completion_mutations_prevents_changes with data set #1" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CompletionConcurrencyTest.php" line="115" class="Tests\Feature\CompletionConcurrencyTest" classname="Tests.Feature.CompletionConcurrencyTest" assertions="6" time="0.166295"/>
+    </testsuite>
+    <testcase name="test_archiving_a_lesson_before_a_queued_completion_preserves_history" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CompletionConcurrencyTest.php" line="127" class="Tests\Feature\CompletionConcurrencyTest" classname="Tests.Feature.CompletionConcurrencyTest" assertions="6" time="0.191668"/>
+  </testsuite>
+</testsuites>

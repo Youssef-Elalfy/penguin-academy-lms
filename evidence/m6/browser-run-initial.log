@@ -1,0 +1,10 @@
+Private MySQL connection verified.
+PASS Administrator login and dashboard
+FAILED Expected values to be strictly equal:
++ actual - expected
+
++ '/admin/teachers/4289/edit'
+- '/admin/teachers'
+                  ^
+
+{"passed":1,"failed":1,"layouts":0,"accessibility_scans":0,"accessibility_violations":0}

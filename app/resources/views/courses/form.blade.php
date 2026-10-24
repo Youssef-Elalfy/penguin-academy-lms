@@ -1,0 +1,11 @@
+<x-errors />
+<x-input name="title" label="Course title" :value="$course->title" required maxlength="180" autocomplete="off" hint="A clear title that tells students what they will learn." />
+<x-input name="slug" label="Course reference" :value="$course->slug" required maxlength="180" pattern="[a-z0-9]+(-[a-z0-9]+)*" autocomplete="off" hint="A unique reference using lowercase letters, numbers and hyphens. Example: web-foundations" />
+<x-textarea name="summary" label="Short introduction" :value="$course->summary" rows="3" maxlength="500" hint="Shown in the course catalog. Keep it clear and welcoming." />
+<x-textarea name="description" label="Course description" :value="$course->description" rows="7" maxlength="20000" hint="Describe the learning goals, audience and prerequisites. Plain text; line breaks are preserved." />
+@if(auth()->user()->hasRole(\App\Enums\UserRole::Admin))
+<div class="mb-4"><label for="teacher_id" class="form-label">Assigned teacher</label><select id="teacher_id" name="teacher_id" class="form-select @error('teacher_id') is-invalid @enderror" aria-describedby="teacher-hint"><option value="">Unassigned (draft only)</option>
+@if($course->teacher_id && !$teachers->contains('id', $course->teacher_id))<option value="{{ $course->teacher_id }}" selected disabled>Current teacher unavailable — choose an active teacher</option>@endif
+@foreach($teachers as $teacher)<option value="{{ $teacher->id }}" @selected(old('teacher_id', $course->teacher_id) == $teacher->id)>{{ $teacher->name }} — {{ $teacher->email }}</option>@endforeach</select><div class="form-text" id="teacher-hint">Only active teacher accounts can be assigned. Published courses need an assigned teacher.</div>@error('teacher_id')<div class="invalid-feedback">{{ $message }}</div>@enderror</div>
+@else<p class="form-note">You will manage this course as its assigned teacher. Ask an administrator if it needs to be reassigned.</p>@endif
+<div class="form-actions"><button class="btn btn-primary" type="submit">{{ $course->exists ? 'Save course' : 'Create draft course' }}</button><a class="btn btn-outline-secondary" href="{{ $course->exists ? route('courses.show', $course) : route('courses.index') }}">Cancel</a></div>

@@ -1,0 +1,2 @@
+Private MySQL connection verified.
+{"tool":"phpunit","result":"passed","tests":39,"passed":39,"assertions":245,"duration_ms":1991}

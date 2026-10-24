@@ -1,0 +1,14 @@
+mysqld: Error on realpath() on '/var/lib/mysql-files' (Error 2 - No such file or directory)
+Traceback (most recent call last):
+  File "/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/database.py", line 93, in <module>
+    main()
+  File "/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/database.py", line 82, in main
+    initialize()
+  File "/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/database.py", line 70, in initialize
+    run('mysqld', f'--defaults-file={CONFIG}', f'--init-file={bootstrap}', '--daemonize')
+  File "/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/database.py", line 26, in run
+    return subprocess.run([str(RUNTIME / 'bin' / binary), *map(str, args)], check=True, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/.runtime/bin/mysqld', '--defaults-file=/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/.runtime/mysql/my.cnf', '--init-file=/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/.runtime/mysql/bootstrap.sql', '--daemonize']' returned non-zero exit status 1.

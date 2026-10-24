@@ -1,0 +1,9 @@
+{
+  "app/tests/Feature/FoundationTest.php": true,
+  "app/tests/TestCase.php": true,
+  "app/composer.lock": true,
+  "app/package-lock.json": true,
+  "app/database/migrations/0001_01_01_000000_create_users_table.php": true,
+  "app/database/migrations/0001_01_01_000001_create_cache_table.php": true,
+  "app/database/migrations/0001_01_01_000002_create_jobs_table.php": true
+}

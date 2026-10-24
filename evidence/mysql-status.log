@@ -1,0 +1,5 @@
+version	timezone	charset	engine
+8.4.13	+00:00	utf8mb4	InnoDB
+Database (penguin_academy%)
+penguin_academy
+penguin_academy_test

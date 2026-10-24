@@ -1,0 +1,35 @@
+{
+    "phase": "after",
+    "database": "penguin_academy",
+    "tables": {
+        "users": {
+            "rows": 0,
+            "original_rows": 0,
+            "original_columns_and_rows_unchanged": true
+        },
+        "courses": {
+            "rows": 0,
+            "original_rows": 0,
+            "original_columns_and_rows_unchanged": true
+        },
+        "lessons": {
+            "rows": 0,
+            "original_rows": 0,
+            "original_columns_and_rows_unchanged": true
+        },
+        "enrollments": {
+            "rows": 0,
+            "original_rows": 0,
+            "original_columns_and_rows_unchanged": true
+        },
+        "lesson_completions": {
+            "rows": 0,
+            "original_rows": 0,
+            "original_columns_and_rows_unchanged": true
+        }
+    },
+    "mysql": {
+        "version": "8.4.13",
+        "time_zone": "+00:00"
+    }
+}

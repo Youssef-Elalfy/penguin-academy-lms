@@ -1,0 +1,98 @@
+Private MySQL connection verified.
+PHPUnit 12.5.40 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.3.6
+Configuration: /workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/phpunit.xml
+
+Time: 00:06.161, Memory: 60.50 MB
+
+[4mAdministrator Provisioning (Tests\Feature\AdministratorProvisioning)[0m
+[32m ✔ [0mSecure command provisions an admin with a hashed password
+[32m ✔ [0mCommand never promotes or overwrites an existing account
+[32m ✔ [0mCommand rejects weak passwords
+[32m ✔ [0mNon interactive command requires explicit secure input
+
+[4mAuthentication (Tests\Feature\Authentication)[0m
+[32m ✔ [0mAuthentication forms render with csrf fields
+[32m ✔ [0mRegistration persists a student with a hashed password
+[32m ✔ [0mRegistration rejects privilege fields[2m with data set [22m[36m0[0m
+[32m ✔ [0mRegistration rejects privilege fields[2m with data set [22m[36m1[0m
+[32m ✔ [0mRegistration rejects privilege fields[2m with data set [22m[36m2[0m
+[32m ✔ [0mRegistration rejects privilege fields[2m with data set [22m[36m3[0m
+[32m ✔ [0mRegistration rejects privilege fields[2m with data set [22m[36m4[0m
+[32m ✔ [0mRegistration rejects privilege fields[2m with data set [22m[36m5[0m
+[32m ✔ [0mRegistration rejects weak mismatched or multibyte overlong passwords
+[32m ✔ [0mRegistration rejects duplicate email case insensitively
+[32m ✔ [0mEach role can login and is routed to its dashboard[2m with data set [22m[36m0[0m
+[32m ✔ [0mEach role can login and is routed to its dashboard[2m with data set [22m[36m1[0m
+[32m ✔ [0mEach role can login and is routed to its dashboard[2m with data set [22m[36m2[0m
+[32m ✔ [0mInvalid password and inactive account cannot login
+[32m ✔ [0mLogin is throttled after five attempts
+[32m ✔ [0mRegistration is rate limited
+[32m ✔ [0mMalformed login input returns validation instead of a server error
+[32m ✔ [0mLogout ends authentication and blocks the dashboard
+
+[4mAuthorization (Tests\Feature\Authorization)[0m
+[32m ✔ [0mGuests cannot access any role workspace or teacher management
+[32m ✔ [0mRoles cannot open each others dashboards[2m with data set [22m[36m0[0m
+[32m ✔ [0mRoles cannot open each others dashboards[2m with data set [22m[36m1[0m
+[32m ✔ [0mRoles cannot open each others dashboards[2m with data set [22m[36m2[0m
+[32m ✔ [0mCourse policy limits teacher ownership and student visibility
+[32m ✔ [0mStudent lesson access requires active enrollment and publication
+[32m ✔ [0mCompletion policy denies other students and cross course data
+[32m ✔ [0mOther teachers cannot read private lessons or enrollments
+[32m ✔ [0mSensitive user fields are guarded against mass assignment
+
+[4mDashboard (Tests\Feature\Dashboard)[0m
+[32m ✔ [0mAdmin statistics reflect persisted active accounts and enrollments
+[32m ✔ [0mTeacher dashboard is scoped and counts unique students
+[32m ✔ [0mStudent dashboard excludes other students withdrawn draft and archived records
+[32m ✔ [0mEmpty student workspace reports zero from the database
+
+[4mDatabase Integrity (Tests\Feature\DatabaseIntegrity)[0m
+[32m ✔ [0mModel relationships and lesson order use persisted records
+[32m ✔ [0mDuplicate enrollment is rejected by mysql
+[32m ✔ [0mDuplicate completion is rejected by mysql
+[32m ✔ [0mCross course completion is rejected even without application validation
+[32m ✔ [0mForged completion course cannot match only the lesson
+[32m ✔ [0mDuplicate lesson position is rejected
+[32m ✔ [0mOrphan foreign keys are rejected
+[32m ✔ [0mSoft deletion preserves learning records and hard deletion cascades
+[32m ✔ [0mDeleting referenced teacher or student is restricted
+[32m ✔ [0mChanging a referenced enrollments course is restricted
+[32m ✔ [0mDatabase rejects an unknown role
+
+[4mFoundation (Tests\Feature\Foundation)[0m
+[32m ✔ [0mFoundation page renders built assets
+[32m ✔ [0mHealth endpoint is available
+[32m ✔ [0mDatabase uses mysql utf8mb4 innodb and utc
+[32m ✔ [0mRecord survives a database reconnection
+[32m ✔ [0mFailed transaction rolls back a write
+[32m ✔ [0mTest account cannot read the development database
+[32m ✔ [0mDatabase rejects duplicate email addresses
+
+[4mSession Security (Tests\Feature\SessionSecurity)[0m
+[32m ✔ [0mLogin rotates session id and logout invalidates session and csrf token
+[32m ✔ [0mCsrf protection rejects missing token with test bypass disabled
+[32m ✔ [0mBrowser response has security headers and http only session cookie
+[32m ✔ [0mSession driver persists encrypted session data in mysql
+[32m ✔ [0mRemember me sets the guard recaller cookie
+[32m ✔ [0mDisabled account is logged out of existing sessions
+[32m ✔ [0mTemporary teacher password must change before dashboard access
+[32m ✔ [0mPassword change requires current password and cannot target another user
+[32m ✔ [0mPassword change revokes other sessions tokens and old remember cookie
+
+[4mTeacher Management (Tests\Feature\TeacherManagement)[0m
+[32m ✔ [0mAdmin can create edit deactivate and reactivate a teacher
+[32m ✔ [0mNon admins cannot manage teachers[2m with data set [22m[36m0[0m
+[32m ✔ [0mNon admins cannot manage teachers[2m with data set [22m[36m1[0m
+[32m ✔ [0mTeacher routes cannot be used to edit admins or students
+[32m ✔ [0mAdministrator password confirmation is required for writes
+[32m ✔ [0mTeacher creation and update reject role escalation
+[32m ✔ [0mDuplicate teacher email is rejected without overwriting a user
+[32m ✔ [0mDeactivation revokes sessions tokens and remember token
+[32m ✔ [0mAdmin password reset requires teacher to change it again
+[32m ✔ [0mTeacher names are escaped and search is scoped to teachers
+
+[30;42mOK (72 tests, 348 assertions)[0m
+{"tool":"phpunit","result":"passed","tests":72,"passed":72,"assertions":348,"duration_ms":6162}

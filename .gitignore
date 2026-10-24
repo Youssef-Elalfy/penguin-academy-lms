@@ -1,0 +1,5 @@
+/.runtime/
+/downloads/
+/deliverables/
+/.qa-preview/
+**/__pycache__/

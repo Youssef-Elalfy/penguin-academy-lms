@@ -1,0 +1,69 @@
+{
+  "baseline_cases": 313,
+  "final_cases": 328,
+  "retained_cases": 313,
+  "new_cases": 15,
+  "removed_cases": 0,
+  "new_tests": [
+    {
+      "class": "Tests\\Feature\\ApiContractRegressionTest",
+      "name": "test_new_course_response_includes_the_persisted_integer_order_version with data set #0"
+    },
+    {
+      "class": "Tests\\Feature\\ApiContractRegressionTest",
+      "name": "test_new_course_response_includes_the_persisted_integer_order_version with data set #1"
+    },
+    {
+      "class": "Tests\\Feature\\SecurityAuditTest",
+      "name": "test_absent_account_authentication_applies_a_minimum_timebox"
+    },
+    {
+      "class": "Tests\\Feature\\SecurityAuditTest",
+      "name": "test_exact_72_byte_password_can_login"
+    },
+    {
+      "class": "Tests\\Feature\\SecurityAuditTest",
+      "name": "test_fortify_confirmation_accepts_the_exact_password"
+    },
+    {
+      "class": "Tests\\Feature\\SecurityAuditTest",
+      "name": "test_fortify_password_confirmation_rejects_truncated_password"
+    },
+    {
+      "class": "Tests\\Feature\\SecurityAuditTest",
+      "name": "test_local_http_does_not_set_hsts"
+    },
+    {
+      "class": "Tests\\Feature\\SecurityAuditTest",
+      "name": "test_login_rejects_a_suffix_after_the_bcrypt_limit"
+    },
+    {
+      "class": "Tests\\Feature\\SecurityAuditTest",
+      "name": "test_login_rejects_multibyte_password_above_72_bytes"
+    },
+    {
+      "class": "Tests\\Feature\\SecurityAuditTest",
+      "name": "test_password_change_rejects_truncated_current_password"
+    },
+    {
+      "class": "Tests\\Feature\\SecurityAuditTest",
+      "name": "test_production_https_responses_enable_hsts"
+    },
+    {
+      "class": "Tests\\Feature\\SecurityAuditTest",
+      "name": "test_security_headers_cover_success_and_exception_responses with data set #0"
+    },
+    {
+      "class": "Tests\\Feature\\SecurityAuditTest",
+      "name": "test_security_headers_cover_success_and_exception_responses with data set #1"
+    },
+    {
+      "class": "Tests\\Feature\\SecurityAuditTest",
+      "name": "test_security_headers_cover_success_and_exception_responses with data set #2"
+    },
+    {
+      "class": "Tests\\Feature\\SecurityAuditTest",
+      "name": "test_teacher_provisioning_rejects_truncated_administrator_password"
+    }
+  ]
+}

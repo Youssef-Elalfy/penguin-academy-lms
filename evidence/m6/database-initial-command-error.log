@@ -1,0 +1,19 @@
+
+   ErrorException 
+
+  Undefined array key 1
+
+  at tools/m3-database-evidence.php:17
+     13▕ $private = __DIR__.'/../.runtime/m3';
+     14▕ if (! is_dir($private)) {
+     15▕     mkdir($private, 0700, true);
+     16▕ }
+  ➜  17▕ $before = $argv[1] === 'before';
+     18▕ $summary = ['phase' => $argv[1], 'database' => DB::connection()->getDatabaseName(), 'tables' => []];
+     19▕ foreach ($tables as $table) {
+     20▕     $rows = DB::table($table)->orderBy('id')->get()->map(fn ($row) => (array) $row)->all();
+     21▕     $path = "$private/$table-before.json";
+
+  1   tools/m3-database-evidence.php:17
+      Illuminate\Foundation\Bootstrap\HandleExceptions::Illuminate\Foundation\Bootstrap\{closure}("Undefined array key 1", "/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/m3-database-evidence.php")
+

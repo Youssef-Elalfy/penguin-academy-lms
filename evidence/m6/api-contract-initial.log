@@ -1,0 +1,5 @@
+Private MySQL connection verified.
+PASS Accounts provisioned through administrator, Fortify and teacher-management flows
+PASS Token issuance uses role-limited abilities and explicit expiry
+FAIL createCourse response schema: [{"instancePath":"/data/lesson_order_version","schemaPath":"urn:penguin:contract#/components/schemas/Course/properties/lesson_order_version/type","keyword":"type","params":{"type":"integer"},"message":"must be integer"}]
+{"passed":2,"failed":1,"responses":4}

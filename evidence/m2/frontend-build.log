@@ -1,0 +1,7 @@
+Recorded from the actual npm run build execution in this milestone:
+vite v8.3.4 building client environment for production...
+✓ 61 modules transformed.
+public/build/manifest.json              0.33 kB │ gzip:  0.16 kB
+public/build/assets/app-7uvl2oni.css  239.79 kB │ gzip: 33.64 kB
+public/build/assets/app-B2XyD8x1.js    80.48 kB │ gzip: 24.05 kB
+✓ built in 1.05s

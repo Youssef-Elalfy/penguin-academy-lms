@@ -1,0 +1,17 @@
+{
+  "source_files_before_this_validation": 232,
+  "private_environment_values_checked": 4,
+  "private_credentials_found": false,
+  "runtime_and_dependency_directories_excluded": true,
+  "historical_reports_unchanged": true,
+  "required_m3_files_present": true,
+  "junit": {
+    "name": "/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/phpunit.xml",
+    "tests": "137",
+    "assertions": "899",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "time": "4.959204"
+  }
+}

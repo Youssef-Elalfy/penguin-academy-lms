@@ -1,0 +1,60 @@
+Private MySQL connection verified.
+PHP 8.3.6 (cli) (built: Sep  2 2026 12:56:02) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.3.6, Copyright (c) Zend Technologies
+    with Zend OPcache v8.3.6, Copyright (c), by Zend Technologies
+Composer version 2.10.3 2026-08-27 13:34:23
+PHP version 8.3.6 (/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/.runtime/usr/bin/php8.3)
+Run the "diagnose" command to get more detailed diagnostics output.
+Laravel Framework 13.38.0
+
+ INFO Preparing database. 
+
+ Creating migration table .. 11.06ms DONE
+
+ INFO Running migrations. 
+
+ 0001_01_01_000000_create_users_table .. 41.95ms DONE
+ 0001_01_01_000001_create_cache_table .. 23.82ms DONE
+ 0001_01_01_000002_create_jobs_table .. 36.21ms DONE
+
+
+   INFO  Preparing database.  
+
+  Creating migration table ....................................... 9.92ms DONE
+
+   INFO  Running migrations.  
+
+  0001_01_01_000000_create_users_table .......................... 45.74ms DONE
+  0001_01_01_000001_create_cache_table .......................... 21.95ms DONE
+  0001_01_01_000002_create_jobs_table ........................... 34.29ms DONE
+
+
+ Migration name .. Batch / Status 
+ 0001_01_01_000000_create_users_table .. [1] Ran 
+ 0001_01_01_000001_create_cache_table .. [1] Ran 
+ 0001_01_01_000002_create_jobs_table .. [1] Ran 
+
+
+ GET|HEAD / .. home › routes/web.php:5
+
+ Showing [1] routes
+
+PHPUnit 12.5.40 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.3.6
+Configuration: /workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/phpunit.xml
+
+Time: 00:00.168, Memory: 44.50 MB
+
+[4mFoundation (Tests\Feature\Foundation)[0m
+[32m ✔ [0mFoundation page renders built assets
+[32m ✔ [0mHealth endpoint is available
+[32m ✔ [0mDatabase uses mysql utf8mb4 innodb and utc
+[32m ✔ [0mRecord survives a database reconnection
+[32m ✔ [0mFailed transaction rolls back a write
+[32m ✔ [0mTest account cannot read the development database
+[32m ✔ [0mDatabase rejects duplicate email addresses
+
+[30;42mOK (7 tests, 16 assertions)[0m
+{"tool":"phpunit","result":"passed","tests":7,"passed":7,"assertions":16,"duration_ms":169}

@@ -1,0 +1,114 @@
+[
+  {
+    "package": "libaio1t64",
+    "version": "0.3.113-6build1.1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/liba/libaio/libaio1t64_0.3.113-6build1.1_amd64.deb",
+    "sha256": "433212b33e26d424605c01cec1de33b63f2cc12870987b4cb7b3625baba66a19",
+    "filename": "libaio1t64_0.3.113-6build1.1_amd64.deb"
+  },
+  {
+    "package": "libmecab2",
+    "version": "0.996-14ubuntu4",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/m/mecab/libmecab2_0.996-14ubuntu4_amd64.deb",
+    "sha256": "cc91804dc82ac766833a97288384b7b65762aa26212bb915a556e13430c61745",
+    "filename": "libmecab2_0.996-14ubuntu4_amd64.deb"
+  },
+  {
+    "package": "php8.3-cli",
+    "version": "8.3.6-0ubuntu0.24.04.11",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/p/php8.3/php8.3-cli_8.3.6-0ubuntu0.24.04.11_amd64.deb",
+    "sha256": "0c1730e4b6e2ba0126a620c373ab6e66eb72ae7276671684863e649d03f8edcd",
+    "filename": "php8.3-cli_8.3.6-0ubuntu0.24.04.11_amd64.deb"
+  },
+  {
+    "package": "php8.3-common",
+    "version": "8.3.6-0ubuntu0.24.04.11",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/p/php8.3/php8.3-common_8.3.6-0ubuntu0.24.04.11_amd64.deb",
+    "sha256": "eeee3f24113506f2b39ff58b271c906494e3f952e5e33e333e53e422d3b65162",
+    "filename": "php8.3-common_8.3.6-0ubuntu0.24.04.11_amd64.deb"
+  },
+  {
+    "package": "php8.3-curl",
+    "version": "8.3.6-0ubuntu0.24.04.11",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/p/php8.3/php8.3-curl_8.3.6-0ubuntu0.24.04.11_amd64.deb",
+    "sha256": "cc6a5003b349deaf7da3dc01beb8ca32dc52c29cac5e8e5730c9958b3799faf0",
+    "filename": "php8.3-curl_8.3.6-0ubuntu0.24.04.11_amd64.deb"
+  },
+  {
+    "package": "php8.3-mbstring",
+    "version": "8.3.6-0ubuntu0.24.04.11",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/p/php8.3/php8.3-mbstring_8.3.6-0ubuntu0.24.04.11_amd64.deb",
+    "sha256": "a0d96d97ef82d4ff11b43491e651fe252efaa6256d5e5b6ce399a94a02a2c075",
+    "filename": "php8.3-mbstring_8.3.6-0ubuntu0.24.04.11_amd64.deb"
+  },
+  {
+    "package": "php8.3-mysql",
+    "version": "8.3.6-0ubuntu0.24.04.11",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/p/php8.3/php8.3-mysql_8.3.6-0ubuntu0.24.04.11_amd64.deb",
+    "sha256": "70623e47f67460ba8eba92f31c7ead46db49ed03522c2d7ebe59e3e62b8e4ee4",
+    "filename": "php8.3-mysql_8.3.6-0ubuntu0.24.04.11_amd64.deb"
+  },
+  {
+    "package": "php8.3-opcache",
+    "version": "8.3.6-0ubuntu0.24.04.11",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/p/php8.3/php8.3-opcache_8.3.6-0ubuntu0.24.04.11_amd64.deb",
+    "sha256": "4c0bca11075f46167f6f2436cee18839a50b41f06dcd2fc346ff0ee74817357d",
+    "filename": "php8.3-opcache_8.3.6-0ubuntu0.24.04.11_amd64.deb"
+  },
+  {
+    "package": "php8.3-readline",
+    "version": "8.3.6-0ubuntu0.24.04.11",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/p/php8.3/php8.3-readline_8.3.6-0ubuntu0.24.04.11_amd64.deb",
+    "sha256": "dab8a9e9a984162a00cb768404c60ecb09d270080be3107ad6f743b0e2838e8c",
+    "filename": "php8.3-readline_8.3.6-0ubuntu0.24.04.11_amd64.deb"
+  },
+  {
+    "package": "php8.3-xml",
+    "version": "8.3.6-0ubuntu0.24.04.11",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/p/php8.3/php8.3-xml_8.3.6-0ubuntu0.24.04.11_amd64.deb",
+    "sha256": "10a516f7a8b5b82e8cc33f7f6d270912bb77c6087f35f7999f5f4817b57a226f",
+    "filename": "php8.3-xml_8.3.6-0ubuntu0.24.04.11_amd64.deb"
+  },
+  {
+    "package": "php8.3-bcmath",
+    "version": "8.3.6-0ubuntu0.24.04.11",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/p/php8.3/php8.3-bcmath_8.3.6-0ubuntu0.24.04.11_amd64.deb",
+    "sha256": "f28c79ed482e37aeeb10720a8773aa85b70f8c9f816f558e77559109c7f8a2dd",
+    "filename": "php8.3-bcmath_8.3.6-0ubuntu0.24.04.11_amd64.deb"
+  },
+  {
+    "package": "php8.3-intl",
+    "version": "8.3.6-0ubuntu0.24.04.11",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/p/php8.3/php8.3-intl_8.3.6-0ubuntu0.24.04.11_amd64.deb",
+    "sha256": "bccd1d4467b09de165723789de7d8de30d68704f61c541193e109a7d5d8aba39",
+    "filename": "php8.3-intl_8.3.6-0ubuntu0.24.04.11_amd64.deb"
+  },
+  {
+    "package": "php8.3-zip",
+    "version": "8.3.6-0ubuntu0.24.04.11",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/p/php8.3/php8.3-zip_8.3.6-0ubuntu0.24.04.11_amd64.deb",
+    "sha256": "b924e62200fd1d855d6e5892ec5a5f32b22ec445c4d21d717e405b0e7972ffd2",
+    "filename": "php8.3-zip_8.3.6-0ubuntu0.24.04.11_amd64.deb"
+  },
+  {
+    "package": "mysql-community-client-core",
+    "version": "8.4.13-1ubuntu24.04",
+    "url": "https://repo.mysql.com/apt/ubuntu/pool/mysql-8.4-lts/m/mysql-community/mysql-community-client-core_8.4.13-1ubuntu24.04_amd64.deb",
+    "sha256": "2bcb554edd33141ac5d54579fd8ab9dc5dbeca255a0a5e29cca7ece9afa7d21e",
+    "filename": "mysql-community-client-core_8.4.13-1ubuntu24.04_amd64.deb"
+  },
+  {
+    "package": "mysql-community-client-plugins",
+    "version": "8.4.13-1ubuntu24.04",
+    "url": "https://repo.mysql.com/apt/ubuntu/pool/mysql-8.4-lts/m/mysql-community/mysql-community-client-plugins_8.4.13-1ubuntu24.04_amd64.deb",
+    "sha256": "6812f8ab63482a3065da19a7cf807f0999073476ed6131561799e6ba9ec8bcc7",
+    "filename": "mysql-community-client-plugins_8.4.13-1ubuntu24.04_amd64.deb"
+  },
+  {
+    "package": "mysql-community-server-core",
+    "version": "8.4.13-1ubuntu24.04",
+    "url": "https://repo.mysql.com/apt/ubuntu/pool/mysql-8.4-lts/m/mysql-community/mysql-community-server-core_8.4.13-1ubuntu24.04_amd64.deb",
+    "sha256": "66269aaf941bee02390df98c7b69ee01eb918298a18f10882202d113aa0f1e62",
+    "filename": "mysql-community-server-core_8.4.13-1ubuntu24.04_amd64.deb"
+  }
+]

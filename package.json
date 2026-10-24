@@ -1,0 +1,7 @@
+{
+  "name": "penguin-academy-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "python3 tools/preview.py"
+  }
+}

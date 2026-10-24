@@ -1,0 +1,2306 @@
+[
+  {
+    "path": ".gitignore",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "aa81189ee84ed37dff1d80845436460e8ce5c5e8089d4efad7dd5c0ee70a29b8"
+  },
+  {
+    "path": "ARCHITECTURE.md",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "28f147799dab80e30b214249d25115faae6fa62ad936baeb497474a6676095d5"
+  },
+  {
+    "path": "MILESTONE_1_REPORT.md",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "6a5559b6a7004bde960baa777677ec91310c4d2a2bfdf17f0e685af5e7d986b3"
+  },
+  {
+    "path": "MILESTONE_2_REPORT.md",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "30ceb1ea8281af0338bda210832d174543925e44ffa04f5981534769d63e6d99"
+  },
+  {
+    "path": "MILESTONE_3_REPORT.md",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "5128d912ec2980c578c8f54ec38da9e193b9669e597b5965dbc46eaeb467bb0d"
+  },
+  {
+    "path": "MILESTONE_4_REPORT.md",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "008e9f5ecf5e1a1d0c6a71f243ecebaae411a0f1fae578996e63d42009521fc8"
+  },
+  {
+    "path": "MILESTONE_5_REPORT.md",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "50648494fa996c96be25717585f38300b7df02935fb40b92b6bffe0a15875ed9"
+  },
+  {
+    "path": "README.md",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "605ed41eaa5cb533487babaa95021b226e1fb7b22a33574915c5ee77dbc6dafd"
+  },
+  {
+    "path": "app/.editorconfig",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "fe39e0ad06edea8e256e44f1fc4f319a8acfa785a7470af5cf6b9ed12dc34406"
+  },
+  {
+    "path": "app/.env.example",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "8bb1a4307dcc5e88fc97ccd688454ad60f2a8c207e4a8b8724172b3e4ff0a647"
+  },
+  {
+    "path": "app/.env.testing.example",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "d61fcc71d0a087006d84f19132755abd938bbe07bf2bdf19b6ffa449fe4861bb"
+  },
+  {
+    "path": "app/.gitattributes",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "a40eb27ee0b545ca5b5542daaf99fec51f84f23b3766a6353864ef2a115bc51c"
+  },
+  {
+    "path": "app/.gitignore",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "70db41ae67a4ff3eca4a4d65f55177d49823a6308c581cf1d63f6267a19e5838"
+  },
+  {
+    "path": "app/.npmrc",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "e968d1d336604e9986ea31306a4d9e1442f4312fca262f444384baf928d6560e"
+  },
+  {
+    "path": "app/AGENTS.md",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "fc7f68b818002266982ebc3e423826ce67988c1edb4532bb1b086a17744cd890"
+  },
+  {
+    "path": "app/CLAUDE.md",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "228c73ab5e44545a1e5b974f5cb7056554c2b8d012673cf15fe76b73d98bdf27"
+  },
+  {
+    "path": "app/DESIGN.md",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "3c1a4513e32f9e39d32689f6bd026ac6de70be8a1074aab4b7bb192b76a15f91"
+  },
+  {
+    "path": "app/README.md",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "cc4b8af6f72a556b4b15480f5413f994c5ac8cd837543d784123c0dad548e9bc"
+  },
+  {
+    "path": "app/app/Actions/Academy/CompletionActions.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "209d37b834437a9f3dcd5c8e83beb99483cc0853522f54d2fa3718ecbe9b0ba5"
+  },
+  {
+    "path": "app/app/Actions/Academy/CourseActions.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "f1f1a2fd090bafe1a9630f3d4a20c20818c7406b2b960e50f4f95e397ef84309"
+  },
+  {
+    "path": "app/app/Actions/Academy/EnrollmentActions.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "fd1c8725d7fb44b768732db770db22bd82c2f9c3502e0112aff596ee6cc87109"
+  },
+  {
+    "path": "app/app/Actions/Academy/LessonActions.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "072ab6e557ea606c4c0f26e99c50837b31ca95586455d3db855059906d2b1bc9"
+  },
+  {
+    "path": "app/app/Actions/Academy/Participants.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "239940ea89569d88a0fd8b366e29bac46ec8b807a44cc9b66a2060d12f426895"
+  },
+  {
+    "path": "app/app/Actions/Accounts/TeacherAccounts.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "e48ecd636460b8b104b2c01bba642b9461c8341965461fe5963dab49b539a7f1"
+  },
+  {
+    "path": "app/app/Actions/Api/TokenActions.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "25b78c5f6a6d5a492c4a09b8ffea19f5571e68ca60b3210f6c2612fc426ffbd6"
+  },
+  {
+    "path": "app/app/Actions/Fortify/CreateNewUser.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "6a86e447410bc0a1cfcd9cc52207f44c5057bad1ade7d52a7061eb9cd818e990"
+  },
+  {
+    "path": "app/app/Console/Commands/ProvisionAdministrator.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "e3a615a6d707488f51d5cc4882bb43e64ebb1f3e32b93ee8293c8862f5adfc5a"
+  },
+  {
+    "path": "app/app/Enums/UserRole.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "2095ac9c3b50b54637954590ee8f9a87f0cbb644432f4eed17f982de11e7c037"
+  },
+  {
+    "path": "app/app/Http/Controllers/AccountPasswordController.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "dbac4100da852381756fc51f9e22d67ff4681e9dd613890f2bcdcb0cdc9c9e8a"
+  },
+  {
+    "path": "app/app/Http/Controllers/Admin/TeacherController.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "2a298adc373d0c492d126789315d8190b61fcf950cdb6ad0c1e025a95f5683ee"
+  },
+  {
+    "path": "app/app/Http/Controllers/Api/V1/CourseController.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "4915d1d22bdab261aed65b407bfdba590828093701786dfb0c9c61a65335afef"
+  },
+  {
+    "path": "app/app/Http/Controllers/Api/V1/EnrollmentController.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "51585d6f0df77bf9a322539da172a81f1c5784dfb96ff1d084dd79fa4462f166"
+  },
+  {
+    "path": "app/app/Http/Controllers/Api/V1/LessonController.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "dc01b550f98f2ba26866d84e75b43760c23bf98b0bc50696513343a369b0b734"
+  },
+  {
+    "path": "app/app/Http/Controllers/Api/V1/ProgressController.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "50e27325a1fdac8c4a61244deeeab179e8be0b9252571d53753b071bffbfdba7"
+  },
+  {
+    "path": "app/app/Http/Controllers/Api/V1/ReportController.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "3fe9d1adbe393f86b8e378e8cabc9db1873d97c3f9fa20ea650107b0b4c20383"
+  },
+  {
+    "path": "app/app/Http/Controllers/Api/V1/TokenController.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "7eb517d437d63e2d61f1d6738132378175f64f92f9182b3d0c72de994ef8bb3b"
+  },
+  {
+    "path": "app/app/Http/Controllers/Controller.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "25d1c1ef8e6cc8a376553faacfba2b07d9dfaee9bdbb84f14f77517580e9deb1"
+  },
+  {
+    "path": "app/app/Http/Controllers/CourseController.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "0f5bd47dca6dd41b7a3bd6d5ab7e6e0634b0a738a4afc6a8a5ec9a2432f50e56"
+  },
+  {
+    "path": "app/app/Http/Controllers/DashboardController.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "037e48c6478ef0bdbf48b2cee4989b60ed76c0f8ac35146c8731e464f5bf60d9"
+  },
+  {
+    "path": "app/app/Http/Controllers/EnrollmentController.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "d8a4386cddc576cd903b14988e0851ebba198b76a2f650b6ff9f465d89256af2"
+  },
+  {
+    "path": "app/app/Http/Controllers/LearningReportController.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "ccd90db3a679ee1a19496878b6f2cffe7fc71baf7074551eb372cdc71a1439c9"
+  },
+  {
+    "path": "app/app/Http/Controllers/LessonCompletionController.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "14fb62384558bc1531d7b89033bc16effd056ce7f756377f7380ad882e8e175a"
+  },
+  {
+    "path": "app/app/Http/Controllers/LessonController.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "60c48349ee384d641a715572e38849a467665ecb9ceace0242f8bd67de935b37"
+  },
+  {
+    "path": "app/app/Http/Middleware/EnsureActiveAccount.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "33cc61ba3ddc517d4662bba17ba27a2835581e7b3299b2b12ce5998fa20e9383"
+  },
+  {
+    "path": "app/app/Http/Middleware/EnsureApiAccount.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "7bf00e9349ddd63af6d870885e8acd80f7acf204484e62f29a03ebab0a9b0a0e"
+  },
+  {
+    "path": "app/app/Http/Middleware/EnsurePasswordChanged.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "ed4c4f902ae1ba24a1649b11340c2527809c50e653c5f8c051e0b6fb5998675a"
+  },
+  {
+    "path": "app/app/Http/Middleware/SecurityHeaders.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "3365858ba402d7a4dc13c34a8f0d9c653bc43b393d40e6613fdbf582c662cfbf"
+  },
+  {
+    "path": "app/app/Http/Requests/AcademyRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "cb6bf90677704b0252871261bb063e5e7e823ad5c76c8f733ad9a5f90bc605d5"
+  },
+  {
+    "path": "app/app/Http/Requests/Api/ChangeCompletionRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "31cde6617a11424f0cfff3889c397b81e75dd65042ebfeb21f80404f7e2b574c"
+  },
+  {
+    "path": "app/app/Http/Requests/Api/CourseIndexRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "8a6d1382b3f344c93f35dda63db75d5bfe161130f798c06698c570b30fafe5fe"
+  },
+  {
+    "path": "app/app/Http/Requests/Api/CourseWriteRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "92681c1267dca3a2c7441a9172f2aafaf4afe284152bd98649fb00e74c8ea5a0"
+  },
+  {
+    "path": "app/app/Http/Requests/Api/DeleteCourseRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "0a461b75b331e2004e31c31eec474ea90476138e85c2accb359b2e6bb98a6fe6"
+  },
+  {
+    "path": "app/app/Http/Requests/Api/DeleteLessonRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "9b7be69bad48f86486a5300a8410fade45d7c6391e1bf931bb6f9c8ca8cc530d"
+  },
+  {
+    "path": "app/app/Http/Requests/Api/EmptyRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "760199e9968d903bcff0bb43e1f25d70f0037f5da9bb320a2725809c35ce0340"
+  },
+  {
+    "path": "app/app/Http/Requests/Api/EnrollStudentRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "d97bdb2ab5bd4ca435f2c0df55d320a9a6b4556614e0c6f5e0d78691da1964f2"
+  },
+  {
+    "path": "app/app/Http/Requests/Api/EnrollmentIndexRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "e37d5ca4a507c4ebf726c292eb26cfa3cb8931292165185a5df3c2f4cb580937"
+  },
+  {
+    "path": "app/app/Http/Requests/Api/IssueTokenRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "ef02175d7c77dd94cd3818efc3162b29e8a0965c37e011e3273645f1e5210946"
+  },
+  {
+    "path": "app/app/Http/Requests/Api/LessonIndexRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "de051fd79b00709120b024fae38ff3035761c286403bbaa36b5355ae146f3688"
+  },
+  {
+    "path": "app/app/Http/Requests/Api/LessonWriteRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "dab98ebf976eea49d9ff0b0a335ff283f9ed1a323dcfc6b78a6a04e5a253b408"
+  },
+  {
+    "path": "app/app/Http/Requests/Api/OrderLessonsRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "0e179fd38c709b255a2a3e8228f26b3555b248606934c080d7881301cfc86313"
+  },
+  {
+    "path": "app/app/Http/Requests/Api/PaginationRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "5b10b95d92bca0c5ec602157e3d1bfe24827a520670255ce04b5cda55fdf0a83"
+  },
+  {
+    "path": "app/app/Http/Requests/Api/PublicationCourseRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "dcc6d96f32c382c958a021718a04c1977928ec9f684a8afd5ad841f7b97d744c"
+  },
+  {
+    "path": "app/app/Http/Requests/Api/PublicationLessonRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "bf02022444cb6892ffa8a449d64e2e4b3d458ad11a8395fefc1dbb082bd6b134"
+  },
+  {
+    "path": "app/app/Http/Requests/Api/RejectsUnknownFields.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "931da58be147000ca11c8c50d670e01a6ed4bb9d7dba37d90c308f6cfe65480d"
+  },
+  {
+    "path": "app/app/Http/Requests/Api/ReportRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "2ae7566b01022974cb1a6509be223f150e06d04640953e49c8c43b69a1bf1b4d"
+  },
+  {
+    "path": "app/app/Http/Requests/Api/WithdrawEnrollmentRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "6a681d8849c90fa679f07db6c0b46017aec902124bc02857113ce13789c9c6ae"
+  },
+  {
+    "path": "app/app/Http/Requests/AssignTeacherRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "ca31b5dda0f8eebcf0128dd5e5430a3761f83c5448e06aacff08e302b4178b99"
+  },
+  {
+    "path": "app/app/Http/Requests/ChangeLessonCompletionRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "6496e968a0b2362f8f6eaeb02b585796f80145ddc5f214fc9192e578a1528f1e"
+  },
+  {
+    "path": "app/app/Http/Requests/CourseIndexRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "aae18d4dd40dc5c53e929eb60c9d6ff2989d98789fd970588c184b71114c7667"
+  },
+  {
+    "path": "app/app/Http/Requests/CourseWriteRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "a03dc03e8b947dd506fef16ae34d426fd7f9dbf233f36493cdd70cde776718c8"
+  },
+  {
+    "path": "app/app/Http/Requests/DeleteCourseRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "7dfee89313a3335fef17ffeba473910ea32ce1304ded2511bd096a183aef2a3a"
+  },
+  {
+    "path": "app/app/Http/Requests/DeleteLessonRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "15f128ab4bba96911e69aed8680ba4b225cfa2e638f69894f7b23a1e63f6f909"
+  },
+  {
+    "path": "app/app/Http/Requests/EnrollStudentRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "795b433126e460b5924e39b7e8ee077c350d4fad17dc4d157c7903717e420342"
+  },
+  {
+    "path": "app/app/Http/Requests/EnrollmentIndexRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "31d4a177f96224e29a9523b7e3e58c87a75936d4927bb3ade72c44c9aa2ecacb"
+  },
+  {
+    "path": "app/app/Http/Requests/LessonWriteRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "d9419098925c87be331755185230e853e9ce14ac50083202e36819e1e8894c26"
+  },
+  {
+    "path": "app/app/Http/Requests/ProgressReportRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "1e7324ffe79f5a6691e6af5d4b23b6edaa4a570fcb160704d15c1345fffca408"
+  },
+  {
+    "path": "app/app/Http/Requests/PublishCourseRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "0692d77ec92881af3d68934c9fdcb4610f59734c861ba6c9fb4ae1d0b6a0ebfb"
+  },
+  {
+    "path": "app/app/Http/Requests/PublishLessonRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "86a5f51a6c6df0c9fa56db335808fcae67eb5ce07a2f62f0a9cb95a7670587cb"
+  },
+  {
+    "path": "app/app/Http/Requests/ReorderLessonsRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "20d8d3b8d3ba0280060577eb2a0083f95ce359f45c74566dc59d2ff578306435"
+  },
+  {
+    "path": "app/app/Http/Requests/StoreTeacherRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "2248c2008ea02eb3b1d23132f541a7e4526300cf14e75391ff28dc992ad81206"
+  },
+  {
+    "path": "app/app/Http/Requests/UpdateAccountPasswordRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "42ee1c24977c39ea5388a9bcdffa9458cc403d8ace5ff4da971f45b64f889fee"
+  },
+  {
+    "path": "app/app/Http/Requests/UpdateTeacherRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "2a0b2a3545bd63311f7769beb3bc94872a11b172358792620b53da3c27a3438f"
+  },
+  {
+    "path": "app/app/Http/Requests/WithdrawEnrollmentRequest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "4533a6d6bb8ba6d67fd53429a0bf6fe2126379d2b6fe3e9d5ef57c393bd2a884"
+  },
+  {
+    "path": "app/app/Http/Resources/Api/CourseResource.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "b976fefb49c1f0c8f2a1ce0e647c805be70f7cd25712de651aa639943307c6ba"
+  },
+  {
+    "path": "app/app/Http/Resources/Api/EnrollmentResource.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "34d6c61c2b3d2d31613b2d72b9afc2958ace04857195df34aa65e31132f5508f"
+  },
+  {
+    "path": "app/app/Http/Resources/Api/LessonResource.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "4d631d4865fd679f2142b6db4ad806a02d070f5a121f93903c0ec13376f2d5c0"
+  },
+  {
+    "path": "app/app/Http/Resources/Api/ProgressResource.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "db486c00640188724057322405db14d131cb4ec6550e6359b27815fbc7004102"
+  },
+  {
+    "path": "app/app/Http/Resources/Api/ReportResource.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "9ae12711bd069a09ea88133b9b23213c62aff53fd6eabfb5f1ddcdd328acd7a5"
+  },
+  {
+    "path": "app/app/Http/Resources/Api/TokenResource.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "cbbe1cf173d412536bd5152024a4a396292bd714ea24a975bc96a7049484d9a6"
+  },
+  {
+    "path": "app/app/Models/Course.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "2fbf1acf455508f662e9628b96758755177968fd945c4c149c14a262a6f2296a"
+  },
+  {
+    "path": "app/app/Models/Enrollment.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "bac7eac16997d6d93e18708dfd3612d3be7e8f29550969060a8ae8710f25014f"
+  },
+  {
+    "path": "app/app/Models/Lesson.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "f1197571e4dcbfdae28e8ab38afa398fdb79fe5b460907e538ceec57191bef7c"
+  },
+  {
+    "path": "app/app/Models/LessonCompletion.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "51398c3044f3cacb5ec1d34a5be07917a6c21ccdbe741e6043ac65fa5c18317f"
+  },
+  {
+    "path": "app/app/Models/User.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "f5ed1324ef4a5173a4884f4216fd9457c5cc87f1ae19361c89292b203b4c60a3"
+  },
+  {
+    "path": "app/app/Policies/AcademyReportPolicy.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "e47d96b7103a8e1b207e644633a01fc3af05dda36e1ca6ae54386bff941ca5cf"
+  },
+  {
+    "path": "app/app/Policies/ApiTokenPolicy.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "58739914dd88872c584737eb3ffc42bfd4a78bc162275da36acf8363308ed5cc"
+  },
+  {
+    "path": "app/app/Policies/CoursePolicy.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "384c76ec2ca2b00f1239fd9cd43bb0820f360f72e2ac7eff3ae1ce6679001e46"
+  },
+  {
+    "path": "app/app/Policies/EnrollmentPolicy.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "e1f1fd4e2388c960c78c21aac8c2e37cf9f603dccdeb1efaf3e367f1b5a87498"
+  },
+  {
+    "path": "app/app/Policies/LessonCompletionPolicy.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "711cdb1de4578ee91bd3dc82438d441f34430ed7bba2a8125a4eb41c71aa31fc"
+  },
+  {
+    "path": "app/app/Policies/LessonPolicy.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "f25705283b283046c1ca2c6e760333c40ccabd230453cf38fde96e957fa1f1e8"
+  },
+  {
+    "path": "app/app/Policies/UserPolicy.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "e0a3d1ce90ecc092df152e027eebbb2824618bf03478b09475947436d2b7637b"
+  },
+  {
+    "path": "app/app/Providers/AppServiceProvider.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "6f8d46e4295f6b8bcedf39598c6eae82fbb132e819a77f3e683865ad870d909b"
+  },
+  {
+    "path": "app/app/Providers/FortifyServiceProvider.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "b963ed52af57baf39c140593e924da8b0fe99359b8c68f04d03865c6d12acc6d"
+  },
+  {
+    "path": "app/app/Queries/CourseCatalog.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "9908442f75655b65da9f892172ad3e2fbff763588bf0fd4af844243d0daf6ed4"
+  },
+  {
+    "path": "app/app/Queries/EnrollmentDirectory.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "8ee8cf415cd2a9066455bc46f4e2935581df51ea679b10965f2b8324e3ef1b86"
+  },
+  {
+    "path": "app/app/Services/Api/ApiErrors.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "7c461070d85d6e72949baa6a2490194c9b20e5c1ae79c1fe932eff0d18409803"
+  },
+  {
+    "path": "app/app/Services/Api/TokenAbilities.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "4cbc9aef8fcc1955c24d883115986fb313370fae27a53793fb0d1dc64cd6a3da"
+  },
+  {
+    "path": "app/app/Services/Learning/AcademyAnalytics.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "12b7b1873987ca1ad00d7d8450cb16ca560f13b314f830c94ea01a6c366dac54"
+  },
+  {
+    "path": "app/app/Services/Learning/ProgressService.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "9fbd03e90f569d3bd95a1fc68253e24777369d4aac39e431b646617b39d62909"
+  },
+  {
+    "path": "app/app/Services/Learning/ProgressSummary.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "9567c0bf770b5af0b05c24d392e0623e6a1904088fb9e7dfbb3eb5711750a1ff"
+  },
+  {
+    "path": "app/artisan",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "f91a517c0c5d3a904c3f390933964a5e08ec1fc68146882730daac4aca4ffcec"
+  },
+  {
+    "path": "app/boost.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "f846ebd9fb38fe4052d91333727e163c4fe03e0ee3394bbf566d462c7106d2f7"
+  },
+  {
+    "path": "app/bootstrap/app.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "144739e0c4a0130a4cf75316e98d2d2579d3673c60905fff848f2034bc41b008"
+  },
+  {
+    "path": "app/bootstrap/cache/.gitignore",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d"
+  },
+  {
+    "path": "app/bootstrap/providers.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "96efbbd0946c9b43c87e3d99258d91b920a6bf51ad0ea0b1c9250f109a0a613a"
+  },
+  {
+    "path": "app/composer.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "8e3d2608969029ed177f4596c815bad9d2639b7da276a36cebbb185c320b7a95"
+  },
+  {
+    "path": "app/composer.lock",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "5956d28e43d4aa79be431617c821967c1132b7ce313415e6fd7dad41f923c1fa"
+  },
+  {
+    "path": "app/config/app.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "ae53fb7fcdf3c91ca1034ed84261d857ffab0a646fac9b90b768a16b9a548897"
+  },
+  {
+    "path": "app/config/auth.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "c7e204e9785c9f596d66fb884b493f658f2327f157646bdb4088efd6b3a7773f"
+  },
+  {
+    "path": "app/config/cache.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "5030cdf171704e58b96f2cf17f1c6d5921b27d5c63c2cefb730eeb2da49a8240"
+  },
+  {
+    "path": "app/config/database.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "0346e9cf5d71a8d7fa14544d06df3a4a7cc1f5046a045d2a30eda658787b6f42"
+  },
+  {
+    "path": "app/config/filesystems.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "ba7060d7a23e490c3ce830656f6d24ad3ccf5b868e3293f2a12e411959dc5635"
+  },
+  {
+    "path": "app/config/fortify.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "f9aff31d3906e474008a68cc2da4e1d974d002b1f2262c1ddd3d9abbaae0a9c3"
+  },
+  {
+    "path": "app/config/logging.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "beb1ffd0db910f6f0b4f75214c3d5aa385d692733ece8a450f4c169d2c99ce38"
+  },
+  {
+    "path": "app/config/mail.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "c43ff49a31c5f32ce21eb7159f2a4b3cd2f4074eaed5838d265646dbfedd3474"
+  },
+  {
+    "path": "app/config/queue.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "6101774da7c8b79af46d0028f2b8b31a484c3f7eda10b76e5b27b6093ad364a4"
+  },
+  {
+    "path": "app/config/sanctum.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "3ddcd0f73488b36e33b6a1085a890c700645ff35b314a32566d8c4d4caa1159a"
+  },
+  {
+    "path": "app/config/services.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "b7ee786ea1adbc92db9f229f479431c94503527c47051da3862eb0e4d7db70aa"
+  },
+  {
+    "path": "app/config/session.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "87d376f0b6259d172ff02e0152032424768f70bae0729438923e70e7aa8da684"
+  },
+  {
+    "path": "app/database/.gitignore",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "e758642d95e83e907e010b6e46b07b3f953c7cef11fe5ebefc2a77b9d7b4d5f7"
+  },
+  {
+    "path": "app/database/factories/CourseFactory.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "c6d24221645b99e11a3d74a7df92b49879b5a567db05723a7a7464c9315c578a"
+  },
+  {
+    "path": "app/database/factories/EnrollmentFactory.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "15771903c4cffe1925de6b4b81b59b14de73c2cb9a799e1f27cecb7d96ca2047"
+  },
+  {
+    "path": "app/database/factories/LessonCompletionFactory.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "07779dac9a2ae34dbb7e8d306533b19ce9dbaac3b1ec5a4020eb6e495fed0962"
+  },
+  {
+    "path": "app/database/factories/LessonFactory.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "03568f42ee1183552ba30c5b93da0b1ed734049dcb57c0482c4a533dde196953"
+  },
+  {
+    "path": "app/database/factories/UserFactory.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "b03f84ff57504ba1c48b9d101bb4a8a36ee0452926149ceeb498f0298fdefa36"
+  },
+  {
+    "path": "app/database/migrations/0001_01_01_000000_create_users_table.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "10d79883bc08ce46510f9ad8b1830b4d06d586dc56ae2c8bac3b3e491f69a90f"
+  },
+  {
+    "path": "app/database/migrations/0001_01_01_000001_create_cache_table.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "fbb4665e5a977e71df4e74ec75b3c06ca4f17ad0de7138fe9786639189978e77"
+  },
+  {
+    "path": "app/database/migrations/0001_01_01_000002_create_jobs_table.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "df4910687180313a14a3f96a8bddd808ae145ed1b107cd772caf865c0dc2b746"
+  },
+  {
+    "path": "app/database/migrations/2026_10_21_001334_create_academy_schema.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "d9b41065d2c248121606c32aafcc6b7d0490b2ea531d18f065d166b9ad528ff2"
+  },
+  {
+    "path": "app/database/migrations/2026_10_21_133758_add_lesson_soft_deletes_and_order_version.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "f1bc916744e5dc41938669b53cdd72a6601750d5295184d66b63b38128847da5"
+  },
+  {
+    "path": "app/database/seeders/DatabaseSeeder.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "6b849412252c972873545e169286e8acc8b6fdd47b8616ec51743b4c45552d66"
+  },
+  {
+    "path": "app/docs/API.md",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "e8b1705d6a30db4605706df942f338a9ee1721a68dbb1a15018f6801b9f7396d"
+  },
+  {
+    "path": "app/docs/openapi.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "40f47d52afe547c7b9ccbcd682fa999c7cd5004ded5f533a6a6ccda3fde5bda4"
+  },
+  {
+    "path": "app/package-lock.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "35e978b66b8d4c857da94262b029c047f27396b214b6a45f8b698d756fe98a11"
+  },
+  {
+    "path": "app/package.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "d094b63ebc13a5f2a7b34aa6df33c32d6314232c8f7fe2aa88d0b999b74f1a06"
+  },
+  {
+    "path": "app/phpunit.xml",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "863ca1679e32f034255fe1cbd27dda1e4b2452b4b22903838634aae68307e455"
+  },
+  {
+    "path": "app/public/.htaccess",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "b7e379c77639fd56144947dbae84c84eb466d9c686ea81f2f013ae85421da923"
+  },
+  {
+    "path": "app/public/build/assets/app-CBS9keng.css",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "72f78607db2ecb59cff5beb3300e55205c8c5d80bfec3c25d0de04f4f5a6dbd5"
+  },
+  {
+    "path": "app/public/build/assets/app-CWefeVrW.js",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "c4e05f13c0916aeb7817693a951c33144ba272fa55f553858491768d7ec06554"
+  },
+  {
+    "path": "app/public/build/manifest.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "82b118051512a982cf8fce77537e721268ca625a48646160773a127861de3dfd"
+  },
+  {
+    "path": "app/public/favicon.ico",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "app/public/index.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "eba77cba39695b6bd091fe5211d481f7ebb2ce2d8d26230b5a609465d0a4aff9"
+  },
+  {
+    "path": "app/public/robots.txt",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "e5c4b84484ee4216e9373be99380320c25dd94805f99f0a805846f087636553f"
+  },
+  {
+    "path": "app/resources/css/app.css",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "336eaebe700fec2f60d332501b3f8c3dc5341b9e9b16d4635351b063d5d7ca47"
+  },
+  {
+    "path": "app/resources/js/app.js",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "026d03305d9c39d5bfd02863fde820968d0754eb535cc9dccf13a0d491155061"
+  },
+  {
+    "path": "app/resources/views/account/password.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "4029cd5fdc17a8d71b6b9dad808299a5ef75734da03cd2758f2460de899bb921"
+  },
+  {
+    "path": "app/resources/views/admin/teachers/create.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "dc014acd477f3f3eccb2b642c0568249ac3c1bd7859043921288783b204a2eb7"
+  },
+  {
+    "path": "app/resources/views/admin/teachers/edit.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "9dcc3410da1be9a1cfe80e0e158798a08b6e86f955318a7cc13a367e604e6a56"
+  },
+  {
+    "path": "app/resources/views/admin/teachers/form.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "61de17e37c26e80d665e6eb0ba67d1169dbd3911ce947728c227e0d05637f9fb"
+  },
+  {
+    "path": "app/resources/views/admin/teachers/index.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "df103da2c6d71f5f2503d14db1b505afcb82c7ba547cb612b9939f4687767422"
+  },
+  {
+    "path": "app/resources/views/auth/confirm-password.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "79f92fe6a94ec0e7664ec559a75d42c9857936a92d6f5b4ac512d3b1cdc4b583"
+  },
+  {
+    "path": "app/resources/views/auth/login.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "f9b468c050dd7816578aecf38f3e78ecfbf186b3ca8cd6612b7cd4b69db257ff"
+  },
+  {
+    "path": "app/resources/views/auth/register.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "0007d42757dcc342657c96ce27b381f5a2a1237abbf8f40191a022cb89178915"
+  },
+  {
+    "path": "app/resources/views/components/brand.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "866d91f01e3f92a067c925c738ef4f29698b71cd82d87c6c0b02466821f42f62"
+  },
+  {
+    "path": "app/resources/views/components/errors.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "49b2474c79db568de15cdf6b868dbd4d2a1a0cdfcc7ee7ba9906125d837d9e1b"
+  },
+  {
+    "path": "app/resources/views/components/input.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "5ff9d3e15fa0a76d615ae83a7b8e09d98ac0b733c8953b8f8a4f7bcf8ce9d599"
+  },
+  {
+    "path": "app/resources/views/components/learning-progress.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "2ee391e3f08c90c8cf2be9b6a435555a2dbd90d7c42322ff085c3455a562da54"
+  },
+  {
+    "path": "app/resources/views/components/stat.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "e0d794c88bb3e15bcaa57568300b2ea134557993637eecd47f9d85e27fff5def"
+  },
+  {
+    "path": "app/resources/views/components/textarea.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "47edafb0775511526f18f56f57b366e808ca454b5e3312f72a7e9a44d7be89c4"
+  },
+  {
+    "path": "app/resources/views/courses/create.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "83d0f1c01e027ea236b30669fbb36eb4ec95d596c99d67cde197901a5871c515"
+  },
+  {
+    "path": "app/resources/views/courses/edit.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "16ee3f09f1db3b8e4c32d9c33ff270c1c9cbdc2f5f21a5d715c6bf7bd5759c58"
+  },
+  {
+    "path": "app/resources/views/courses/form.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "71411c7dd7689c323c00e637392e80c4f8409ecbd86086a9096ae3659e9b08c0"
+  },
+  {
+    "path": "app/resources/views/courses/index.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "3da1e2a0f94d78ae402fc513416acdc7cd97c9fadb06c3ff57f74467f4d9b23a"
+  },
+  {
+    "path": "app/resources/views/courses/show.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "31dd45d01f529884bb677d7f0ebbbf05af2db5c02d120443ec4a53d0609a3149"
+  },
+  {
+    "path": "app/resources/views/dashboards/admin.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "29e7a36f8071386cfa4886c7280719f71fd2f3c8cbba558ff638c43457eb1fe0"
+  },
+  {
+    "path": "app/resources/views/dashboards/student.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "51b236cfd78c3dd6fc7e27dff85bd87f6bd7f53e68d9db7f7ad468c6a0290e1b"
+  },
+  {
+    "path": "app/resources/views/dashboards/teacher.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "d9fdac76fdb773127be4c70e65f4a99554e07e4b87295ff3c88671b8d56a8633"
+  },
+  {
+    "path": "app/resources/views/enrollments/filters.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "305dc0763e5eb4850f811128b9f5bec3d6518f74ca545f4c4e7a450af929f986"
+  },
+  {
+    "path": "app/resources/views/enrollments/mine.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "8dc7f2f58953fa5cfc6148329645a34dfd60f12d00805df1a334542233fdc35b"
+  },
+  {
+    "path": "app/resources/views/enrollments/overview.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "55a27f2a3825a16ec91d00fec7bef1f39f065699ba46bdb9c14e233035cbde0e"
+  },
+  {
+    "path": "app/resources/views/enrollments/roster.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "d87661aa6423f69cba30fa55e7ae5b2f3c1437e5ba2b55789d680b9c7bb5a1bf"
+  },
+  {
+    "path": "app/resources/views/errors/409.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "9bef49b42792b6bc8c26df90d98c074b6b768e3503caabba7cd1d56cc54db427"
+  },
+  {
+    "path": "app/resources/views/layouts/app.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "b3fdab8681a0b4058da4c670321b321adfe4df12f6ad9eea6b683efd035420be"
+  },
+  {
+    "path": "app/resources/views/layouts/guest.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "c6e9c80a307405f70862eeac0c9becb4c4d419dcd77cbba79d51becd194da57a"
+  },
+  {
+    "path": "app/resources/views/learning/course-report.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "6904dcade4c6cd2b99b9e14772db171fb4c2433452337f96de1ad9bcf7676006"
+  },
+  {
+    "path": "app/resources/views/learning/course-table.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "f96392a31453391207df9061fd469ccf76f1d40a5e5f3b7bef87266ddb5f348d"
+  },
+  {
+    "path": "app/resources/views/learning/metrics.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "827b7c27a890d48cb49fb8d2e997491cc668cecdb1fab6895a8b92ce7b26888d"
+  },
+  {
+    "path": "app/resources/views/learning/student-report.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "01cae7433bad0cedb1485dd91ad57ed3c84df03372269bfae3ed90592bdf6088"
+  },
+  {
+    "path": "app/resources/views/lessons/create.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "6c0d0639713e33a0ef48cc2d7a65f312b6387a1d356452ea01faff8ab2383332"
+  },
+  {
+    "path": "app/resources/views/lessons/edit.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "1c09c7019b49684aa9e7527343c4864909803de01af446126060e3e0eb2216be"
+  },
+  {
+    "path": "app/resources/views/lessons/form.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "3f09b61a9f811449466256d68fd5e1bffcb896c0f3f2c1ee55c8c8760c6562df"
+  },
+  {
+    "path": "app/resources/views/lessons/order.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "88c34a88188e115bcb3f2c654bc42409bd356102db0e9239ad72f19fa028cf59"
+  },
+  {
+    "path": "app/resources/views/lessons/show.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "e688364ed70a8ec161d16c77f5398c917ecfa8c42b7cb9ab0ea79425d1101c9d"
+  },
+  {
+    "path": "app/resources/views/welcome.blade.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "cf51347ba0afb4613139989494e5a9a189f504cb35d3bfa6ca9715a0305ac615"
+  },
+  {
+    "path": "app/routes/api.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "5c1bab287f33aecc5e2c42c57d0c6617c14bc30cdbcd2ee217cc5358ce1de81f"
+  },
+  {
+    "path": "app/routes/console.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "9adccc33e7dd400683e434774077c7fdb2f299c5712cedf16a43fdf56f2850fa"
+  },
+  {
+    "path": "app/routes/web.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "c7cddc782277073c0baaf1aad73aacfe339850875eede6c51a503b4f5f9bdaf2"
+  },
+  {
+    "path": "app/storage/app/.gitignore",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "993b9e3709d7b5189da331725d1169d79e561a509db2490b722b525073d2d976"
+  },
+  {
+    "path": "app/storage/app/private/.gitignore",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d"
+  },
+  {
+    "path": "app/storage/app/public/.gitignore",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d"
+  },
+  {
+    "path": "app/storage/framework/.gitignore",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "37bc9570de232e9db87ce530b3e4e2d5fa8d75f3bd587069fd26e2fb4ef1ffa5"
+  },
+  {
+    "path": "app/storage/framework/cache/.gitignore",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "533853ce8390305dd856510063fdffdd1ae206f24c03b9294542d3cfe5c3e33a"
+  },
+  {
+    "path": "app/storage/framework/cache/data/.gitignore",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d"
+  },
+  {
+    "path": "app/storage/framework/cache/locks/.gitignore",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d"
+  },
+  {
+    "path": "app/storage/framework/sessions/.gitignore",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d"
+  },
+  {
+    "path": "app/storage/framework/testing/.gitignore",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d"
+  },
+  {
+    "path": "app/storage/framework/views/.gitignore",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d"
+  },
+  {
+    "path": "app/storage/logs/.gitignore",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d"
+  },
+  {
+    "path": "app/tests/ApiTestCase.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "9ba5f9328320329fcbfc86e981131a8dfbf2882c7a9f2355a8787f67f05cbd4d"
+  },
+  {
+    "path": "app/tests/Feature/AcademyConcurrencyTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "e78566d88226fc546ae38cf69ea04232b30087b828d1a77160211cce6ec82e9c"
+  },
+  {
+    "path": "app/tests/Feature/AdministratorProvisioningTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "96de3b68615eee046154cef4a5b052b0350d622099924ba48d5c989d642acea9"
+  },
+  {
+    "path": "app/tests/Feature/ApiContractTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "9c4d03e47f2850329baa90ac65e40d687aaa384a5226d91d7670c08a38b0b1e5"
+  },
+  {
+    "path": "app/tests/Feature/ApiCourseTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "2e5bee0c1f52b6de660b663ee6d0032bd75a415ed2a39f14b1e0f128bf6ae1c8"
+  },
+  {
+    "path": "app/tests/Feature/ApiEnrollmentTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "ff92522c5f4bed54ea90a8c7ab0e951cdf4cb1da097b9afa7d04ef4dd3521053"
+  },
+  {
+    "path": "app/tests/Feature/ApiLessonTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "2f4b669364ccbcd766661c4be8ff28e5ef3ca03f59132017299d4ad297bce271"
+  },
+  {
+    "path": "app/tests/Feature/ApiProgressTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "808cea5b0711e738d610ca60eb9baece3f035692e2f7ab91bcd50c75c5fd0742"
+  },
+  {
+    "path": "app/tests/Feature/ApiReportingTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "ae9398e926733caaf61452ee394e87175fd33c62ee82f8977a88b6a22eb5d983"
+  },
+  {
+    "path": "app/tests/Feature/ApiTokenTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "db32bc971b03d39ae59cd29fe9fc3c42d331e29f8616b173d23ba1adc03300ef"
+  },
+  {
+    "path": "app/tests/Feature/AuthenticationTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "7a9f3b077d68eacbf0379bbef76bd9e6fae5568b84a9815105c05f933228ee3b"
+  },
+  {
+    "path": "app/tests/Feature/AuthorizationTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "761d291a6659f89a5ae2b15110d931bf7019551c5935835b3e5e784ced529bda"
+  },
+  {
+    "path": "app/tests/Feature/CompletionConcurrencyTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "62e2d388befae819a6b45767ece38b522652329a81bd57cfa530e1bd91c8ba28"
+  },
+  {
+    "path": "app/tests/Feature/CourseManagementTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "89814988a65b60f812bd05b0b55190f6b055988a482e7967fc0717f82e64243a"
+  },
+  {
+    "path": "app/tests/Feature/DashboardTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "a29737c3a0b5f2e6f359039188e33695101d69de50cd20451e2f462f9624f931"
+  },
+  {
+    "path": "app/tests/Feature/DatabaseIntegrityTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "b746a024a174a8640dec7c6038b853aa648ca21b0c22e054bbd217138842cf6e"
+  },
+  {
+    "path": "app/tests/Feature/EnrollmentManagementTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "1cbd9f57fc365427ff66a24a967b6363d41b01d78fa9c4b39b0029b36a3379e5"
+  },
+  {
+    "path": "app/tests/Feature/FoundationTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "0966fbb1433592414cc0a7c0f671548274303779e6ccc186540026fae83b9a17"
+  },
+  {
+    "path": "app/tests/Feature/LearningProgressTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "eca7b821fbe52d66842de1afc05f8fb57c49a3d899d54168e94eb80ef7ab270f"
+  },
+  {
+    "path": "app/tests/Feature/LearningReportsTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "928ac6c0ff6b5de2810f184c46fb359119a2ac50ff9b92f87b91a9d5ba691e2b"
+  },
+  {
+    "path": "app/tests/Feature/LessonCompletionTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "3958c494edefc4688433b3ff3753902c1afba2a4bbdde070c4bcf51aab4b40cd"
+  },
+  {
+    "path": "app/tests/Feature/LessonManagementTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "90c479ad9645d1550ca087b910e959ecac09d8c8994a39f15e257e40686f7a43"
+  },
+  {
+    "path": "app/tests/Feature/ReviewCorrectionsTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "9db2ee6f7686d3b78e3b03abe41f662ae57987af2fcd73192ae2e396cba5a023"
+  },
+  {
+    "path": "app/tests/Feature/SessionSecurityTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "caf145e30b03cd4437e21ad7ccd253ceb0af02c0bdfa12c04740fe87ad38b3db"
+  },
+  {
+    "path": "app/tests/Feature/TeacherManagementTest.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "13508558b327780c5732ce90a36b668c81c6586488330bdee280e5dc024096e5"
+  },
+  {
+    "path": "app/tests/Fixtures/academy-worker.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "309c44f6c13c60e150574c8494acb0516ce4f89b522450ff18dc4a0cd5741ea8"
+  },
+  {
+    "path": "app/tests/Fixtures/completion-worker.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "c0efa8cc86ef14d30b21b7c319836d1ed63b7c06eb751cf556fd0b66800cdc63"
+  },
+  {
+    "path": "app/tests/TestCase.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "99dcf755b93f6e2cda022f3e49e61c471dd8740fb1f10737d4063c7b9e210aaf"
+  },
+  {
+    "path": "app/vite.config.js",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "b491b42f8a0a2a9fa1b94ae3aaed6e9ffae11fdb3b0ad2defbe946d0c6447eea"
+  },
+  {
+    "path": "evidence/apt-update.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "1c5b6b1c143c1ee03b82d05413fad9ea7c3daaa2c7fe89a2faf1aaf1574ea8fb"
+  },
+  {
+    "path": "evidence/auth-dependencies-install.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "1835b482a47ac3a7caeddea73377e162cea2ef7264d65973c980f4f22eeb058b"
+  },
+  {
+    "path": "evidence/boost-install.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "6f7d49f4c030c53b9e1c09904e4821a1d7d575cbcee6898dd20ebaa32aa51a31"
+  },
+  {
+    "path": "evidence/composer-audit.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "3d68c4566587606c21e4bcd82b55d322ddb79158f657d9fb90bf0d24ab5bccdf"
+  },
+  {
+    "path": "evidence/composer-download.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "a03b45f8fadf0df1f101618ec18f662cab703d06275c865c40d1d28fa190db1c"
+  },
+  {
+    "path": "evidence/composer-install.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "d445f4c8d436f1f5c568a6778696d5bc6754f12dc513a890d1a89045e20da893"
+  },
+  {
+    "path": "evidence/composer-validate.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "43add299dc97ecbd90ec2dc456ef5a0bd824bb9abdae2a3d7cdb520e21f8e86d"
+  },
+  {
+    "path": "evidence/dependencies.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "12d444684fc608bcf104b2dc70264a14010bd448bd3edaf6e781595674061e4d"
+  },
+  {
+    "path": "evidence/frontend-build.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "1ac41a73d7ba77ba09a4bb914c4d1075732c5a1b9ff8250a28e2a366630c5667"
+  },
+  {
+    "path": "evidence/laravel-create.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "2c33b0d4de01507b97347ea971d932400f2de9c2b435d61b91600b4aa1f5ea48"
+  },
+  {
+    "path": "evidence/m1-verification.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "f44a1929a1c150c4a81550c7fc4080e2bf654feba236c48bab314c95e760136d"
+  },
+  {
+    "path": "evidence/m2/browser-attempt.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "5c35de45fa44ce349d22ee5a4b40742dca11562823088aa8e784b48fdf79af7f"
+  },
+  {
+    "path": "evidence/m2/composer-validate.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "43add299dc97ecbd90ec2dc456ef5a0bd824bb9abdae2a3d7cdb520e21f8e86d"
+  },
+  {
+    "path": "evidence/m2/frontend-build.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "ce8cf90da784730d6b64e05127484f7553995837682917df845d334903154bc9"
+  },
+  {
+    "path": "evidence/m2/m1-preservation.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "1ab57c583bc8af30dbc5800a75a994a8a680ba216a0eeb1fb50fd5b458838466"
+  },
+  {
+    "path": "evidence/m2/migrations-and-database.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "b2fdaaadb9d83f2a216480e260077ba107d4f25110a950ef0e03c818e60f86a0"
+  },
+  {
+    "path": "evidence/m2/phpunit-first-run.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "d6be9232991a4c0198b0a7badf86ad32a9ffc5f5c51776f6531378e9c1e809f7"
+  },
+  {
+    "path": "evidence/m2/phpunit.xml",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "3aef7dd39b99c8ea6b7ff4dcbeccb3ebe954a74e51a243bc9a5374971f557244"
+  },
+  {
+    "path": "evidence/m2/pint-final.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "cd1a94fc2cf6a965b86e1a4809d6c7fb9148b1ee374e1010ed2ac96ff4876ec2"
+  },
+  {
+    "path": "evidence/m2/pint.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "8062c20098c6d7147448547555926fd5c16b81e297779a55a8f9718e8436dbce"
+  },
+  {
+    "path": "evidence/m2/routes.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "f6884b48417f891b256db77893d1bdc84ff804c91a116c37b41431952a0f898e"
+  },
+  {
+    "path": "evidence/m2/views.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "b23e9c1d51de7f510646dd5c2642a6d870f77354b43da7ffe68541ca25ecfe2f"
+  },
+  {
+    "path": "evidence/m3/blade.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "b23e9c1d51de7f510646dd5c2642a6d870f77354b43da7ffe68541ca25ecfe2f"
+  },
+  {
+    "path": "evidence/m3/boost-install.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "52faac79acc30d29d5e456d7d1796ee3fcc831742ee73ae37937ed5bb7f98aaf"
+  },
+  {
+    "path": "evidence/m3/browser-final.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "b033067c0bf7e2018ed0c952addb49d8333d040dc7cc40dc0f07f1f80d8bf7e0"
+  },
+  {
+    "path": "evidence/m3/browser-initial.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "da2b3cf7a0284e70b6d929ddd9168efb68d3b611395b081c0caa039a4d878b82"
+  },
+  {
+    "path": "evidence/m3/composer-validate.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "43add299dc97ecbd90ec2dc456ef5a0bd824bb9abdae2a3d7cdb520e21f8e86d"
+  },
+  {
+    "path": "evidence/m3/database-after.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "9d4e428293787d3f53e58c1dd459b6365134fb1bced8c501fd9358a6495e3b6b"
+  },
+  {
+    "path": "evidence/m3/database-before.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "ac5d12014f534d5dcd0578093bed08b55d4a06a8bdb039eaffb19fed37e9fd57"
+  },
+  {
+    "path": "evidence/m3/database-integrity-development.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "36a4407c9db8544c1465d2aa3c633a25e2a25c8fbe2a196e3eb12c1bd350294e"
+  },
+  {
+    "path": "evidence/m3/database-integrity-test.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "5e293f0c5b7b389fa4c730cbbf61b37bc794bf6562008afe96f4d48ba822c71c"
+  },
+  {
+    "path": "evidence/m3/enrollment-concurrency.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "9822fab62353f057edd50286574a8bb098fd3a81ec0405ef0564030b4f125f6f"
+  },
+  {
+    "path": "evidence/m3/enrollment-concurrency.xml",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "ee004743fb4639fd43139ce78286573bce1a942a6b0d31a95126d1b356c76368"
+  },
+  {
+    "path": "evidence/m3/frontend-build.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "31b68cb65428bce5f77a186d844d03d48354b51f7cc74cfe729d79e287c97f79"
+  },
+  {
+    "path": "evidence/m3/m1-m2-preservation.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "687cc9eef8eafc66c5764eb34f2961f455963e1d5a75afa784e30f0cf91d0901"
+  },
+  {
+    "path": "evidence/m3/migrations-final.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "c1036fccb38ed9083f57b470a4a14360f5c326079577a1fcbae94e4ce3c895b2"
+  },
+  {
+    "path": "evidence/m3/package-validation.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "9e30f443b0012bd7a2ea282e74e8255ba87a0041f3ade0c7502786c3f76b29c1"
+  },
+  {
+    "path": "evidence/m3/phpunit-all.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "6575cfcad04d20c3aaa02eb7fecf06bdc7e67a3a03a41966dd8ae9df55a5c8f9"
+  },
+  {
+    "path": "evidence/m3/phpunit-all.xml",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "6a112c21dd10c2f0c9761d9e081c2f68059b5d2409dc336c541255c4c44e2241"
+  },
+  {
+    "path": "evidence/m3/phpunit-baseline.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "231064b88eccf648fa623b743eed3f328b3954813974c2c634e4a4e9241d6da3"
+  },
+  {
+    "path": "evidence/m3/phpunit-baseline.xml",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "0e990ec1caf4eace9cc4666f3d78d976cd7b334d16d81b0395e945dedfc18130"
+  },
+  {
+    "path": "evidence/m3/pint.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "f11f72980c8711d16c4772be64000817b9f11ef6dfaa7811d14ae05c82168a64"
+  },
+  {
+    "path": "evidence/m3/review-corrections.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "6d37ddfb48c7042d23d5e9692227cf1e690987f1cc0bf90592ae8d50d07ad7e0"
+  },
+  {
+    "path": "evidence/m3/routes.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "ec0e78b370859246333b3d8460b4ab679325f224d2d363954c78c279330f6418"
+  },
+  {
+    "path": "evidence/m3/workflows-first.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "d44289f4819d0679ccb12880960a57eeafb794a23febbe00e3d7f1dc605a58c1"
+  },
+  {
+    "path": "evidence/m3/workflows-first.xml",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "425d49c57741c67c65459eaf7cd855e563ae53ed35c65f66dce520e5aeede093"
+  },
+  {
+    "path": "evidence/m4/blade-cache.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "b23e9c1d51de7f510646dd5c2642a6d870f77354b43da7ffe68541ca25ecfe2f"
+  },
+  {
+    "path": "evidence/m4/browser-verification.md",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "333b8832b5f49d56d17ac4fd9f0789fbc107e093a2709fb6304c2b6d21445d94"
+  },
+  {
+    "path": "evidence/m4/completion-first.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "e29e92524fb296a40f01abd83bf7f2a18ff23047c7e8e1b03615b4522cbe83da"
+  },
+  {
+    "path": "evidence/m4/completion-first.xml",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "b46ec08a61f2b7f68f8d042d3ef3e313d0625fc0752ccf883a9f5efe71b57aeb"
+  },
+  {
+    "path": "evidence/m4/composer-validate.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "43add299dc97ecbd90ec2dc456ef5a0bd824bb9abdae2a3d7cdb520e21f8e86d"
+  },
+  {
+    "path": "evidence/m4/concurrency-first.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "052927918f257a0441513808c2751a8edf80224a855d99b100f9e8c0e2acbdf1"
+  },
+  {
+    "path": "evidence/m4/concurrency-first.xml",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "660ee2fccaf60864e5c72f7558b8467b00b54e74b84a22d34cd6be4316d48d7e"
+  },
+  {
+    "path": "evidence/m4/dashboard-regression-summary.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "8a37199fc1681e446f15ac864661666e17b3611ad22ba8be7b396bea52408094"
+  },
+  {
+    "path": "evidence/m4/database-after.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "063b1aec07f2190c14eeb63ed487a8a1e9d08474022974cf6cdcc7c2ead0a571"
+  },
+  {
+    "path": "evidence/m4/database-before.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "52e28d727db0836aaf44e97f53fed57416b624edcc730779cb7036868eb9050c"
+  },
+  {
+    "path": "evidence/m4/delivery-file-manifest.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "be1a8759e7999d5966a63038559045085ef1e5f0a88648fa8483e2239a371cc3"
+  },
+  {
+    "path": "evidence/m4/formatted-files.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "0f570b9193df4050d552d853677f04ca2edd3dacd5fe375634496d8c60eb106a"
+  },
+  {
+    "path": "evidence/m4/frontend-build.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "3ea2b60d0fd99bc24fa36b47f369762255982b38788235da467a6a3587b5e3c9"
+  },
+  {
+    "path": "evidence/m4/integrity-development.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "36a4407c9db8544c1465d2aa3c633a25e2a25c8fbe2a196e3eb12c1bd350294e"
+  },
+  {
+    "path": "evidence/m4/integrity-test.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "5e293f0c5b7b389fa4c730cbbf61b37bc794bf6562008afe96f4d48ba822c71c"
+  },
+  {
+    "path": "evidence/m4/migrate-development.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "a02082bba29e2e32a525f8ecb9a47cc798807b46d9e3289c647f9b2d5f4be685"
+  },
+  {
+    "path": "evidence/m4/migrate-test.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "9a70d0169290097b056d5809116789fbeaa194c1a5ae0a6e9af8f0a2648a7536"
+  },
+  {
+    "path": "evidence/m4/phpunit-baseline.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "482b4ac938bda0df64afbe1d7999af09a02c967faf9ca814caadfdcca6d0b3b6"
+  },
+  {
+    "path": "evidence/m4/phpunit-baseline.xml",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "f1c6f135dc3de6347463aecf5f8cd1d49a1946db50fb2385dd57884e97c066ef"
+  },
+  {
+    "path": "evidence/m4/phpunit-final.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "8d5fb22913f9f2cd223988ececf849fafd21ee2cfafc6228c8647c0c61273be0"
+  },
+  {
+    "path": "evidence/m4/phpunit-final.xml",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "f85dc6af35a39ac8db884dfdaa54b82c61417c928c39378311401028fa975e32"
+  },
+  {
+    "path": "evidence/m4/pint-dirty.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "0e96354260ee01bb9895fc3ac61f1f81b690c238728fe43b3e6bad5a28159f8c"
+  },
+  {
+    "path": "evidence/m4/pint.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "f6af8ae5fb790daf0b5f1ca5d9289568d9334227da34dd2449ba85f239dd6f4b"
+  },
+  {
+    "path": "evidence/m4/reports-first.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "2a0eee49708999dd8e3c784721d30cf77525ede94741b551355040e5c825bcc7"
+  },
+  {
+    "path": "evidence/m4/reports-first.xml",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "6d8f8938d76081915274abc51e8a46e553951e6308c899f851b39078f058fe1a"
+  },
+  {
+    "path": "evidence/m4/routes.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "c94c12c0722e9069eccd7fb915686c8166d0aa4c6e739ef8fbf521e3f72c656a"
+  },
+  {
+    "path": "evidence/m4/schema-before.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "36a4407c9db8544c1465d2aa3c633a25e2a25c8fbe2a196e3eb12c1bd350294e"
+  },
+  {
+    "path": "evidence/m4/source-after.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "38227cfb91a26e32ab6f23b93a6d7e794d7267bf97660a0fb50b6c93d2d222e5"
+  },
+  {
+    "path": "evidence/m4/source-before.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "ad76c210086417ac04baff3206cd404d161ef5f805592e0058c96059f70ae927"
+  },
+  {
+    "path": "evidence/m4/status-development.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "2543e939c06a90879df2e0ab54097a3c44cd0eb9ee416acea49f0ce4e4ad9f05"
+  },
+  {
+    "path": "evidence/m4/status-test.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "92b61bfd0eebf8b6d18010febed271c2864abeef6aad9e5a166470c32edf89c7"
+  },
+  {
+    "path": "evidence/m4/test-summary.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "5e3cd5390f06009c408df05a6dbaeed5e89b5b9554f22d90f51c6a1dd28b4819"
+  },
+  {
+    "path": "evidence/m5/api-all.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "9a07b1f7ba72ab021818225b07d9fbbb2168f5240943853acdc64d605e8642bc"
+  },
+  {
+    "path": "evidence/m5/api-all.xml",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "57c8c6862e9a1773d992ebd4c70f463181312d5650b95f1189576727b5d6eea3"
+  },
+  {
+    "path": "evidence/m5/api-core.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "bdf3a71f2474aa2ce976c02271a330bb82bb5d3be24c431398c87f337a21216a"
+  },
+  {
+    "path": "evidence/m5/api-core.xml",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "bb187f0bc46b78fbf30752d880db236b4e61bd64a00d192c25709d3efc024a7f"
+  },
+  {
+    "path": "evidence/m5/api-reports.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "194c5b55294b6bc40f012448b648fc2c13993c0f11e685cc73c3a6df60489a21"
+  },
+  {
+    "path": "evidence/m5/api-reports.xml",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "d2079984f11088e57344cc9511b61392d73710eba8465d6771809530be0234bb"
+  },
+  {
+    "path": "evidence/m5/api-test-summary.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "bbe057982a6746fb0d34549c8fef90edc4ad98eb985c4622a7c85f031f95c593"
+  },
+  {
+    "path": "evidence/m5/api-workflows.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "44d37c9b1070ed361191de33ad6b602360ce9c360a9db28a55e872f7a3ceebb7"
+  },
+  {
+    "path": "evidence/m5/api-workflows.xml",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "7045aca6a15d8723a1765e243365beae7b1c31d28585f6d99245f9509bd66d65"
+  },
+  {
+    "path": "evidence/m5/browser-verification.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "da4700f575ec64ba90b17aeac9ea3ff16c67e6e3ee8f657311c30a9e438bbcb6"
+  },
+  {
+    "path": "evidence/m5/build.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "dd73bc7b36032cfcb8b594fc15210b9baf50368f8e354d55aaf58c3a773dfc24"
+  },
+  {
+    "path": "evidence/m5/changed-php.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "ce836ee7820d7e22908b7f31ee404532d60a47c83f3760bd8ec74c16ad82c96f"
+  },
+  {
+    "path": "evidence/m5/contrast.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "9eb3287cb6deed65b037fe0bef8b1e9029025c21e8be705fea98f2ebb223b02c"
+  },
+  {
+    "path": "evidence/m5/database-after.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "063b1aec07f2190c14eeb63ed487a8a1e9d08474022974cf6cdcc7c2ead0a571"
+  },
+  {
+    "path": "evidence/m5/database-before.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "52e28d727db0836aaf44e97f53fed57416b624edcc730779cb7036868eb9050c"
+  },
+  {
+    "path": "evidence/m5/database-preservation.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "08598c0e8f11d2bd622c433a667519f788f27188dd1c3e1dff190d59596ac4cd"
+  },
+  {
+    "path": "evidence/m5/final-verification.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "527562e65171b20a02ac98eb7caa2867b951021485708e612575fcade5fb3895"
+  },
+  {
+    "path": "evidence/m5/final/api-routes.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "6d0fc54e3027e0ceda89d12a6e76c860da0e4c9f252a95c3580158f8ba730794"
+  },
+  {
+    "path": "evidence/m5/final/blade.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "5d8556ea182286030191c8e004d4eafffd3e37d0fd7270850a4bfcad617d27e1"
+  },
+  {
+    "path": "evidence/m5/final/build.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "6a7015f36e952fdf6872b58317d8d12511e88e03150638e8a7ed7faafacc3e83"
+  },
+  {
+    "path": "evidence/m5/final/composer.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "43add299dc97ecbd90ec2dc456ef5a0bd824bb9abdae2a3d7cdb520e21f8e86d"
+  },
+  {
+    "path": "evidence/m5/final/integrity-development.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "36a4407c9db8544c1465d2aa3c633a25e2a25c8fbe2a196e3eb12c1bd350294e"
+  },
+  {
+    "path": "evidence/m5/final/integrity-test.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "5e293f0c5b7b389fa4c730cbbf61b37bc794bf6562008afe96f4d48ba822c71c"
+  },
+  {
+    "path": "evidence/m5/final/migrate-development.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "a02082bba29e2e32a525f8ecb9a47cc798807b46d9e3289c647f9b2d5f4be685"
+  },
+  {
+    "path": "evidence/m5/final/migrate-test.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "9a70d0169290097b056d5809116789fbeaa194c1a5ae0a6e9af8f0a2648a7536"
+  },
+  {
+    "path": "evidence/m5/final/phpunit.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "0776c3fcb4d1389b2679fe80df68dd9d0500ac585d8d8ac442954c374f4321c3"
+  },
+  {
+    "path": "evidence/m5/final/phpunit.xml",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "7fb641c148c5da24fd0ae0b4381ae0f7ec9af296849139ceb26cd14fd335ffa1"
+  },
+  {
+    "path": "evidence/m5/final/platform.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "ba0a5a1ac9c9e61ef9fe882315ebe8e7ad3627f5be11024ac11be3eae56be64c"
+  },
+  {
+    "path": "evidence/m5/final/routes.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "097f2ba3088f6e7c48c9c05847e4870218a3e8b740d90ea513ee99b8e3d24c22"
+  },
+  {
+    "path": "evidence/m5/final/status-development.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "2543e939c06a90879df2e0ab54097a3c44cd0eb9ee416acea49f0ce4e4ad9f05"
+  },
+  {
+    "path": "evidence/m5/final/status-test.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "92b61bfd0eebf8b6d18010febed271c2864abeef6aad9e5a166470c32edf89c7"
+  },
+  {
+    "path": "evidence/m5/full-pre-ui.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "2bb44e6980f81470eca925aa16b6c0beb7f9b4fe1a46c6fb924b6289c9a64ef1"
+  },
+  {
+    "path": "evidence/m5/full-pre-ui.xml",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "65852f328a402c0c6bfa65799e1eef7f6d6d885e556ed459030215e73295f1a3"
+  },
+  {
+    "path": "evidence/m5/openapi-validation.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "4bf2ba6c7f8dfe0b631db41afe06e38e99887b2df5130e51fedc2b69c4320c08"
+  },
+  {
+    "path": "evidence/m5/phpunit-baseline.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "aa099d5149cdee4d1f2ab156cc63d08ee102a38bb79e21ca3a98751abe588db7"
+  },
+  {
+    "path": "evidence/m5/phpunit-baseline.xml",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "2f51f6aa833c54516315c44f1d605fe8ba3ffe87d34cf3a7fb75d0d70b247206"
+  },
+  {
+    "path": "evidence/m5/pint-dirty.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "0e96354260ee01bb9895fc3ac61f1f81b690c238728fe43b3e6bad5a28159f8c"
+  },
+  {
+    "path": "evidence/m5/pint.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "9a0ac926f90b3dd785ef406a20ae5fa74dd315362b564c7e16c94119b5ecf7a8"
+  },
+  {
+    "path": "evidence/m5/query-counts.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "df19c7a0d7b4713bd3048a8bdd6668ea096ffc66dc9d2b091036dcde9b8ca588"
+  },
+  {
+    "path": "evidence/m5/regression-preservation.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "c2515dff115bd5d670587ce4a285f60842dc5e819a9ccd70b4a3da6581cb40c8"
+  },
+  {
+    "path": "evidence/m5/schema-after.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "36a4407c9db8544c1465d2aa3c633a25e2a25c8fbe2a196e3eb12c1bd350294e"
+  },
+  {
+    "path": "evidence/m5/schema-before.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "36a4407c9db8544c1465d2aa3c633a25e2a25c8fbe2a196e3eb12c1bd350294e"
+  },
+  {
+    "path": "evidence/m5/source-before.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "485e73203968c0c718a5eb2834af477e55bcc6047683b5c1136c777c2fd94079"
+  },
+  {
+    "path": "evidence/m5/source-manifest.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "2116ca724024354b43a37da0271f04dc0c4027d7b638a4b2bed592c2700bf56c"
+  },
+  {
+    "path": "evidence/m5/test-summary.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "65cfa99c3d8d45f8464b5e8bcb9befd5ba9b16e16cd39adc7506c4a267f77bc1"
+  },
+  {
+    "path": "evidence/m5/token-tests.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "aa0e293b6d23fb622a55ef691f1661a4403441c67b0333c27690ee821726aa06"
+  },
+  {
+    "path": "evidence/m5/token-tests.xml",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "0ccc04dd8708a606b7c04352e746c6ab5e2a8224fe4e6f2d8187d956e36713e4"
+  },
+  {
+    "path": "evidence/mysql-init.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "d44815dccdf268eb28f278ecfbc99bf4f89a95ebd35f7d36cabc864e4ad7ba2f"
+  },
+  {
+    "path": "evidence/mysql-status.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "ff515806b09fa896687edd0ae3b21c92b333e34d803c314a39d34c364f60033d"
+  },
+  {
+    "path": "evidence/npm-audit.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "356bc008ba464d6b1508617f9074efba34c548cb990c758e99dbea13d54203b4"
+  },
+  {
+    "path": "evidence/npm-dependencies.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "38034b496cd6fa516abbb42972b62eb4a3ed814ed1344bc0c4d1537698b02ffb"
+  },
+  {
+    "path": "evidence/npm-install.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "d61f1efb2a5a836d12491d30e31497ce6d6f888e8111c8bd45a38548105e5a39"
+  },
+  {
+    "path": "evidence/phpunit.xml",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "c47a78229134087d9d3dccd65aab342549a4e147394c35d9e7f2bd1c84f7aeb2"
+  },
+  {
+    "path": "evidence/pint.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "2f7a3348d691a8b9bc960b73f641909a92012b713f94e1fd7f19cf9b9f5491d3"
+  },
+  {
+    "path": "evidence/platform-check.log",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "ba0a5a1ac9c9e61ef9fe882315ebe8e7ad3627f5be11024ac11be3eae56be64c"
+  },
+  {
+    "path": "evidence/runtime-packages.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "96a15cf6cf040899b4bb1c76d207862e4186d9a21de57b70b96783b9e9a6d47c"
+  },
+  {
+    "path": "package.json",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "2f9474028b864ef3f8c5df350976612b26df8ef7a117167b9b7261e5e8187934"
+  },
+  {
+    "path": "tools/configure-environment.py",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "a1d0580057a6793650338139cc2c15e98a0add0d93546213ce9962e249230966"
+  },
+  {
+    "path": "tools/database.py",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "3b53491caca2f0c6472627e0151c6660360ace961e5381d56c239d6544b0094c"
+  },
+  {
+    "path": "tools/m3-database-evidence.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "c352e2874166862fec4231056128e7ed6b7386aec9536cae52a35c7440e7ed6e"
+  },
+  {
+    "path": "tools/m3-integrity.php",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "d644d40ff532b30ad6122590af03608d8f0ff2d4655c77db0486f200ed542c75"
+  },
+  {
+    "path": "tools/preview.py",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "6fd120f448ef0b321a8bb0126a6cedd4a94e735de5d9b00907935a5c2855d2a2"
+  },
+  {
+    "path": "tools/restore-runtime.py",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "12b75e6c40c66a68e2a2e9794b78185f297476fc1045083e1884c170b97b8c2c"
+  },
+  {
+    "path": "tools/verify-m1.sh",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "380694f2ac180e639994847cfba1fac827eaaf60789c591de46368af22b50cd7"
+  },
+  {
+    "path": "tools/verify-m2.sh",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "4115b744aef13a0efcd6fb72e56503cbd224b69e25ad8e81b7ed78f00bde623f"
+  },
+  {
+    "path": "tools/verify-m3.sh",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "04e005ebedf4057338f9a66bd39d5060378c9820d88814b595756c26c282c2f4"
+  },
+  {
+    "path": "tools/verify-m4.sh",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "c5b9ababb56283dfd01c98c17756dafe287c2a13e5c9cca85284bd2b5c80db3a"
+  },
+  {
+    "path": "tools/verify-m5.sh",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "47a4087d52fadc23c48b59854f167387bf8064a7814753bb64214bba811b473f"
+  },
+  {
+    "path": "tools/with-database.py",
+    "exists": true,
+    "matches_m5": true,
+    "sha256": "3c74638927a5e2ef21c1db32287df901c777d72511653e571176ab2911ac522a"
+  }
+]

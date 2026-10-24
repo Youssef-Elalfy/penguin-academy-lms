@@ -1,0 +1,130 @@
+{
+  "checked_files": 31,
+  "all_unchanged": true,
+  "files": [
+    {
+      "file": "app/app/Actions/Accounts/TeacherAccounts.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/app/Actions/Fortify/CreateNewUser.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/app/Http/Middleware/EnsureActiveAccount.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/app/Http/Middleware/EnsurePasswordChanged.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/app/Http/Middleware/SecurityHeaders.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/composer.lock",
+      "unchanged": true
+    },
+    {
+      "file": "app/config/app.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/config/auth.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/config/cache.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/config/database.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/config/filesystems.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/config/fortify.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/config/logging.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/config/mail.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/config/queue.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/config/services.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/config/session.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/database/migrations/0001_01_01_000000_create_users_table.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/database/migrations/0001_01_01_000001_create_cache_table.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/database/migrations/2026_10_21_001334_create_academy_schema.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/package-lock.json",
+      "unchanged": true
+    },
+    {
+      "file": "app/tests/Feature/AdministratorProvisioningTest.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/tests/Feature/AuthenticationTest.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/tests/Feature/AuthorizationTest.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/tests/Feature/DashboardTest.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/tests/Feature/DatabaseIntegrityTest.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/tests/Feature/FoundationTest.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/tests/Feature/SessionSecurityTest.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/tests/Feature/TeacherManagementTest.php",
+      "unchanged": true
+    },
+    {
+      "file": "app/tests/TestCase.php",
+      "unchanged": true
+    }
+  ]
+}

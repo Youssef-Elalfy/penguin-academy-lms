@@ -1,0 +1,807 @@
+[
+  {
+    "path": "app/.editorconfig",
+    "sha256": "fe39e0ad06edea8e256e44f1fc4f319a8acfa785a7470af5cf6b9ed12dc34406",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/.env.example",
+    "sha256": "8bb1a4307dcc5e88fc97ccd688454ad60f2a8c207e4a8b8724172b3e4ff0a647",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/.env.testing.example",
+    "sha256": "d61fcc71d0a087006d84f19132755abd938bbe07bf2bdf19b6ffa449fe4861bb",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/.gitattributes",
+    "sha256": "a40eb27ee0b545ca5b5542daaf99fec51f84f23b3766a6353864ef2a115bc51c",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/.gitignore",
+    "sha256": "70db41ae67a4ff3eca4a4d65f55177d49823a6308c581cf1d63f6267a19e5838",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/.npmrc",
+    "sha256": "e968d1d336604e9986ea31306a4d9e1442f4312fca262f444384baf928d6560e",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/AGENTS.md",
+    "sha256": "fc7f68b818002266982ebc3e423826ce67988c1edb4532bb1b086a17744cd890",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/CLAUDE.md",
+    "sha256": "228c73ab5e44545a1e5b974f5cb7056554c2b8d012673cf15fe76b73d98bdf27",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/DESIGN.md",
+    "sha256": "7ce47c107e70ef39ebfe11d7693e1d58ef1c91433bcdcd49374802d61a8562f3",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/README.md",
+    "sha256": "bede3804ef42f7db531cf5f6803d7be71d9a83a653c45d94a00d0fc9b10db73c",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Actions/Academy/CourseActions.php",
+    "sha256": "f1f1a2fd090bafe1a9630f3d4a20c20818c7406b2b960e50f4f95e397ef84309",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Actions/Academy/EnrollmentActions.php",
+    "sha256": "fd1c8725d7fb44b768732db770db22bd82c2f9c3502e0112aff596ee6cc87109",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Actions/Academy/LessonActions.php",
+    "sha256": "072ab6e557ea606c4c0f26e99c50837b31ca95586455d3db855059906d2b1bc9",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Actions/Academy/Participants.php",
+    "sha256": "239940ea89569d88a0fd8b366e29bac46ec8b807a44cc9b66a2060d12f426895",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Actions/Accounts/TeacherAccounts.php",
+    "sha256": "e48ecd636460b8b104b2c01bba642b9461c8341965461fe5963dab49b539a7f1",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Actions/Fortify/CreateNewUser.php",
+    "sha256": "6a86e447410bc0a1cfcd9cc52207f44c5057bad1ade7d52a7061eb9cd818e990",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Console/Commands/ProvisionAdministrator.php",
+    "sha256": "e3a615a6d707488f51d5cc4882bb43e64ebb1f3e32b93ee8293c8862f5adfc5a",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Enums/UserRole.php",
+    "sha256": "2095ac9c3b50b54637954590ee8f9a87f0cbb644432f4eed17f982de11e7c037",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Controllers/AccountPasswordController.php",
+    "sha256": "dbac4100da852381756fc51f9e22d67ff4681e9dd613890f2bcdcb0cdc9c9e8a",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Controllers/Admin/TeacherController.php",
+    "sha256": "2a298adc373d0c492d126789315d8190b61fcf950cdb6ad0c1e025a95f5683ee",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Controllers/Controller.php",
+    "sha256": "25d1c1ef8e6cc8a376553faacfba2b07d9dfaee9bdbb84f14f77517580e9deb1",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Controllers/CourseController.php",
+    "sha256": "3ce7ea15a50edcc23afb2ad63e1749fb8168e0b131c53c84a80aed308e69b6bb",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Controllers/DashboardController.php",
+    "sha256": "872a525f18f2d1d1ac3fbaaf6de883d2867229758a83e31f69abb29350aac1c2",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Controllers/EnrollmentController.php",
+    "sha256": "92ff1201e0d7bfbf1a95f48924e52002a3afd65d32412519b9d97d54a6127078",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Controllers/LessonController.php",
+    "sha256": "6fc7241384bef3e807fc31f29270e6de352c838b8cbc0e1f97229f7a2d33a80a",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Middleware/EnsureActiveAccount.php",
+    "sha256": "33cc61ba3ddc517d4662bba17ba27a2835581e7b3299b2b12ce5998fa20e9383",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Middleware/EnsurePasswordChanged.php",
+    "sha256": "ed4c4f902ae1ba24a1649b11340c2527809c50e653c5f8c051e0b6fb5998675a",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Middleware/SecurityHeaders.php",
+    "sha256": "3365858ba402d7a4dc13c34a8f0d9c653bc43b393d40e6613fdbf582c662cfbf",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Requests/AcademyRequest.php",
+    "sha256": "cb6bf90677704b0252871261bb063e5e7e823ad5c76c8f733ad9a5f90bc605d5",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Requests/AssignTeacherRequest.php",
+    "sha256": "ca31b5dda0f8eebcf0128dd5e5430a3761f83c5448e06aacff08e302b4178b99",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Requests/CourseIndexRequest.php",
+    "sha256": "aae18d4dd40dc5c53e929eb60c9d6ff2989d98789fd970588c184b71114c7667",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Requests/CourseWriteRequest.php",
+    "sha256": "a03dc03e8b947dd506fef16ae34d426fd7f9dbf233f36493cdd70cde776718c8",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Requests/DeleteCourseRequest.php",
+    "sha256": "7dfee89313a3335fef17ffeba473910ea32ce1304ded2511bd096a183aef2a3a",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Requests/DeleteLessonRequest.php",
+    "sha256": "15f128ab4bba96911e69aed8680ba4b225cfa2e638f69894f7b23a1e63f6f909",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Requests/EnrollStudentRequest.php",
+    "sha256": "795b433126e460b5924e39b7e8ee077c350d4fad17dc4d157c7903717e420342",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Requests/EnrollmentIndexRequest.php",
+    "sha256": "31d4a177f96224e29a9523b7e3e58c87a75936d4927bb3ade72c44c9aa2ecacb",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Requests/LessonWriteRequest.php",
+    "sha256": "d9419098925c87be331755185230e853e9ce14ac50083202e36819e1e8894c26",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Requests/PublishCourseRequest.php",
+    "sha256": "0692d77ec92881af3d68934c9fdcb4610f59734c861ba6c9fb4ae1d0b6a0ebfb",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Requests/PublishLessonRequest.php",
+    "sha256": "86a5f51a6c6df0c9fa56db335808fcae67eb5ce07a2f62f0a9cb95a7670587cb",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Requests/ReorderLessonsRequest.php",
+    "sha256": "20d8d3b8d3ba0280060577eb2a0083f95ce359f45c74566dc59d2ff578306435",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Requests/StoreTeacherRequest.php",
+    "sha256": "2248c2008ea02eb3b1d23132f541a7e4526300cf14e75391ff28dc992ad81206",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Requests/UpdateAccountPasswordRequest.php",
+    "sha256": "42ee1c24977c39ea5388a9bcdffa9458cc403d8ace5ff4da971f45b64f889fee",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Requests/UpdateTeacherRequest.php",
+    "sha256": "2a0b2a3545bd63311f7769beb3bc94872a11b172358792620b53da3c27a3438f",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Http/Requests/WithdrawEnrollmentRequest.php",
+    "sha256": "4533a6d6bb8ba6d67fd53429a0bf6fe2126379d2b6fe3e9d5ef57c393bd2a884",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Models/Course.php",
+    "sha256": "2fbf1acf455508f662e9628b96758755177968fd945c4c149c14a262a6f2296a",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Models/Enrollment.php",
+    "sha256": "bac7eac16997d6d93e18708dfd3612d3be7e8f29550969060a8ae8710f25014f",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Models/Lesson.php",
+    "sha256": "f1197571e4dcbfdae28e8ab38afa398fdb79fe5b460907e538ceec57191bef7c",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Models/LessonCompletion.php",
+    "sha256": "51398c3044f3cacb5ec1d34a5be07917a6c21ccdbe741e6043ac65fa5c18317f",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Models/User.php",
+    "sha256": "f5ed1324ef4a5173a4884f4216fd9457c5cc87f1ae19361c89292b203b4c60a3",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Policies/CoursePolicy.php",
+    "sha256": "384c76ec2ca2b00f1239fd9cd43bb0820f360f72e2ac7eff3ae1ce6679001e46",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Policies/EnrollmentPolicy.php",
+    "sha256": "e1f1fd4e2388c960c78c21aac8c2e37cf9f603dccdeb1efaf3e367f1b5a87498",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Policies/LessonCompletionPolicy.php",
+    "sha256": "711cdb1de4578ee91bd3dc82438d441f34430ed7bba2a8125a4eb41c71aa31fc",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Policies/LessonPolicy.php",
+    "sha256": "ccf35194377b8d733271ae0c523832c5f3b59a83d31f29ba1a206dc040399f04",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Policies/UserPolicy.php",
+    "sha256": "e0a3d1ce90ecc092df152e027eebbb2824618bf03478b09475947436d2b7637b",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Providers/AppServiceProvider.php",
+    "sha256": "290897410a445f0ed0b6a40af21b96e54bd5e2a4fad3e4e7ef5d1e9b9df0a0bf",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/app/Providers/FortifyServiceProvider.php",
+    "sha256": "b963ed52af57baf39c140593e924da8b0fe99359b8c68f04d03865c6d12acc6d",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/artisan",
+    "sha256": "f91a517c0c5d3a904c3f390933964a5e08ec1fc68146882730daac4aca4ffcec",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/boost.json",
+    "sha256": "f846ebd9fb38fe4052d91333727e163c4fe03e0ee3394bbf566d462c7106d2f7",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/bootstrap/app.php",
+    "sha256": "0af1a57fe0ac332d699bc265ea92c51e668896655c0a72c3a87a250479a4d095",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/bootstrap/cache/.gitignore",
+    "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/bootstrap/providers.php",
+    "sha256": "96efbbd0946c9b43c87e3d99258d91b920a6bf51ad0ea0b1c9250f109a0a613a",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/composer.json",
+    "sha256": "8e3d2608969029ed177f4596c815bad9d2639b7da276a36cebbb185c320b7a95",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/composer.lock",
+    "sha256": "5956d28e43d4aa79be431617c821967c1132b7ce313415e6fd7dad41f923c1fa",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/config/app.php",
+    "sha256": "ae53fb7fcdf3c91ca1034ed84261d857ffab0a646fac9b90b768a16b9a548897",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/config/auth.php",
+    "sha256": "c7e204e9785c9f596d66fb884b493f658f2327f157646bdb4088efd6b3a7773f",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/config/cache.php",
+    "sha256": "5030cdf171704e58b96f2cf17f1c6d5921b27d5c63c2cefb730eeb2da49a8240",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/config/database.php",
+    "sha256": "0346e9cf5d71a8d7fa14544d06df3a4a7cc1f5046a045d2a30eda658787b6f42",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/config/filesystems.php",
+    "sha256": "ba7060d7a23e490c3ce830656f6d24ad3ccf5b868e3293f2a12e411959dc5635",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/config/fortify.php",
+    "sha256": "f9aff31d3906e474008a68cc2da4e1d974d002b1f2262c1ddd3d9abbaae0a9c3",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/config/logging.php",
+    "sha256": "beb1ffd0db910f6f0b4f75214c3d5aa385d692733ece8a450f4c169d2c99ce38",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/config/mail.php",
+    "sha256": "c43ff49a31c5f32ce21eb7159f2a4b3cd2f4074eaed5838d265646dbfedd3474",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/config/queue.php",
+    "sha256": "6101774da7c8b79af46d0028f2b8b31a484c3f7eda10b76e5b27b6093ad364a4",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/config/services.php",
+    "sha256": "b7ee786ea1adbc92db9f229f479431c94503527c47051da3862eb0e4d7db70aa",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/config/session.php",
+    "sha256": "87d376f0b6259d172ff02e0152032424768f70bae0729438923e70e7aa8da684",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/database/.gitignore",
+    "sha256": "e758642d95e83e907e010b6e46b07b3f953c7cef11fe5ebefc2a77b9d7b4d5f7",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/database/factories/CourseFactory.php",
+    "sha256": "c6d24221645b99e11a3d74a7df92b49879b5a567db05723a7a7464c9315c578a",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/database/factories/EnrollmentFactory.php",
+    "sha256": "15771903c4cffe1925de6b4b81b59b14de73c2cb9a799e1f27cecb7d96ca2047",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/database/factories/LessonCompletionFactory.php",
+    "sha256": "07779dac9a2ae34dbb7e8d306533b19ce9dbaac3b1ec5a4020eb6e495fed0962",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/database/factories/LessonFactory.php",
+    "sha256": "03568f42ee1183552ba30c5b93da0b1ed734049dcb57c0482c4a533dde196953",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/database/factories/UserFactory.php",
+    "sha256": "b03f84ff57504ba1c48b9d101bb4a8a36ee0452926149ceeb498f0298fdefa36",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/database/migrations/0001_01_01_000000_create_users_table.php",
+    "sha256": "10d79883bc08ce46510f9ad8b1830b4d06d586dc56ae2c8bac3b3e491f69a90f",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/database/migrations/0001_01_01_000001_create_cache_table.php",
+    "sha256": "fbb4665e5a977e71df4e74ec75b3c06ca4f17ad0de7138fe9786639189978e77",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/database/migrations/0001_01_01_000002_create_jobs_table.php",
+    "sha256": "df4910687180313a14a3f96a8bddd808ae145ed1b107cd772caf865c0dc2b746",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/database/migrations/2026_10_21_001334_create_academy_schema.php",
+    "sha256": "d9b41065d2c248121606c32aafcc6b7d0490b2ea531d18f065d166b9ad528ff2",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/database/migrations/2026_10_21_133758_add_lesson_soft_deletes_and_order_version.php",
+    "sha256": "f1bc916744e5dc41938669b53cdd72a6601750d5295184d66b63b38128847da5",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/database/seeders/DatabaseSeeder.php",
+    "sha256": "6b849412252c972873545e169286e8acc8b6fdd47b8616ec51743b4c45552d66",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/package-lock.json",
+    "sha256": "35e978b66b8d4c857da94262b029c047f27396b214b6a45f8b698d756fe98a11",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/package.json",
+    "sha256": "d094b63ebc13a5f2a7b34aa6df33c32d6314232c8f7fe2aa88d0b999b74f1a06",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/phpunit.xml",
+    "sha256": "863ca1679e32f034255fe1cbd27dda1e4b2452b4b22903838634aae68307e455",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/public/.htaccess",
+    "sha256": "b7e379c77639fd56144947dbae84c84eb466d9c686ea81f2f013ae85421da923",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/public/build/assets/app-C8uxtaYG.css",
+    "sha256": "d9f3fa0e2aec0123402bbce7bb3b450e6c5e2594ea6c35b22ae8c464d1716e73",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/public/build/assets/app-CBrPiYsV.js",
+    "sha256": "d34d9b1da411a23a08bc03dfc9f0f4bfca9862188534443ad2b8b35bf069e8da",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/public/build/manifest.json",
+    "sha256": "8beb7d116f5e5342588b02aa2a7285d8c905c84b3b7f9b91cf4a8c01448ba6e9",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/public/favicon.ico",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/public/index.php",
+    "sha256": "eba77cba39695b6bd091fe5211d481f7ebb2ce2d8d26230b5a609465d0a4aff9",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/public/robots.txt",
+    "sha256": "e5c4b84484ee4216e9373be99380320c25dd94805f99f0a805846f087636553f",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/css/app.css",
+    "sha256": "646f87bf4bf2d3fdc9e65ca96cef209d7111fe7e382772a47c8ad9a324995ccf",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/js/app.js",
+    "sha256": "ba24377e2e1762f166303e49e535c6a8d289df9f26b78946d65c618a2258973c",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/account/password.blade.php",
+    "sha256": "4029cd5fdc17a8d71b6b9dad808299a5ef75734da03cd2758f2460de899bb921",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/admin/teachers/create.blade.php",
+    "sha256": "dc014acd477f3f3eccb2b642c0568249ac3c1bd7859043921288783b204a2eb7",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/admin/teachers/edit.blade.php",
+    "sha256": "9dcc3410da1be9a1cfe80e0e158798a08b6e86f955318a7cc13a367e604e6a56",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/admin/teachers/form.blade.php",
+    "sha256": "61de17e37c26e80d665e6eb0ba67d1169dbd3911ce947728c227e0d05637f9fb",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/admin/teachers/index.blade.php",
+    "sha256": "f6983cc202c738608a31b3925a13de87dbb94dae368acc58b40394bf3b6f6196",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/auth/confirm-password.blade.php",
+    "sha256": "79f92fe6a94ec0e7664ec559a75d42c9857936a92d6f5b4ac512d3b1cdc4b583",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/auth/login.blade.php",
+    "sha256": "f9b468c050dd7816578aecf38f3e78ecfbf186b3ca8cd6612b7cd4b69db257ff",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/auth/register.blade.php",
+    "sha256": "0007d42757dcc342657c96ce27b381f5a2a1237abbf8f40191a022cb89178915",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/components/brand.blade.php",
+    "sha256": "866d91f01e3f92a067c925c738ef4f29698b71cd82d87c6c0b02466821f42f62",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/components/errors.blade.php",
+    "sha256": "10a98f6376847460873ac0c71ce781393949f2b08f594f8482fd25c1f748b744",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/components/input.blade.php",
+    "sha256": "5ff9d3e15fa0a76d615ae83a7b8e09d98ac0b733c8953b8f8a4f7bcf8ce9d599",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/components/stat.blade.php",
+    "sha256": "2f29025d1518762bbc46916504be0fa674fd93a97bcf4670a8ad3969d0950d1a",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/components/textarea.blade.php",
+    "sha256": "47edafb0775511526f18f56f57b366e808ca454b5e3312f72a7e9a44d7be89c4",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/courses/create.blade.php",
+    "sha256": "83d0f1c01e027ea236b30669fbb36eb4ec95d596c99d67cde197901a5871c515",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/courses/edit.blade.php",
+    "sha256": "16ee3f09f1db3b8e4c32d9c33ff270c1c9cbdc2f5f21a5d715c6bf7bd5759c58",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/courses/form.blade.php",
+    "sha256": "71411c7dd7689c323c00e637392e80c4f8409ecbd86086a9096ae3659e9b08c0",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/courses/index.blade.php",
+    "sha256": "10d71b77975fb2998033bdcb6c7d767d47c49cfca2081db6d0d0978af1fe9900",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/courses/show.blade.php",
+    "sha256": "b8c5fc027d14ac9f68daa6c4be5a7411ad2065f1d5de10fbfbbdb2e1b242fa28",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/dashboards/admin.blade.php",
+    "sha256": "ec21cb088a06e6f07fb1054075df49134d496f2fb4da74c02c3b169ea112ef81",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/dashboards/student.blade.php",
+    "sha256": "a72a1a56433f717e4555a69d6b216ea13c9a8ed861f2c9fbccb9c890259c6939",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/dashboards/teacher.blade.php",
+    "sha256": "027e9001042b264d17063cce13c1e84569bf1108551899c4b2eee660c709dc8e",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/enrollments/filters.blade.php",
+    "sha256": "305dc0763e5eb4850f811128b9f5bec3d6518f74ca545f4c4e7a450af929f986",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/enrollments/mine.blade.php",
+    "sha256": "ab285926e03f4b98020e50eddb8b4acea5e1f0ae621994b7c5696df08b2c1a7c",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/enrollments/overview.blade.php",
+    "sha256": "8bd4b5dd01a77cb362b47572634cfb7f0d4913580b000a160e8f84275ca413a3",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/enrollments/roster.blade.php",
+    "sha256": "f8da85e84ab3ac878a8ccb906c2d0c8883d1d7fbd6e54e4f6d53f7d41daa0498",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/errors/409.blade.php",
+    "sha256": "9bef49b42792b6bc8c26df90d98c074b6b768e3503caabba7cd1d56cc54db427",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/layouts/app.blade.php",
+    "sha256": "aa0cddcaaa62aefc569a585eb5842449112fa49638fa535cc84502ed1856947b",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/layouts/guest.blade.php",
+    "sha256": "8f0c9590990501fead111ee24142799f6cb1e854fab0c299860b31d8f8635293",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/lessons/create.blade.php",
+    "sha256": "6c0d0639713e33a0ef48cc2d7a65f312b6387a1d356452ea01faff8ab2383332",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/lessons/edit.blade.php",
+    "sha256": "1c09c7019b49684aa9e7527343c4864909803de01af446126060e3e0eb2216be",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/lessons/form.blade.php",
+    "sha256": "3f09b61a9f811449466256d68fd5e1bffcb896c0f3f2c1ee55c8c8760c6562df",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/lessons/order.blade.php",
+    "sha256": "88c34a88188e115bcb3f2c654bc42409bd356102db0e9239ad72f19fa028cf59",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/lessons/show.blade.php",
+    "sha256": "a3978dbdf79a32c09126143b2e0177e7c522863e4f4784f68812dc3a8e83e7e4",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/resources/views/welcome.blade.php",
+    "sha256": "cf51347ba0afb4613139989494e5a9a189f504cb35d3bfa6ca9715a0305ac615",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/routes/console.php",
+    "sha256": "9adccc33e7dd400683e434774077c7fdb2f299c5712cedf16a43fdf56f2850fa",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/routes/web.php",
+    "sha256": "15e096b6cde233c63275d052542ca00608df1e689c79653f593f32ac644a0e00",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/storage/app/.gitignore",
+    "sha256": "993b9e3709d7b5189da331725d1169d79e561a509db2490b722b525073d2d976",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/storage/app/private/.gitignore",
+    "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/storage/app/public/.gitignore",
+    "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/storage/framework/.gitignore",
+    "sha256": "37bc9570de232e9db87ce530b3e4e2d5fa8d75f3bd587069fd26e2fb4ef1ffa5",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/storage/framework/cache/.gitignore",
+    "sha256": "533853ce8390305dd856510063fdffdd1ae206f24c03b9294542d3cfe5c3e33a",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/storage/framework/cache/data/.gitignore",
+    "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/storage/framework/cache/locks/.gitignore",
+    "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/storage/framework/sessions/.gitignore",
+    "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/storage/framework/testing/.gitignore",
+    "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/storage/framework/views/.gitignore",
+    "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/storage/logs/.gitignore",
+    "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/tests/Feature/AcademyConcurrencyTest.php",
+    "sha256": "e78566d88226fc546ae38cf69ea04232b30087b828d1a77160211cce6ec82e9c",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/tests/Feature/AdministratorProvisioningTest.php",
+    "sha256": "96de3b68615eee046154cef4a5b052b0350d622099924ba48d5c989d642acea9",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/tests/Feature/AuthenticationTest.php",
+    "sha256": "7a9f3b077d68eacbf0379bbef76bd9e6fae5568b84a9815105c05f933228ee3b",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/tests/Feature/AuthorizationTest.php",
+    "sha256": "761d291a6659f89a5ae2b15110d931bf7019551c5935835b3e5e784ced529bda",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/tests/Feature/CourseManagementTest.php",
+    "sha256": "89814988a65b60f812bd05b0b55190f6b055988a482e7967fc0717f82e64243a",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/tests/Feature/DashboardTest.php",
+    "sha256": "a29737c3a0b5f2e6f359039188e33695101d69de50cd20451e2f462f9624f931",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/tests/Feature/DatabaseIntegrityTest.php",
+    "sha256": "b746a024a174a8640dec7c6038b853aa648ca21b0c22e054bbd217138842cf6e",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/tests/Feature/EnrollmentManagementTest.php",
+    "sha256": "1cbd9f57fc365427ff66a24a967b6363d41b01d78fa9c4b39b0029b36a3379e5",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/tests/Feature/FoundationTest.php",
+    "sha256": "0966fbb1433592414cc0a7c0f671548274303779e6ccc186540026fae83b9a17",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/tests/Feature/LessonManagementTest.php",
+    "sha256": "90c479ad9645d1550ca087b910e959ecac09d8c8994a39f15e257e40686f7a43",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/tests/Feature/ReviewCorrectionsTest.php",
+    "sha256": "9db2ee6f7686d3b78e3b03abe41f662ae57987af2fcd73192ae2e396cba5a023",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/tests/Feature/SessionSecurityTest.php",
+    "sha256": "caf145e30b03cd4437e21ad7ccd253ceb0af02c0bdfa12c04740fe87ad38b3db",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/tests/Feature/TeacherManagementTest.php",
+    "sha256": "13508558b327780c5732ce90a36b668c81c6586488330bdee280e5dc024096e5",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/tests/Fixtures/academy-worker.php",
+    "sha256": "309c44f6c13c60e150574c8494acb0516ce4f89b522450ff18dc4a0cd5741ea8",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/tests/TestCase.php",
+    "sha256": "99dcf755b93f6e2cda022f3e49e61c471dd8740fb1f10737d4063c7b9e210aaf",
+    "matches_delivered_m3": true
+  },
+  {
+    "path": "app/vite.config.js",
+    "sha256": "b491b42f8a0a2a9fa1b94ae3aaed6e9ffae11fdb3b0ad2defbe946d0c6447eea",
+    "matches_delivered_m3": true
+  }
+]

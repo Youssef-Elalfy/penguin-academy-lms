@@ -1,0 +1,2244 @@
+{
+  "run": "m6-e373be0ba751",
+  "started_at": "2026-10-23T19:15:04.548Z",
+  "base_url": "http://127.0.0.1:4174",
+  "database": "penguin_academy_test",
+  "browser": {
+    "engine": "153.0.8010.0",
+    "playwright": "1.62.1",
+    "implementation": "Real local Chromium with fresh isolated contexts; all sign-in through Fortify forms."
+  },
+  "cases": [
+    {
+      "name": "Administrator login and dashboard",
+      "status": "passed",
+      "duration_ms": 1453
+    },
+    {
+      "name": "Administrator creates two teacher accounts through protected forms",
+      "status": "passed",
+      "duration_ms": 2601
+    },
+    {
+      "name": "Administrator course creation, edit, teacher assignment and publication",
+      "status": "passed",
+      "duration_ms": 4936
+    },
+    {
+      "name": "Teacher login enforces password change and redirects to teacher dashboard",
+      "status": "passed",
+      "duration_ms": 2171
+    },
+    {
+      "name": "Teacher assignment scope and cross-course/admin rejection",
+      "status": "passed",
+      "duration_ms": 2681
+    },
+    {
+      "name": "Teacher creates and edits own course",
+      "status": "passed",
+      "duration_ms": 2462
+    },
+    {
+      "name": "Teacher creates, edits, publishes and reorders lessons",
+      "status": "passed",
+      "duration_ms": 8062
+    },
+    {
+      "name": "Student registration, logout, login and role redirect",
+      "status": "passed",
+      "duration_ms": 3283
+    },
+    {
+      "name": "Student catalog and denial before enrollment or for staff/draft content",
+      "status": "passed",
+      "duration_ms": 2679
+    },
+    {
+      "name": "Student enrolls and reads published lesson with escaped content",
+      "status": "passed",
+      "duration_ms": 2368
+    },
+    {
+      "name": "Completion, 50 percent progress and persistence after refresh",
+      "status": "passed",
+      "duration_ms": 1358
+    },
+    {
+      "name": "Undo completion and complete again",
+      "status": "passed",
+      "duration_ms": 1479
+    },
+    {
+      "name": "Withdrawal blocks lessons; re-enrollment retains progress and enrollment identity",
+      "status": "passed",
+      "duration_ms": 3097
+    },
+    {
+      "name": "Teacher roster, learner report and course report",
+      "status": "passed",
+      "duration_ms": 1696
+    },
+    {
+      "name": "Administrator enrollment and progress reports",
+      "status": "passed",
+      "duration_ms": 1669
+    },
+    {
+      "name": "Server-side form validation focuses accessible error summary",
+      "status": "passed",
+      "duration_ms": 1192
+    },
+    {
+      "name": "admin responsive layouts at 375, 768 and 1440 pixels",
+      "status": "passed",
+      "duration_ms": 13702
+    },
+    {
+      "name": "admin desktop sidebar navigation works",
+      "status": "passed",
+      "duration_ms": 1727
+    },
+    {
+      "name": "admin mobile navigation and keyboard focus",
+      "status": "passed",
+      "duration_ms": 687
+    },
+    {
+      "name": "teacher responsive layouts at 375, 768 and 1440 pixels",
+      "status": "passed",
+      "duration_ms": 11974
+    },
+    {
+      "name": "teacher desktop sidebar navigation works",
+      "status": "passed",
+      "duration_ms": 1732
+    },
+    {
+      "name": "teacher mobile navigation and keyboard focus",
+      "status": "passed",
+      "duration_ms": 679
+    },
+    {
+      "name": "student responsive layouts at 375, 768 and 1440 pixels",
+      "status": "passed",
+      "duration_ms": 8626
+    },
+    {
+      "name": "student desktop sidebar navigation works",
+      "status": "passed",
+      "duration_ms": 1732
+    },
+    {
+      "name": "student mobile navigation and keyboard focus",
+      "status": "passed",
+      "duration_ms": 653
+    },
+    {
+      "name": "Teacher lesson archival preserves completion history and updates eligible progress",
+      "status": "passed",
+      "duration_ms": 2423
+    },
+    {
+      "name": "Administrator archival preserves learning history and revokes student access",
+      "status": "passed",
+      "duration_ms": 2344
+    },
+    {
+      "name": "Administrator and teacher logout block dashboard access",
+      "status": "passed",
+      "duration_ms": 1307
+    },
+    {
+      "name": "Automated accessibility and browser errors have no outstanding failures",
+      "status": "passed",
+      "duration_ms": 0
+    }
+  ],
+  "layouts": [
+    {
+      "role": "admin",
+      "route": "/admin/dashboard",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/teachers",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/teachers/create",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses/create",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses/1700/edit",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/enrollments",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses/1700/progress",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/dashboard",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/teachers",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/teachers/create",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses/create",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses/1700/edit",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/enrollments",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses/1700/progress",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/dashboard",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/teachers",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/teachers/create",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses/create",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses/1700/edit",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/enrollments",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses/1700/progress",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/teacher/dashboard",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700/lessons/create",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700/lessons/order",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700/enrollments",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700/progress",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700/enrollments/1385/progress",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/teacher/dashboard",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700/lessons/create",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700/lessons/order",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700/enrollments",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700/progress",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700/enrollments/1385/progress",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/teacher/dashboard",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700/lessons/create",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700/lessons/order",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700/enrollments",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700/progress",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700/enrollments/1385/progress",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/student/dashboard",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/courses",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/courses/1700",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/courses/1700/lessons/1250",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/my-courses",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/student/dashboard",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/courses",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/courses/1700",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/courses/1700/lessons/1250",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/my-courses",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/student/dashboard",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/courses",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/courses/1700",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/courses/1700/lessons/1250",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/my-courses",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    }
+  ],
+  "accessibility": [
+    {
+      "role": "admin",
+      "route": "/admin/dashboard",
+      "passes": 22,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".active > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a[href$=\"courses\"] > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(3) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(4) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(5) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".avatar-light"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "admin",
+      "route": "/admin/teachers",
+      "passes": 25,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "nav > a:nth-child(1) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a[href$=\"courses\"] > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(3) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".active > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(5) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "admin",
+      "route": "/admin/teachers/create",
+      "passes": 20,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "a:nth-child(1) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a[href$=\"courses\"] > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(3) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".active > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(5) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "admin",
+      "route": "/courses",
+      "passes": 26,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "a:nth-child(1) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".active > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(3) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(4) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(5) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#status"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#teacher_id"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#sort"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "admin",
+      "route": "/courses/create",
+      "passes": 21,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "a:nth-child(1) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".active > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(3) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(4) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(5) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#teacher_id"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "admin",
+      "route": "/courses/1700/edit",
+      "passes": 21,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "a:nth-child(1) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".active > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(3) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(4) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(5) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#teacher_id"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "admin",
+      "route": "/admin/enrollments",
+      "passes": 25,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "a:nth-child(1) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a[href$=\"courses\"] > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".active > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(4) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(5) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#status"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#course_id"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "admin",
+      "route": "/courses/1700/progress",
+      "passes": 26,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "a:nth-child(1) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".active > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(3) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(4) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(5) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#status"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "teacher",
+      "route": "/teacher/dashboard",
+      "passes": 22,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".active > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a[href$=\"courses\"] > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(3) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700",
+      "passes": 18,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "a:nth-child(1) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".active > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(3) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".lesson-list-row:nth-child(2) > .lesson-number[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                ".lesson-list-row:nth-child(3) > .lesson-number[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                ".lesson-list-row:nth-child(4) > .lesson-number[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700/lessons/create",
+      "passes": 19,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "a:nth-child(1) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".active > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(3) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700/lessons/order",
+      "passes": 19,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "a:nth-child(1) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".active > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(3) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#order-0"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Move position 1 down\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#order-1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Move position 2 up\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Move position 2 down\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#order-2"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Move position 3 up\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "nodes": [
+            {
+              "target": [
+                "button[aria-label=\"Move position 1 up\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Unable to determine if the visible text is part of the accessible name"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Move position 1 down\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Unable to determine if the visible text is part of the accessible name"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Move position 2 up\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Unable to determine if the visible text is part of the accessible name"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Move position 2 down\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Unable to determine if the visible text is part of the accessible name"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Move position 3 up\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Unable to determine if the visible text is part of the accessible name"
+            },
+            {
+              "target": [
+                "button[aria-label=\"Move position 3 down\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Unable to determine if the visible text is part of the accessible name"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700/enrollments",
+      "passes": 26,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "a:nth-child(1) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".active > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(3) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#status"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#student_id"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700/progress",
+      "passes": 26,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "a:nth-child(1) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".active > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(3) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#status"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1700/enrollments/1385/progress",
+      "passes": 22,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "a:nth-child(1) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".active > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(3) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "student",
+      "route": "/student/dashboard",
+      "passes": 18,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".active > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a[href$=\"courses\"]:nth-child(2) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(3) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(4) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "student",
+      "route": "/courses",
+      "passes": 20,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "a:nth-child(1) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".active > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(3) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(4) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#sort"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "student",
+      "route": "/courses/1700",
+      "passes": 18,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "a:nth-child(1) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".active > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(3) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(4) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".lesson-list-row:nth-child(2) > .lesson-number[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                ".lesson-list-row:nth-child(3) > .lesson-number[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "student",
+      "route": "/courses/1700/lessons/1250",
+      "passes": 17,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "a:nth-child(1) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".active > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(3) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(4) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "student",
+      "route": "/my-courses",
+      "passes": 20,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "a:nth-child(1) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "nav > a[href$=\"courses\"]:nth-child(2) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".active > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a:nth-child(4) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#status"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    }
+  ],
+  "screenshots": [
+    "admin-375.png",
+    "admin-768.png",
+    "admin-1440.png",
+    "teacher-375.png",
+    "teacher-768.png",
+    "teacher-1440.png",
+    "student-375.png",
+    "student-768.png",
+    "student-1440.png"
+  ],
+  "console_errors": [],
+  "persistence": [
+    {
+      "label": "Administrator provisioned through existing secure command",
+      "status": "passed",
+      "course_rows": 0,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    },
+    {
+      "label": "Teachers have Teacher role and mandatory password change",
+      "status": "passed",
+      "course_rows": 0,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    },
+    {
+      "label": "Course title, teacher and publication persisted",
+      "status": "passed",
+      "course_rows": 1,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    },
+    {
+      "label": "Mandatory password change cleared after supported form",
+      "status": "passed",
+      "course_rows": 2,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    },
+    {
+      "label": "Teacher-created course assigns current teacher",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    },
+    {
+      "label": "Lesson publication and order persist",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    },
+    {
+      "label": "Registration creates active Student only",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    },
+    {
+      "label": "One active persisted enrollment",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 1,
+      "completion_rows": 0
+    },
+    {
+      "label": "Completion row persisted",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 1,
+      "completion_rows": 1
+    },
+    {
+      "label": "Undo removes only current completion",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 1,
+      "completion_rows": 0
+    },
+    {
+      "label": "Re-completion creates one unique row",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 1,
+      "completion_rows": 1
+    },
+    {
+      "label": "Withdrawn enrollment and historical completion retained",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 1,
+      "completion_rows": 1
+    },
+    {
+      "label": "Original enrollment reactivated with history",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 1,
+      "completion_rows": 1
+    },
+    {
+      "label": "Archived completed lesson retains historical row",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 1,
+      "completion_rows": 1
+    },
+    {
+      "label": "Archived course preserves enrollment and completion",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 1,
+      "completion_rows": 1
+    }
+  ],
+  "navigation": [
+    {
+      "role": "admin",
+      "elements": [
+        {
+          "text": "PenguinACADEMY",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "x": 28,
+            "y": 36,
+            "width": 176,
+            "height": 45,
+            "top": 36,
+            "right": 204,
+            "bottom": 81,
+            "left": 28
+          }
+        },
+        {
+          "text": "▦ Overview",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "x": 20,
+            "y": 154.71875,
+            "width": 192,
+            "height": 52.140625,
+            "top": 154.71875,
+            "right": 212,
+            "bottom": 206.859375,
+            "left": 20
+          }
+        },
+        {
+          "text": "▤ Courses",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "x": 20,
+            "y": 213.25,
+            "width": 192,
+            "height": 52.140625,
+            "top": 213.25,
+            "right": 212,
+            "bottom": 265.390625,
+            "left": 20
+          }
+        },
+        {
+          "text": "◎ Enrollments",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "x": 20,
+            "y": 271.78125,
+            "width": 192,
+            "height": 52.140625,
+            "top": 271.78125,
+            "right": 212,
+            "bottom": 323.921875,
+            "left": 20
+          }
+        },
+        {
+          "text": "♧ Teachers",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "x": 20,
+            "y": 330.3125,
+            "width": 192,
+            "height": 52.140625,
+            "top": 330.3125,
+            "right": 212,
+            "bottom": 382.453125,
+            "left": 20
+          }
+        },
+        {
+          "text": "◇ Account security",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "x": 20,
+            "y": 388.84375,
+            "width": 192,
+            "height": 52.140625,
+            "top": 388.84375,
+            "right": 212,
+            "bottom": 440.984375,
+            "left": 20
+          }
+        },
+        {
+          "text": "Sign out ↗",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "x": 20,
+            "y": 936,
+            "width": 192,
+            "height": 44,
+            "top": 936,
+            "right": 212,
+            "bottom": 980,
+            "left": 20
+          }
+        }
+      ]
+    },
+    {
+      "role": "teacher",
+      "elements": [
+        {
+          "text": "PenguinACADEMY",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "x": 28,
+            "y": 36,
+            "width": 176,
+            "height": 45,
+            "top": 36,
+            "right": 204,
+            "bottom": 81,
+            "left": 28
+          }
+        },
+        {
+          "text": "▦ Overview",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "x": 20,
+            "y": 154.71875,
+            "width": 192,
+            "height": 52.140625,
+            "top": 154.71875,
+            "right": 212,
+            "bottom": 206.859375,
+            "left": 20
+          }
+        },
+        {
+          "text": "▤ Courses",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "x": 20,
+            "y": 213.25,
+            "width": 192,
+            "height": 52.140625,
+            "top": 213.25,
+            "right": 212,
+            "bottom": 265.390625,
+            "left": 20
+          }
+        },
+        {
+          "text": "◇ Account security",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "x": 20,
+            "y": 271.78125,
+            "width": 192,
+            "height": 52.140625,
+            "top": 271.78125,
+            "right": 212,
+            "bottom": 323.921875,
+            "left": 20
+          }
+        },
+        {
+          "text": "Sign out ↗",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "x": 20,
+            "y": 936,
+            "width": 192,
+            "height": 44,
+            "top": 936,
+            "right": 212,
+            "bottom": 980,
+            "left": 20
+          }
+        }
+      ]
+    },
+    {
+      "role": "student",
+      "elements": [
+        {
+          "text": "PenguinACADEMY",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "x": 28,
+            "y": 36,
+            "width": 176,
+            "height": 45,
+            "top": 36,
+            "right": 204,
+            "bottom": 81,
+            "left": 28
+          }
+        },
+        {
+          "text": "▦ Overview",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "x": 20,
+            "y": 154.71875,
+            "width": 192,
+            "height": 52.140625,
+            "top": 154.71875,
+            "right": 212,
+            "bottom": 206.859375,
+            "left": 20
+          }
+        },
+        {
+          "text": "▤ Course catalog",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "x": 20,
+            "y": 213.25,
+            "width": 192,
+            "height": 52.140625,
+            "top": 213.25,
+            "right": 212,
+            "bottom": 265.390625,
+            "left": 20
+          }
+        },
+        {
+          "text": "◇ My courses",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "x": 20,
+            "y": 271.78125,
+            "width": 192,
+            "height": 52.140625,
+            "top": 271.78125,
+            "right": 212,
+            "bottom": 323.921875,
+            "left": 20
+          }
+        },
+        {
+          "text": "◇ Account security",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "x": 20,
+            "y": 330.3125,
+            "width": 192,
+            "height": 52.140625,
+            "top": 330.3125,
+            "right": 212,
+            "bottom": 382.453125,
+            "left": 20
+          }
+        },
+        {
+          "text": "Sign out ↗",
+          "visibility": "visible",
+          "opacity": "1",
+          "rect": {
+            "x": 20,
+            "y": 936,
+            "width": 192,
+            "height": 44,
+            "top": 936,
+            "right": 212,
+            "bottom": 980,
+            "left": 20
+          }
+        }
+      ]
+    }
+  ],
+  "outcome": "completed",
+  "finished_at": "2026-10-23T19:16:52.342Z",
+  "summary": {
+    "passed": 29,
+    "failed": 0,
+    "layouts": 60,
+    "accessibility_scans": 20,
+    "accessibility_violations": 0
+  },
+  "cleanup": {
+    "database": "penguin_academy_test",
+    "cleanup": "Only this run’s synthetic users and course records removed."
+  }
+}

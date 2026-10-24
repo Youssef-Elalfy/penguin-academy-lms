@@ -1,0 +1,1 @@
+{"tool":"pint","result":"fixed","files":[{"path":"app\/Services\/Learning\/ProgressService.php","fixers":["method_chaining_indentation"]},{"path":"app\/Services\/Learning\/ProgressSummary.php","fixers":["class_attributes_separation"]},{"path":"routes\/web.php","fixers":["ordered_imports"]}]}

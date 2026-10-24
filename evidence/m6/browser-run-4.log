@@ -1,0 +1,34 @@
+Private MySQL connection verified.
+PASS Public authentication forms are responsive and accessible
+PASS Administrator login and dashboard
+PASS Real browser session cookies and CSRF rejection
+PASS Administrator creates two teacher accounts through protected forms
+PASS Administrator course creation, edit, teacher assignment and publication
+PASS Teacher login enforces password change and redirects to teacher dashboard
+PASS Teacher assignment scope and cross-course/admin rejection
+PASS Teacher creates and edits own course
+PASS Teacher creates, edits, publishes and reorders lessons
+PASS Student registration, logout, login and role redirect
+PASS Student catalog and denial before enrollment or for staff/draft content
+PASS Student enrolls and reads published lesson with escaped content
+PASS Completion, 50 percent progress and persistence after refresh
+PASS Undo completion and complete again
+PASS Withdrawal blocks lessons; re-enrollment retains progress and enrollment identity
+PASS Continue learning opens the next incomplete lesson
+PASS Teacher roster, learner report and course report
+PASS Administrator enrollment and progress reports
+PASS Server-side form validation focuses accessible error summary
+PASS admin responsive layouts at 375, 768 and 1440 pixels
+PASS admin desktop sidebar navigation works
+PASS admin mobile navigation and keyboard focus
+PASS teacher responsive layouts at 375, 768 and 1440 pixels
+PASS teacher desktop sidebar navigation works
+PASS teacher mobile navigation and keyboard focus
+PASS student responsive layouts at 375, 768 and 1440 pixels
+PASS student desktop sidebar navigation works
+PASS student mobile navigation and keyboard focus
+PASS Teacher lesson archival preserves completion history and updates eligible progress
+PASS Administrator archival preserves learning history and revokes student access
+PASS Administrator and teacher logout block dashboard access
+PASS Automated accessibility and browser errors have no outstanding failures
+{"passed":32,"failed":0,"layouts":66,"accessibility_scans":22,"accessibility_violations":0}

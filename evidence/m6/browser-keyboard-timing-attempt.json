@@ -1,0 +1,251 @@
+{
+  "run": "m6-382c0f160892",
+  "started_at": "2026-10-23T19:27:32.885Z",
+  "base_url": "http://127.0.0.1:4174",
+  "database": "penguin_academy_test",
+  "browser": {
+    "engine": "153.0.8010.0",
+    "playwright": "1.62.1",
+    "implementation": "Real local Chromium with fresh isolated contexts; all sign-in through Fortify forms."
+  },
+  "cases": [
+    {
+      "name": "Public authentication forms are responsive and accessible",
+      "status": "passed",
+      "duration_ms": 4890
+    },
+    {
+      "name": "Administrator login and dashboard",
+      "status": "passed",
+      "duration_ms": 1455
+    },
+    {
+      "name": "Real browser session cookies and CSRF rejection",
+      "status": "passed",
+      "duration_ms": 561
+    },
+    {
+      "name": "Administrator creates two teacher accounts through protected forms",
+      "status": "passed",
+      "duration_ms": 2474
+    },
+    {
+      "name": "Administrator course creation, edit, teacher assignment and publication",
+      "status": "passed",
+      "duration_ms": 4938
+    },
+    {
+      "name": "Teacher login enforces password change and redirects to teacher dashboard",
+      "status": "passed",
+      "duration_ms": 2191
+    },
+    {
+      "name": "Teacher assignment scope and cross-course/admin rejection",
+      "status": "passed",
+      "duration_ms": 2698
+    },
+    {
+      "name": "Teacher creates and edits own course",
+      "status": "passed",
+      "duration_ms": 2444
+    },
+    {
+      "name": "Teacher creates, edits, publishes and reorders lessons",
+      "status": "passed",
+      "duration_ms": 8188
+    },
+    {
+      "name": "Student registration, logout, keyboard-only login and role redirect",
+      "status": "failed",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ '/login'\n- '/student/dashboard'\n\n    at login (file:///workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/qa/browser.mjs:90:10)\n    at async file:///workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/qa/browser.mjs:273:5\n    at async step (file:///workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/qa/browser.mjs:53:9)\n    at async file:///workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/qa/browser.mjs:263:3",
+      "duration_ms": 2591
+    }
+  ],
+  "layouts": [
+    {
+      "role": "guest",
+      "route": "/login",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "guest",
+      "route": "/register",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "guest",
+      "route": "/login",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "guest",
+      "route": "/register",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "guest",
+      "route": "/login",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "guest",
+      "route": "/register",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    }
+  ],
+  "accessibility": [
+    {
+      "role": "guest",
+      "route": "/login",
+      "passes": 15,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "guest",
+      "route": "/register",
+      "passes": 21,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "violations": []
+    }
+  ],
+  "screenshots": [],
+  "console_errors": [],
+  "persistence": [
+    {
+      "label": "Administrator provisioned through existing secure command",
+      "status": "passed",
+      "course_rows": 0,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    },
+    {
+      "label": "Teachers have Teacher role and mandatory password change",
+      "status": "passed",
+      "course_rows": 0,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    },
+    {
+      "label": "Course title, teacher and publication persisted",
+      "status": "passed",
+      "course_rows": 1,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    },
+    {
+      "label": "Mandatory password change cleared after supported form",
+      "status": "passed",
+      "course_rows": 2,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    },
+    {
+      "label": "Teacher-created course assigns current teacher",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    },
+    {
+      "label": "Lesson publication and order persist",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    },
+    {
+      "label": "Registration creates active Student only",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    }
+  ],
+  "session_controls": {
+    "http_only": true,
+    "same_site": "Lax",
+    "csrf_missing_token_status": 419,
+    "local_http_secure_cookie": false
+  },
+  "outcome": "failed",
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ '/login'\n- '/student/dashboard'\n\n    at login (file:///workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/qa/browser.mjs:90:10)\n    at async file:///workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/qa/browser.mjs:273:5\n    at async step (file:///workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/qa/browser.mjs:53:9)\n    at async file:///workspace/scratch/c2d7cdfd8394/penguin-academy-m1/tools/qa/browser.mjs:263:3",
+  "finished_at": "2026-10-23T19:28:06.219Z",
+  "summary": {
+    "passed": 9,
+    "failed": 1,
+    "layouts": 6,
+    "accessibility_scans": 2,
+    "accessibility_violations": 0
+  },
+  "cleanup": {
+    "database": "penguin_academy_test",
+    "cleanup": "Only this run’s synthetic users and course records removed."
+  }
+}

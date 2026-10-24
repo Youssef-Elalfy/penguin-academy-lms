@@ -1,0 +1,8 @@
+{
+  "tables": true,
+  "new_columns": true,
+  "indexes": true,
+  "foreign_keys": true,
+  "migrations": true,
+  "core_records_unchanged": true
+}

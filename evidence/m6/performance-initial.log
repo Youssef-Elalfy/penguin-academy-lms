@@ -1,0 +1,16 @@
+Private MySQL connection verified.
+Seeded {"admins":1,"teachers":5,"students":300,"courses":30,"lessons":600,"enrollments":3000,"completions":28800}
+Measured admin /api/v1/courses?per_page=1 14 queries
+Measured admin /api/v1/courses?per_page=100 11 queries
+Measured admin /api/v1/enrollments?per_page=1 13 queries
+Measured admin /api/v1/enrollments?per_page=100 12 queries
+Measured admin /api/v1/reports/overview?per_page=1 16 queries
+Measured admin /api/v1/reports/overview?per_page=100 16 queries
+Measured teacher0 /api/v1/reports/overview?per_page=100 17 queries
+Measured student0 /api/v1/enrollments?per_page=100 15 queries
+Measured student0 /api/v1/enrollments/1389/progress 11 queries
+FAIL No N+1 growth: /api/v1/courses
+
+14 !== 11
+
+Performance run failed

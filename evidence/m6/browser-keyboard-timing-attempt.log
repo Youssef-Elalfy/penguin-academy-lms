@@ -1,0 +1,17 @@
+Private MySQL connection verified.
+PASS Public authentication forms are responsive and accessible
+PASS Administrator login and dashboard
+PASS Real browser session cookies and CSRF rejection
+PASS Administrator creates two teacher accounts through protected forms
+PASS Administrator course creation, edit, teacher assignment and publication
+PASS Teacher login enforces password change and redirects to teacher dashboard
+PASS Teacher assignment scope and cross-course/admin rejection
+PASS Teacher creates and edits own course
+PASS Teacher creates, edits, publishes and reorders lessons
+FAILED Expected values to be strictly equal:
++ actual - expected
+
++ '/login'
+- '/student/dashboard'
+
+{"passed":9,"failed":1,"layouts":6,"accessibility_scans":2,"accessibility_violations":0}

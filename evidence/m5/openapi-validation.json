@@ -1,0 +1,10 @@
+{
+  "openapi": "3.1.1",
+  "operations": 24,
+  "path_templates": 15,
+  "local_references_checked": 205,
+  "broken_local_references": 0,
+  "path_parameters_and_unique_operation_ids": "pass",
+  "route_and_ability_parity": "Covered by the passing ApiContractTest in final/phpunit.xml",
+  "external_full_schema_validator": "Not installed; full external OpenAPI meta-schema validation was not run."
+}

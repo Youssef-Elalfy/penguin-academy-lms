@@ -1,0 +1,30 @@
+{
+  "ApiContractTest": {
+    "tests": 54,
+    "assertions": 308
+  },
+  "ApiCourseTest": {
+    "tests": 16,
+    "assertions": 105
+  },
+  "ApiEnrollmentTest": {
+    "tests": 8,
+    "assertions": 64
+  },
+  "ApiLessonTest": {
+    "tests": 9,
+    "assertions": 64
+  },
+  "ApiProgressTest": {
+    "tests": 11,
+    "assertions": 71
+  },
+  "ApiReportingTest": {
+    "tests": 3,
+    "assertions": 47
+  },
+  "ApiTokenTest": {
+    "tests": 25,
+    "assertions": 214
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "original_source_files": 161,
+  "modified": [
+    "app/DESIGN.md",
+    "app/README.md",
+    "app/app/Http/Controllers/CourseController.php",
+    "app/app/Http/Controllers/DashboardController.php",
+    "app/app/Http/Controllers/EnrollmentController.php",
+    "app/app/Http/Controllers/LessonController.php",
+    "app/public/build/manifest.json",
+    "app/resources/css/app.css",
+    "app/resources/views/components/stat.blade.php",
+    "app/resources/views/courses/show.blade.php",
+    "app/resources/views/dashboards/admin.blade.php",
+    "app/resources/views/dashboards/student.blade.php",
+    "app/resources/views/dashboards/teacher.blade.php",
+    "app/resources/views/enrollments/mine.blade.php",
+    "app/resources/views/enrollments/overview.blade.php",
+    "app/resources/views/enrollments/roster.blade.php",
+    "app/resources/views/lessons/show.blade.php",
+    "app/routes/web.php"
+  ],
+  "removed_superseded_build_assets": [
+    "app/public/build/assets/app-C8uxtaYG.css"
+  ],
+  "new_source_files": [
+    "app/app/Actions/Academy/CompletionActions.php",
+    "app/app/Http/Controllers/LearningReportController.php",
+    "app/app/Http/Controllers/LessonCompletionController.php",
+    "app/app/Http/Requests/ChangeLessonCompletionRequest.php",
+    "app/app/Http/Requests/ProgressReportRequest.php",
+    "app/app/Services/Learning/AcademyAnalytics.php",
+    "app/app/Services/Learning/ProgressService.php",
+    "app/app/Services/Learning/ProgressSummary.php",
+    "app/public/build/assets/app-CcLB5p0l.css",
+    "app/resources/views/components/learning-progress.blade.php",
+    "app/resources/views/learning/course-report.blade.php",
+    "app/resources/views/learning/course-table.blade.php",
+    "app/resources/views/learning/metrics.blade.php",
+    "app/resources/views/learning/student-report.blade.php",
+    "app/tests/Feature/CompletionConcurrencyTest.php",
+    "app/tests/Feature/LearningProgressTest.php",
+    "app/tests/Feature/LearningReportsTest.php",
+    "app/tests/Feature/LessonCompletionTest.php",
+    "app/tests/Fixtures/completion-worker.php"
+  ],
+  "protected_files_checked": 22,
+  "protected_unchanged": true
+}

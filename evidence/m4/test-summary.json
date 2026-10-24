@@ -1,0 +1,54 @@
+{
+  "baseline": {
+    "tests": 137,
+    "assertions": 899,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0
+  },
+  "final": {
+    "tests": 187,
+    "assertions": 1268,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "duration_ms": 7648
+  },
+  "new_m4": {
+    "tests": 50,
+    "assertions": 369,
+    "suites": [
+      {
+        "name": "LessonCompletionTest",
+        "tests": 25,
+        "assertions": 197
+      },
+      {
+        "name": "LearningProgressTest",
+        "tests": 10,
+        "assertions": 33
+      },
+      {
+        "name": "LearningReportsTest",
+        "tests": 10,
+        "assertions": 102
+      },
+      {
+        "name": "CompletionConcurrencyTest",
+        "tests": 5,
+        "assertions": 37
+      }
+    ]
+  },
+  "initial_regression": {
+    "tests": 4,
+    "failed": 4,
+    "reason": "Percentage strings passed to a numeric stat component caused number_format() TypeError and HTTP 500.",
+    "resolution": "Added separate suffix and decimals props; views pass numeric values. All original dashboard tests passed in the final suite."
+  },
+  "browser": {
+    "public_checks": "passed",
+    "authenticated_end_to_end": "not_executed_no_provisioned_account_or_secure_user_sign_in",
+    "mobile": "not_verified"
+  }
+}

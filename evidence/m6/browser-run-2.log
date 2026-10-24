@@ -1,0 +1,26 @@
+Private MySQL connection verified.
+PASS Administrator login and dashboard
+PASS Administrator creates two teacher accounts through protected forms
+PASS Administrator course creation, edit, teacher assignment and publication
+PASS Teacher login enforces password change and redirects to teacher dashboard
+PASS Teacher assignment scope and cross-course/admin rejection
+PASS Teacher creates and edits own course
+PASS Teacher creates, edits, publishes and reorders lessons
+PASS Student registration, logout, login and role redirect
+PASS Student catalog and denial before enrollment or for staff/draft content
+PASS Student enrolls and reads published lesson with escaped content
+PASS Completion, 50 percent progress and persistence after refresh
+PASS Undo completion and complete again
+PASS Withdrawal blocks lessons; re-enrollment retains progress and enrollment identity
+PASS Teacher roster, learner report and course report
+PASS Administrator enrollment and progress reports
+PASS Server-side form validation focuses accessible error summary
+PASS admin responsive layouts at 375, 768 and 1440 pixels
+PASS admin mobile navigation and keyboard focus
+PASS teacher responsive layouts at 375, 768 and 1440 pixels
+PASS teacher mobile navigation and keyboard focus
+PASS student responsive layouts at 375, 768 and 1440 pixels
+PASS student mobile navigation and keyboard focus
+PASS Administrator archival preserves learning history and revokes student access
+PASS Administrator and teacher logout block dashboard access
+{"passed":24,"failed":0,"layouts":60,"accessibility_scans":20,"accessibility_violations":4}

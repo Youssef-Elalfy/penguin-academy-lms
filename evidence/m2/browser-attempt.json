@@ -1,0 +1,11 @@
+{
+  "preview": "Started successfully, then stopped",
+  "browser": "Chrome CDP available; no existing tabs",
+  "operation": "Open internal terminal.local:4173",
+  "requestedTimeoutMs": 15000,
+  "reportedWallTimeSeconds": 1047.4752,
+  "result": "js execution timed out; kernel reset, rerun your request",
+  "pagesInspected": 0,
+  "browserTestsExecuted": 0,
+  "status": "Unverified; browser infrastructure timeout"
+}

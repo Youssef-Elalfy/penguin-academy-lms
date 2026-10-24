@@ -1,0 +1,76 @@
+{
+  "checked_date": "2026-10-22",
+  "surface": "Real cloud Chrome through supported CUA/Playwright browser controls",
+  "origin": "http://terminal.local:4173",
+  "viewport": {
+    "width": 1363,
+    "height": 936
+  },
+  "completed": [
+    {
+      "check": "Welcome page",
+      "result": "Rendered with working sign-in and registration links."
+    },
+    {
+      "check": "Sign-in page",
+      "result": "Labeled email, password and remember-device controls; username/current-password autocomplete; focusable main target."
+    },
+    {
+      "check": "Guest role dashboards",
+      "result": "Admin, Teacher and Student dashboard navigations all redirected to /login with a visible Sign in button."
+    },
+    {
+      "check": "Keyboard navigation",
+      "result": "Tab from Email -> Password -> remember-device checkbox -> Sign in. Computed focus outline 3px."
+    },
+    {
+      "check": "Required field feedback",
+      "result": "Clicking Sign in with empty fields showed native 'Please fill out this field.'; email/password valueMissing were true. No credentials entered."
+    },
+    {
+      "check": "Registration page",
+      "result": "Full name, Email address, Password, Confirm password labels rendered; no account was created."
+    },
+    {
+      "check": "Document overflow",
+      "result": "Login and registration document scrollWidth=1363, equal to the 1363px viewport."
+    },
+    {
+      "check": "Visual inspection",
+      "result": "Actual sign-in screenshot inspected internally. No screenshot generated or included as a deliverable."
+    }
+  ],
+  "authentication": {
+    "status": "blocked_before_authenticated_workflows",
+    "development_accounts": 0,
+    "reason": "The preserved development database contains no user accounts. Secure browserAuth requires an existing user-supplied credential; its documentation prohibits using it to create accounts or entering credentials through lower-level browser controls. No secure account-creation/sign-in handoff was completed.",
+    "browser_auth_request_executed": false,
+    "credentials_entered": false,
+    "session_injected": false,
+    "backdoor_created": false
+  },
+  "unexecuted": [
+    "Authenticated login/logout and role redirects after login",
+    "Course creation/publication and lesson management in a browser",
+    "Enrollment/withdrawal and completion/undo in a browser",
+    "Progress after browser refresh",
+    "Authenticated staff reports",
+    "Authenticated mobile navigation and keyboard workflows"
+  ],
+  "viewport_limit": {
+    "requested_widths": [
+      375,
+      768,
+      1440
+    ],
+    "executed_widths": [
+      1363
+    ],
+    "reason": "The advertised browser API provides no viewport/device resizing method; Browser Capabilities: None. No alternate browser runtime or unsupported CDP method was used."
+  },
+  "console": {
+    "observation": "Available log buffer contained Chrome-extension 'Error sending browser metadata to extension: Object' entries from earlier inspection. These were not application-origin errors; no claim of a clean full authenticated console audit is made."
+  },
+  "final_color_change": "On 2026-10-23 several CSS foreground/border pairs were darkened after calculated contrast checks and rebuilt. Browser observations above precede that small color adjustment.",
+  "http_distinction": "The 313 PHPUnit tests are Laravel HTTP/database tests, not browser end-to-end tests."
+}

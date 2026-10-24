@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Tests\Feature\ApiTokenTest" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" tests="24" assertions="202" errors="0" failures="2" skipped="0" time="5.155304">
+    <testcase name="test_issues_a_hashed_expiring_token_and_authenticates_real_bearer_requests" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="22" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="3" time="0.503028">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\ApiTokenTest::test_issues_a_hashed_expiring_token_and_authenticates_real_bearer_requests
+Failed asserting that false is true.
+
+/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php:31</failure>
+    </testcase>
+    <testsuite name="Tests\Feature\ApiTokenTest::test_returns_generic_401_for_invalid_credentials" tests="3" assertions="9" errors="0" failures="0" skipped="0" time="0.757443">
+      <testcase name="test_returns_generic_401_for_invalid_credentials with data set #0" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="42" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="3" time="0.306267"/>
+      <testcase name="test_returns_generic_401_for_invalid_credentials with data set #1" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="42" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="3" time="0.227225"/>
+      <testcase name="test_returns_generic_401_for_invalid_credentials with data set #2" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="42" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="3" time="0.223952"/>
+    </testsuite>
+    <testcase name="test_returns_403_for_temporary_password_and_existing_tokens_after_account_changes" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="60" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="3" time="0.242699"/>
+    <testsuite name="Tests\Feature\ApiTokenTest::test_returns_422_for_invalid_token_requests" tests="8" assertions="31" errors="0" failures="1" skipped="0" time="0.749981">
+      <testcase name="test_returns_422_for_invalid_token_requests with data set #0" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="79" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="4" time="0.022809"/>
+      <testcase name="test_returns_422_for_invalid_token_requests with data set #1" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="79" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="4" time="0.018073"/>
+      <testcase name="test_returns_422_for_invalid_token_requests with data set #2" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="79" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="4" time="0.224048"/>
+      <testcase name="test_returns_422_for_invalid_token_requests with data set #3" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="79" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="4" time="0.245871"/>
+      <testcase name="test_returns_422_for_invalid_token_requests with data set #4" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="79" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="3" time="0.027185">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\ApiTokenTest::test_returns_422_for_invalid_token_requests with data set #4
+Failed to find a validation error in the response for key: 'abilities'
+
+Response has the following JSON validation errors:
+
+{
+    "abilities.0": [
+        "The abilities.0 field has a duplicate value."
+    ],
+    "abilities.1": [
+        "The abilities.1 field has a duplicate value."
+    ]
+}
+
+Failed asserting that an array has the key 'abilities'.
+
+The following errors occurred during the last request:
+
+{
+    "message": "The given data was invalid.",
+    "code": "validation_failed",
+    "errors": {
+        "abilities.0": [
+            "The abilities.0 field has a duplicate value."
+        ],
+        "abilities.1": [
+            "The abilities.1 field has a duplicate value."
+        ]
+    }
+}
+
+/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:46
+/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:1173
+/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:1101
+/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php:84</failure>
+      </testcase>
+      <testcase name="test_returns_422_for_invalid_token_requests with data set #5" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="79" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="4" time="0.022049"/>
+      <testcase name="test_returns_422_for_invalid_token_requests with data set #6" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="79" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="4" time="0.165624"/>
+      <testcase name="test_returns_422_for_invalid_token_requests with data set #7" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="79" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="4" time="0.024321"/>
+    </testsuite>
+    <testsuite name="Tests\Feature\ApiTokenTest::test_returns_401_for_unusable_tokens" tests="5" assertions="5" errors="0" failures="0" skipped="0" time="0.403845">
+      <testcase name="test_returns_401_for_unusable_tokens with data set #0" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="93" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="1" time="0.020393"/>
+      <testcase name="test_returns_401_for_unusable_tokens with data set #1" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="93" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="1" time="0.266965"/>
+      <testcase name="test_returns_401_for_unusable_tokens with data set #2" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="93" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="1" time="0.036744"/>
+      <testcase name="test_returns_401_for_unusable_tokens with data set #3" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="93" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="1" time="0.036890"/>
+      <testcase name="test_returns_401_for_unusable_tokens with data set #4" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="93" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="1" time="0.042852"/>
+    </testsuite>
+    <testcase name="test_rejects_session_and_query_authentication_and_requires_abilities" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="110" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="4" time="0.042009"/>
+    <testcase name="test_revokes_only_owned_tokens_and_current_token_immediately" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="120" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="9" time="0.060626"/>
+    <testcase name="test_limits_active_tokens_and_does_not_count_expired_tokens" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="136" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="5" time="0.480318"/>
+    <testcase name="test_token_does_not_preserve_previous_role_permissions" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="149" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="2" time="0.051117"/>
+    <testcase name="test_token_issuance_throttles_repeated_failures" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="160" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="9" time="1.058640"/>
+    <testcase name="test_authenticated_api_throttle_is_shared_between_tokens_for_the_same_user" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="172" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="122" time="0.805599"/>
+  </testsuite>
+</testsuites>

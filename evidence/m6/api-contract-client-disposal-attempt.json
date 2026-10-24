@@ -1,0 +1,1064 @@
+{
+  "run": "m6-e1e6c206d2aa",
+  "started_at": "2026-10-23T19:26:00.772Z",
+  "transport": "Real loopback HTTP; operation paths/methods and response schemas read from OpenAPI",
+  "cases": [
+    {
+      "name": "Accounts provisioned through administrator, Fortify and teacher-management flows",
+      "status": "passed",
+      "duration_ms": 1065
+    },
+    {
+      "name": "Token issuance uses role-limited abilities and explicit expiry",
+      "status": "passed",
+      "duration_ms": 899
+    },
+    {
+      "name": "Course CRUD, teacher assignment, filtering and pagination match the contract",
+      "status": "passed",
+      "duration_ms": 327
+    },
+    {
+      "name": "Lesson CRUD, publication, ordering and conflicting versions",
+      "status": "passed",
+      "duration_ms": 359
+    },
+    {
+      "name": "Enrollment is idempotent; own learning access and data remain scoped",
+      "status": "passed",
+      "duration_ms": 315
+    },
+    {
+      "name": "Concurrent completion requests persist one row; undo, withdrawal and re-enrollment retain expected history",
+      "status": "passed",
+      "duration_ms": 526
+    },
+    {
+      "name": "All protected operations reject absent bearer authentication",
+      "status": "passed",
+      "duration_ms": 197
+    },
+    {
+      "name": "Token abilities and live policies reject cross-course, forged and invalid requests",
+      "status": "passed",
+      "duration_ms": 397
+    },
+    {
+      "name": "All protected operations enforce their required token abilities",
+      "status": "passed",
+      "duration_ms": 811
+    },
+    {
+      "name": "Staff reports are scoped; archival preserves historical relationships",
+      "status": "passed",
+      "duration_ms": 305
+    },
+    {
+      "name": "Token listing excludes secrets, owned revocation and current revocation take effect",
+      "status": "passed",
+      "duration_ms": 304
+    },
+    {
+      "name": "Disabling a teacher through the administrator form invalidates existing API access",
+      "status": "passed",
+      "duration_ms": 204
+    },
+    {
+      "name": "All 24 documented operations executed with a successful real HTTP response",
+      "status": "passed",
+      "duration_ms": 1
+    }
+  ],
+  "responses": [
+    {
+      "operation": "issueToken",
+      "method": "POST",
+      "path": "/api/v1/tokens",
+      "status": 201,
+      "schema_checked": true,
+      "duration_ms": 239.75
+    },
+    {
+      "operation": "issueToken",
+      "method": "POST",
+      "path": "/api/v1/tokens",
+      "status": 201,
+      "schema_checked": true,
+      "duration_ms": 220.52
+    },
+    {
+      "operation": "issueToken",
+      "method": "POST",
+      "path": "/api/v1/tokens",
+      "status": 201,
+      "schema_checked": true,
+      "duration_ms": 219.33
+    },
+    {
+      "operation": "issueToken",
+      "method": "POST",
+      "path": "/api/v1/tokens",
+      "status": 201,
+      "schema_checked": true,
+      "duration_ms": 218.85
+    },
+    {
+      "operation": "createCourse",
+      "method": "POST",
+      "path": "/api/v1/courses",
+      "status": 201,
+      "schema_checked": true,
+      "duration_ms": 39.39
+    },
+    {
+      "operation": "createCourse",
+      "method": "POST",
+      "path": "/api/v1/courses",
+      "status": 201,
+      "schema_checked": true,
+      "duration_ms": 21.62
+    },
+    {
+      "operation": "updateCourse",
+      "method": "PATCH",
+      "path": "/api/v1/courses/{course}",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 25.44
+    },
+    {
+      "operation": "setCoursePublication",
+      "method": "PUT",
+      "path": "/api/v1/courses/{course}/publication",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 34.79
+    },
+    {
+      "operation": "listCourses",
+      "method": "GET",
+      "path": "/api/v1/courses",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 28.04
+    },
+    {
+      "operation": "listCourses",
+      "method": "GET",
+      "path": "/api/v1/courses",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 18.05
+    },
+    {
+      "operation": "showCourse",
+      "method": "GET",
+      "path": "/api/v1/courses/{course}",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 22.92
+    },
+    {
+      "operation": "showCourse",
+      "method": "GET",
+      "path": "/api/v1/courses/{course}",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 18.47
+    },
+    {
+      "operation": "createLesson",
+      "method": "POST",
+      "path": "/api/v1/courses/{course}/lessons",
+      "status": 201,
+      "schema_checked": true,
+      "duration_ms": 38.5
+    },
+    {
+      "operation": "createLesson",
+      "method": "POST",
+      "path": "/api/v1/courses/{course}/lessons",
+      "status": 201,
+      "schema_checked": true,
+      "duration_ms": 22.89
+    },
+    {
+      "operation": "updateLesson",
+      "method": "PATCH",
+      "path": "/api/v1/courses/{course}/lessons/{lesson}",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 23.91
+    },
+    {
+      "operation": "setLessonPublication",
+      "method": "PUT",
+      "path": "/api/v1/courses/{course}/lessons/{lesson}/publication",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 27.36
+    },
+    {
+      "operation": "showLesson",
+      "method": "GET",
+      "path": "/api/v1/courses/{course}/lessons/{lesson}",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 18.68
+    },
+    {
+      "operation": "listLessons",
+      "method": "GET",
+      "path": "/api/v1/courses/{course}/lessons",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 24.37
+    },
+    {
+      "operation": "showCourse",
+      "method": "GET",
+      "path": "/api/v1/courses/{course}",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 17.73
+    },
+    {
+      "operation": "reorderLessons",
+      "method": "PUT",
+      "path": "/api/v1/courses/{course}/lessons/order",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 36.69
+    },
+    {
+      "operation": "reorderLessons",
+      "method": "PUT",
+      "path": "/api/v1/courses/{course}/lessons/order",
+      "status": 409,
+      "schema_checked": true,
+      "duration_ms": 24.75
+    },
+    {
+      "operation": "enrollStudent",
+      "method": "POST",
+      "path": "/api/v1/enrollments",
+      "status": 201,
+      "schema_checked": true,
+      "duration_ms": 38.56
+    },
+    {
+      "operation": "enrollStudent",
+      "method": "POST",
+      "path": "/api/v1/enrollments",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 27.91
+    },
+    {
+      "operation": "listEnrollments",
+      "method": "GET",
+      "path": "/api/v1/enrollments",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 26.3
+    },
+    {
+      "operation": "listEnrollments",
+      "method": "GET",
+      "path": "/api/v1/enrollments",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 20.46
+    },
+    {
+      "operation": "showProgress",
+      "method": "GET",
+      "path": "/api/v1/enrollments/{enrollment}/progress",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 18.02
+    },
+    {
+      "operation": "completeLesson",
+      "method": "PUT",
+      "path": "/api/v1/enrollments/{enrollment}/lessons/{lesson}/completion",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 21.27
+    },
+    {
+      "operation": "withdrawEnrollment",
+      "method": "DELETE",
+      "path": "/api/v1/enrollments/{enrollment}",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 18.94
+    },
+    {
+      "operation": "listLessons",
+      "method": "GET",
+      "path": "/api/v1/courses/{course}/lessons",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 17.06
+    },
+    {
+      "operation": "showLesson",
+      "method": "GET",
+      "path": "/api/v1/courses/{course}/lessons/{lesson}",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 15.28
+    },
+    {
+      "operation": "completeLesson",
+      "method": "PUT",
+      "path": "/api/v1/enrollments/{enrollment}/lessons/{lesson}/completion",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 37.35
+    },
+    {
+      "operation": "completeLesson",
+      "method": "PUT",
+      "path": "/api/v1/enrollments/{enrollment}/lessons/{lesson}/completion",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 38.32
+    },
+    {
+      "operation": "completeLesson",
+      "method": "PUT",
+      "path": "/api/v1/enrollments/{enrollment}/lessons/{lesson}/completion",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 39.75
+    },
+    {
+      "operation": "completeLesson",
+      "method": "PUT",
+      "path": "/api/v1/enrollments/{enrollment}/lessons/{lesson}/completion",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 44.95
+    },
+    {
+      "operation": "completeLesson",
+      "method": "PUT",
+      "path": "/api/v1/enrollments/{enrollment}/lessons/{lesson}/completion",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 48.04
+    },
+    {
+      "operation": "completeLesson",
+      "method": "PUT",
+      "path": "/api/v1/enrollments/{enrollment}/lessons/{lesson}/completion",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 71.72
+    },
+    {
+      "operation": "completeLesson",
+      "method": "PUT",
+      "path": "/api/v1/enrollments/{enrollment}/lessons/{lesson}/completion",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 75.33
+    },
+    {
+      "operation": "completeLesson",
+      "method": "PUT",
+      "path": "/api/v1/enrollments/{enrollment}/lessons/{lesson}/completion",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 94.51
+    },
+    {
+      "operation": "showProgress",
+      "method": "GET",
+      "path": "/api/v1/enrollments/{enrollment}/progress",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 21.13
+    },
+    {
+      "operation": "undoCompletion",
+      "method": "DELETE",
+      "path": "/api/v1/enrollments/{enrollment}/lessons/{lesson}/completion",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 37.85
+    },
+    {
+      "operation": "undoCompletion",
+      "method": "DELETE",
+      "path": "/api/v1/enrollments/{enrollment}/lessons/{lesson}/completion",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 39.31
+    },
+    {
+      "operation": "completeLesson",
+      "method": "PUT",
+      "path": "/api/v1/enrollments/{enrollment}/lessons/{lesson}/completion",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 29.4
+    },
+    {
+      "operation": "withdrawEnrollment",
+      "method": "DELETE",
+      "path": "/api/v1/enrollments/{enrollment}",
+      "status": 204,
+      "schema_checked": false,
+      "duration_ms": 21.89
+    },
+    {
+      "operation": "completeLesson",
+      "method": "PUT",
+      "path": "/api/v1/enrollments/{enrollment}/lessons/{lesson}/completion",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 18.9
+    },
+    {
+      "operation": "enrollStudent",
+      "method": "POST",
+      "path": "/api/v1/enrollments",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 23.4
+    },
+    {
+      "operation": "listTokens",
+      "method": "GET",
+      "path": "/api/v1/tokens",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 10.97
+    },
+    {
+      "operation": "revokeCurrentToken",
+      "method": "DELETE",
+      "path": "/api/v1/tokens/current",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 8.48
+    },
+    {
+      "operation": "revokeOwnedToken",
+      "method": "DELETE",
+      "path": "/api/v1/tokens/{token}",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 10.59
+    },
+    {
+      "operation": "listCourses",
+      "method": "GET",
+      "path": "/api/v1/courses",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 10.71
+    },
+    {
+      "operation": "createCourse",
+      "method": "POST",
+      "path": "/api/v1/courses",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 9.29
+    },
+    {
+      "operation": "showCourse",
+      "method": "GET",
+      "path": "/api/v1/courses/{course}",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 8.61
+    },
+    {
+      "operation": "updateCourse",
+      "method": "PATCH",
+      "path": "/api/v1/courses/{course}",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 7.97
+    },
+    {
+      "operation": "archiveCourse",
+      "method": "DELETE",
+      "path": "/api/v1/courses/{course}",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 7.78
+    },
+    {
+      "operation": "setCoursePublication",
+      "method": "PUT",
+      "path": "/api/v1/courses/{course}/publication",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 7.51
+    },
+    {
+      "operation": "listLessons",
+      "method": "GET",
+      "path": "/api/v1/courses/{course}/lessons",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 7.92
+    },
+    {
+      "operation": "createLesson",
+      "method": "POST",
+      "path": "/api/v1/courses/{course}/lessons",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 8.78
+    },
+    {
+      "operation": "showLesson",
+      "method": "GET",
+      "path": "/api/v1/courses/{course}/lessons/{lesson}",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 9.26
+    },
+    {
+      "operation": "updateLesson",
+      "method": "PATCH",
+      "path": "/api/v1/courses/{course}/lessons/{lesson}",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 7.79
+    },
+    {
+      "operation": "archiveLesson",
+      "method": "DELETE",
+      "path": "/api/v1/courses/{course}/lessons/{lesson}",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 8.02
+    },
+    {
+      "operation": "setLessonPublication",
+      "method": "PUT",
+      "path": "/api/v1/courses/{course}/lessons/{lesson}/publication",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 8.25
+    },
+    {
+      "operation": "reorderLessons",
+      "method": "PUT",
+      "path": "/api/v1/courses/{course}/lessons/order",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 7.91
+    },
+    {
+      "operation": "listEnrollments",
+      "method": "GET",
+      "path": "/api/v1/enrollments",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 7.88
+    },
+    {
+      "operation": "enrollStudent",
+      "method": "POST",
+      "path": "/api/v1/enrollments",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 7.83
+    },
+    {
+      "operation": "withdrawEnrollment",
+      "method": "DELETE",
+      "path": "/api/v1/enrollments/{enrollment}",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 7.94
+    },
+    {
+      "operation": "showProgress",
+      "method": "GET",
+      "path": "/api/v1/enrollments/{enrollment}/progress",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 8.25
+    },
+    {
+      "operation": "completeLesson",
+      "method": "PUT",
+      "path": "/api/v1/enrollments/{enrollment}/lessons/{lesson}/completion",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 7.95
+    },
+    {
+      "operation": "undoCompletion",
+      "method": "DELETE",
+      "path": "/api/v1/enrollments/{enrollment}/lessons/{lesson}/completion",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 8.21
+    },
+    {
+      "operation": "academyOverview",
+      "method": "GET",
+      "path": "/api/v1/reports/overview",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 8.28
+    },
+    {
+      "operation": "issueToken",
+      "method": "POST",
+      "path": "/api/v1/tokens",
+      "status": 201,
+      "schema_checked": true,
+      "duration_ms": 215.55
+    },
+    {
+      "operation": "createCourse",
+      "method": "POST",
+      "path": "/api/v1/courses",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 20.47
+    },
+    {
+      "operation": "updateCourse",
+      "method": "PATCH",
+      "path": "/api/v1/courses/{course}",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 23.76
+    },
+    {
+      "operation": "updateCourse",
+      "method": "PATCH",
+      "path": "/api/v1/courses/{course}",
+      "status": 422,
+      "schema_checked": true,
+      "duration_ms": 21.46
+    },
+    {
+      "operation": "updateCourse",
+      "method": "PATCH",
+      "path": "/api/v1/courses/{course}",
+      "status": 422,
+      "schema_checked": true,
+      "duration_ms": 20.92
+    },
+    {
+      "operation": "enrollStudent",
+      "method": "POST",
+      "path": "/api/v1/enrollments",
+      "status": 422,
+      "schema_checked": true,
+      "duration_ms": 17.61
+    },
+    {
+      "operation": "enrollStudent",
+      "method": "POST",
+      "path": "/api/v1/enrollments",
+      "status": 422,
+      "schema_checked": true,
+      "duration_ms": 16.6
+    },
+    {
+      "operation": "showLesson",
+      "method": "GET",
+      "path": "/api/v1/courses/{course}/lessons/{lesson}",
+      "status": 404,
+      "schema_checked": true,
+      "duration_ms": 17.81
+    },
+    {
+      "operation": "createCourse",
+      "method": "POST",
+      "path": "/api/v1/courses",
+      "status": 422,
+      "schema_checked": true,
+      "duration_ms": 17.72
+    },
+    {
+      "operation": "listCourses",
+      "method": "GET",
+      "path": "/api/v1/courses",
+      "status": 422,
+      "schema_checked": true,
+      "duration_ms": 15
+    },
+    {
+      "operation": "listCourses",
+      "method": "GET",
+      "path": "/api/v1/courses",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 9.27
+    },
+    {
+      "operation": "issueToken",
+      "method": "POST",
+      "path": "/api/v1/tokens",
+      "status": 201,
+      "schema_checked": true,
+      "duration_ms": 215.73
+    },
+    {
+      "operation": "issueToken",
+      "method": "POST",
+      "path": "/api/v1/tokens",
+      "status": 201,
+      "schema_checked": true,
+      "duration_ms": 220.78
+    },
+    {
+      "operation": "listTokens",
+      "method": "GET",
+      "path": "/api/v1/tokens",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 18.57
+    },
+    {
+      "operation": "revokeCurrentToken",
+      "method": "DELETE",
+      "path": "/api/v1/tokens/current",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 18.42
+    },
+    {
+      "operation": "revokeOwnedToken",
+      "method": "DELETE",
+      "path": "/api/v1/tokens/{token}",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 16
+    },
+    {
+      "operation": "listCourses",
+      "method": "GET",
+      "path": "/api/v1/courses",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 15.98
+    },
+    {
+      "operation": "createCourse",
+      "method": "POST",
+      "path": "/api/v1/courses",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 16.48
+    },
+    {
+      "operation": "showCourse",
+      "method": "GET",
+      "path": "/api/v1/courses/{course}",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 12.71
+    },
+    {
+      "operation": "updateCourse",
+      "method": "PATCH",
+      "path": "/api/v1/courses/{course}",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 14.24
+    },
+    {
+      "operation": "archiveCourse",
+      "method": "DELETE",
+      "path": "/api/v1/courses/{course}",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 15.76
+    },
+    {
+      "operation": "setCoursePublication",
+      "method": "PUT",
+      "path": "/api/v1/courses/{course}/publication",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 15.76
+    },
+    {
+      "operation": "listLessons",
+      "method": "GET",
+      "path": "/api/v1/courses/{course}/lessons",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 14.29
+    },
+    {
+      "operation": "createLesson",
+      "method": "POST",
+      "path": "/api/v1/courses/{course}/lessons",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 15.81
+    },
+    {
+      "operation": "showLesson",
+      "method": "GET",
+      "path": "/api/v1/courses/{course}/lessons/{lesson}",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 12.66
+    },
+    {
+      "operation": "updateLesson",
+      "method": "PATCH",
+      "path": "/api/v1/courses/{course}/lessons/{lesson}",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 16.28
+    },
+    {
+      "operation": "archiveLesson",
+      "method": "DELETE",
+      "path": "/api/v1/courses/{course}/lessons/{lesson}",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 18.05
+    },
+    {
+      "operation": "setLessonPublication",
+      "method": "PUT",
+      "path": "/api/v1/courses/{course}/lessons/{lesson}/publication",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 15.92
+    },
+    {
+      "operation": "reorderLessons",
+      "method": "PUT",
+      "path": "/api/v1/courses/{course}/lessons/order",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 15.93
+    },
+    {
+      "operation": "listEnrollments",
+      "method": "GET",
+      "path": "/api/v1/enrollments",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 14.13
+    },
+    {
+      "operation": "enrollStudent",
+      "method": "POST",
+      "path": "/api/v1/enrollments",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 16.54
+    },
+    {
+      "operation": "withdrawEnrollment",
+      "method": "DELETE",
+      "path": "/api/v1/enrollments/{enrollment}",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 15.86
+    },
+    {
+      "operation": "showProgress",
+      "method": "GET",
+      "path": "/api/v1/enrollments/{enrollment}/progress",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 18.79
+    },
+    {
+      "operation": "completeLesson",
+      "method": "PUT",
+      "path": "/api/v1/enrollments/{enrollment}/lessons/{lesson}/completion",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 18.01
+    },
+    {
+      "operation": "undoCompletion",
+      "method": "DELETE",
+      "path": "/api/v1/enrollments/{enrollment}/lessons/{lesson}/completion",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 18.97
+    },
+    {
+      "operation": "academyOverview",
+      "method": "GET",
+      "path": "/api/v1/reports/overview",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 18.14
+    },
+    {
+      "operation": "academyOverview",
+      "method": "GET",
+      "path": "/api/v1/reports/overview",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 35.71
+    },
+    {
+      "operation": "academyOverview",
+      "method": "GET",
+      "path": "/api/v1/reports/overview",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 25.36
+    },
+    {
+      "operation": "academyOverview",
+      "method": "GET",
+      "path": "/api/v1/reports/overview",
+      "status": 403,
+      "schema_checked": true,
+      "duration_ms": 13.57
+    },
+    {
+      "operation": "archiveLesson",
+      "method": "DELETE",
+      "path": "/api/v1/courses/{course}/lessons/{lesson}",
+      "status": 204,
+      "schema_checked": false,
+      "duration_ms": 20.4
+    },
+    {
+      "operation": "showLesson",
+      "method": "GET",
+      "path": "/api/v1/courses/{course}/lessons/{lesson}",
+      "status": 404,
+      "schema_checked": true,
+      "duration_ms": 14.25
+    },
+    {
+      "operation": "showProgress",
+      "method": "GET",
+      "path": "/api/v1/enrollments/{enrollment}/progress",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 17.57
+    },
+    {
+      "operation": "archiveCourse",
+      "method": "DELETE",
+      "path": "/api/v1/courses/{course}",
+      "status": 204,
+      "schema_checked": false,
+      "duration_ms": 21.42
+    },
+    {
+      "operation": "showCourse",
+      "method": "GET",
+      "path": "/api/v1/courses/{course}",
+      "status": 404,
+      "schema_checked": true,
+      "duration_ms": 18.99
+    },
+    {
+      "operation": "issueToken",
+      "method": "POST",
+      "path": "/api/v1/tokens",
+      "status": 201,
+      "schema_checked": true,
+      "duration_ms": 218.64
+    },
+    {
+      "operation": "listTokens",
+      "method": "GET",
+      "path": "/api/v1/tokens",
+      "status": 200,
+      "schema_checked": true,
+      "duration_ms": 23.11
+    },
+    {
+      "operation": "revokeOwnedToken",
+      "method": "DELETE",
+      "path": "/api/v1/tokens/{token}",
+      "status": 204,
+      "schema_checked": false,
+      "duration_ms": 19.02
+    },
+    {
+      "operation": "listTokens",
+      "method": "GET",
+      "path": "/api/v1/tokens",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 12.85
+    },
+    {
+      "operation": "revokeCurrentToken",
+      "method": "DELETE",
+      "path": "/api/v1/tokens/current",
+      "status": 204,
+      "schema_checked": false,
+      "duration_ms": 19.72
+    },
+    {
+      "operation": "listTokens",
+      "method": "GET",
+      "path": "/api/v1/tokens",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 10.1
+    },
+    {
+      "operation": "listCourses",
+      "method": "GET",
+      "path": "/api/v1/courses",
+      "status": 401,
+      "schema_checked": true,
+      "duration_ms": 10.33
+    }
+  ],
+  "persistence": [
+    {
+      "name": "Supported account flows persist intended roles",
+      "status": "passed"
+    },
+    {
+      "name": "Published course and assigned teacher persisted",
+      "status": "passed"
+    },
+    {
+      "name": "Lesson order, content and publication persisted",
+      "status": "passed"
+    },
+    {
+      "name": "Duplicate enrollment has one active row",
+      "status": "passed"
+    },
+    {
+      "name": "Eight concurrent PUTs produce one completion",
+      "status": "passed"
+    },
+    {
+      "name": "Withdrawal retains one historical completion",
+      "status": "passed"
+    },
+    {
+      "name": "Archived curriculum retains enrollment and completion history",
+      "status": "passed"
+    },
+    {
+      "name": "Teacher deactivation persisted",
+      "status": "passed"
+    }
+  ],
+  "operation_coverage": {
+    "documented": 24,
+    "successful": 24
+  }
+}

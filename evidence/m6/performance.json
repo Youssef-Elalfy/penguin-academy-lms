@@ -1,0 +1,2638 @@
+{
+  "run": "m6-b2bc069c945f",
+  "started_at": "2026-10-23T19:24:03.274Z",
+  "environment": {
+    "os": "Linux 6.18.55",
+    "arch": "x64",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "logical_cpus": 9,
+    "host_memory_bytes": 10451439616,
+    "server": "PHP artisan serve, 4 worker processes; loopback HTTP; BCRYPT_ROUNDS=4 for disposable fixtures"
+  },
+  "measurements": [
+    {
+      "role": "admin",
+      "uri": "/api/v1/courses?per_page=1",
+      "status": 200,
+      "duration_ms": 45.654,
+      "query_count": 14,
+      "business_read_query_count": 3,
+      "query_ms": 6.86,
+      "peak_php_memory_bytes": 31457280,
+      "response_bytes": 2422,
+      "returned_rows": 1,
+      "query_templates": [
+        {
+          "sql": "select * from `personal_access_tokens` where `personal_access_tokens`.`id` = ? limit 1",
+          "ms": 1.46
+        },
+        {
+          "sql": "select * from `users` where `users`.`id` = ? limit 1",
+          "ms": 0.37
+        },
+        {
+          "sql": "update `personal_access_tokens` set `last_used_at` = ?, `personal_access_tokens`.`updated_at` = ? where `id` = ?",
+          "ms": 1.36
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.31
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.15
+        },
+        {
+          "sql": "insert ignore into `cache` (`key`, `value`, `expiration`) values (?, ?, ?)",
+          "ms": 0.58
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.19
+        },
+        {
+          "sql": "insert ignore into `cache` (`key`, `value`, `expiration`) values (?, ?, ?)",
+          "ms": 0.56
+        },
+        {
+          "sql": "select * from `cache` where `key` = ? limit 1 for update",
+          "ms": 0.22
+        },
+        {
+          "sql": "update `cache` set `value` = ? where `key` = ?",
+          "ms": 0.12
+        },
+        {
+          "sql": "select count(*) as `aggregate` from `courses` where `courses`.`deleted_at` is null",
+          "ms": 0.48
+        },
+        {
+          "sql": "select `courses`.*, (select count(*) from `lessons` where `courses`.`id` = `lessons`.`course_id` and `lessons`.`deleted_at` is null) as `lessons_count`, (select count(*) from `enrollments` where `courses`.`id` = `enrollments`.`course_id` and `withdrawn_at` is null) as `enrollments_count` from `courses` where `courses`.`deleted_at` is null order by `id` desc limit 1 offset 0",
+          "ms": 0.51
+        },
+        {
+          "sql": "select * from `users` where `users`.`id` in (4695)",
+          "ms": 0.23
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.32
+        }
+      ],
+      "explain": []
+    },
+    {
+      "role": "admin",
+      "uri": "/api/v1/courses?per_page=100",
+      "status": 200,
+      "duration_ms": 44.656,
+      "query_count": 11,
+      "business_read_query_count": 3,
+      "query_ms": 5.49,
+      "peak_php_memory_bytes": 31457280,
+      "response_bytes": 18159,
+      "returned_rows": 30,
+      "query_templates": [
+        {
+          "sql": "select * from `personal_access_tokens` where `personal_access_tokens`.`id` = ? limit 1",
+          "ms": 1.47
+        },
+        {
+          "sql": "select * from `users` where `users`.`id` = ? limit 1",
+          "ms": 0.42
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.22
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.15
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.12
+        },
+        {
+          "sql": "select * from `cache` where `key` = ? limit 1 for update",
+          "ms": 0.15
+        },
+        {
+          "sql": "update `cache` set `value` = ? where `key` = ?",
+          "ms": 0.15
+        },
+        {
+          "sql": "select count(*) as `aggregate` from `courses` where `courses`.`deleted_at` is null",
+          "ms": 0.38
+        },
+        {
+          "sql": "select `courses`.*, (select count(*) from `lessons` where `courses`.`id` = `lessons`.`course_id` and `lessons`.`deleted_at` is null) as `lessons_count`, (select count(*) from `enrollments` where `courses`.`id` = `enrollments`.`course_id` and `withdrawn_at` is null) as `enrollments_count` from `courses` where `courses`.`deleted_at` is null order by `id` desc limit 100 offset 0",
+          "ms": 1.64
+        },
+        {
+          "sql": "select * from `users` where `users`.`id` in (4691, 4692, 4693, 4694, 4695)",
+          "ms": 0.31
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.48
+        }
+      ],
+      "explain": []
+    },
+    {
+      "role": "admin",
+      "uri": "/api/v1/enrollments?per_page=1",
+      "status": 200,
+      "duration_ms": 40.433,
+      "query_count": 12,
+      "business_read_query_count": 4,
+      "query_ms": 6.09,
+      "peak_php_memory_bytes": 29360128,
+      "response_bytes": 2332,
+      "returned_rows": 1,
+      "query_templates": [
+        {
+          "sql": "select * from `personal_access_tokens` where `personal_access_tokens`.`id` = ? limit 1",
+          "ms": 1.56
+        },
+        {
+          "sql": "select * from `users` where `users`.`id` = ? limit 1",
+          "ms": 0.46
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.29
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.26
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.19
+        },
+        {
+          "sql": "select * from `cache` where `key` = ? limit 1 for update",
+          "ms": 0.21
+        },
+        {
+          "sql": "update `cache` set `value` = ? where `key` = ?",
+          "ms": 0.21
+        },
+        {
+          "sql": "select count(*) as `aggregate` from `enrollments` where exists (select * from `courses` where `enrollments`.`course_id` = `courses`.`id` and `courses`.`deleted_at` is null) and `withdrawn_at` is null",
+          "ms": 1.17
+        },
+        {
+          "sql": "select `enrollments`.*, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at`, (select `lessons`.`id` from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and not exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `enrollments`.`withdrawn_at` is null and exists (select 1 from `courses` as `available_course` where `available_course`.`id` = `enrollments`.`course_id` and `available_course`.`deleted_at` is null and `available_course`.`published_at` is not null and `available_course`.`published_at` <= ?) and `lessons`.`deleted_at` is null order by `lessons`.`position` asc, `lessons`.`id` asc limit 1) as `next_lesson_id` from `enrollments` where exists (select * from `courses` where `enrollments`.`course_id` = `courses`.`id` and `courses`.`deleted_at` is null) and `withdrawn_at` is null order by `id` desc limit 1 offset 0",
+          "ms": 1.01
+        },
+        {
+          "sql": "select `id`, `title`, `published_at` from `courses` where `courses`.`id` in (1788) and `courses`.`deleted_at` is null",
+          "ms": 0.2
+        },
+        {
+          "sql": "select `id`, `name`, `email` from `users` where `users`.`id` in (4995)",
+          "ms": 0.18
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.35
+        }
+      ],
+      "explain": [
+        {
+          "sql_template": "select `enrollments`.*, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at`, (select `lessons`.`id` from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and not exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `enrollments`.`withdrawn_at` is null and exists (select 1 from `courses` as `available_course` where `available_course`.`id` = `enrollments`.`course_id` and `available_course`.`deleted_at` is null and `available_course`.`published_at` is not null and `available_course`.`published_at` <= ?) and `lessons`.`deleted_at` is null order by `lessons`.`position` asc, `lessons`.`id` asc limit 1) as `next_lesson_id` from `enrollments` where exists (select * from `courses` where `enrollments`.`course_id` = `courses`.`id` and `courses`.`deleted_at` is null) and `withdrawn_at` is null order by `id` desc limit 1 offset 0",
+          "plan": [
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "enrollments",
+              "partitions": null,
+              "type": "index",
+              "possible_keys": "enrollments_course_id_withdrawn_at_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": null,
+              "rows": 2,
+              "filtered": 10,
+              "Extra": "Using where; Backward index scan"
+            },
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "courses",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,courses_deleted_at_published_at_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.course_id",
+              "rows": 1,
+              "filtered": 50,
+              "Extra": "Using where"
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "available_course",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,courses_deleted_at_published_at_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.course_id",
+              "rows": 1,
+              "filtered": 50,
+              "Extra": "Using where; Using temporary; Using filesort"
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_position_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.course_id",
+              "rows": 600,
+              "filtered": 1.0000001192092896,
+              "Extra": "Using where"
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "progress_completion",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "16",
+              "ref": "penguin_academy_test.enrollments.id,penguin_academy_test.lessons.id",
+              "rows": 1,
+              "filtered": 100,
+              "Extra": "Using where; Not exists"
+            },
+            {
+              "id": 5,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 10,
+              "Extra": "Using where"
+            },
+            {
+              "id": 5,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity_lesson",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.activity.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 3,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "progress_completion",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 100,
+              "Extra": "Using where"
+            },
+            {
+              "id": 3,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.progress_completion.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 2,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_deleted_at_is_published_index",
+              "key_len": "14",
+              "ref": "penguin_academy_test.enrollments.course_id,const,const",
+              "rows": 600,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "admin",
+      "uri": "/api/v1/enrollments?per_page=100",
+      "status": 200,
+      "duration_ms": 63.673,
+      "query_count": 12,
+      "business_read_query_count": 4,
+      "query_ms": 16.71,
+      "peak_php_memory_bytes": 31457280,
+      "response_bytes": 45966,
+      "returned_rows": 100,
+      "query_templates": [
+        {
+          "sql": "select * from `personal_access_tokens` where `personal_access_tokens`.`id` = ? limit 1",
+          "ms": 1.68
+        },
+        {
+          "sql": "select * from `users` where `users`.`id` = ? limit 1",
+          "ms": 0.33
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.25
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.17
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.13
+        },
+        {
+          "sql": "select * from `cache` where `key` = ? limit 1 for update",
+          "ms": 0.16
+        },
+        {
+          "sql": "update `cache` set `value` = ? where `key` = ?",
+          "ms": 0.47
+        },
+        {
+          "sql": "select count(*) as `aggregate` from `enrollments` where exists (select * from `courses` where `enrollments`.`course_id` = `courses`.`id` and `courses`.`deleted_at` is null) and `withdrawn_at` is null",
+          "ms": 1.08
+        },
+        {
+          "sql": "select `enrollments`.*, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at`, (select `lessons`.`id` from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and not exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `enrollments`.`withdrawn_at` is null and exists (select 1 from `courses` as `available_course` where `available_course`.`id` = `enrollments`.`course_id` and `available_course`.`deleted_at` is null and `available_course`.`published_at` is not null and `available_course`.`published_at` <= ?) and `lessons`.`deleted_at` is null order by `lessons`.`position` asc, `lessons`.`id` asc limit 1) as `next_lesson_id` from `enrollments` where exists (select * from `courses` where `enrollments`.`course_id` = `courses`.`id` and `courses`.`deleted_at` is null) and `withdrawn_at` is null order by `id` desc limit 100 offset 0",
+          "ms": 11.25
+        },
+        {
+          "sql": "select `id`, `title`, `published_at` from `courses` where `courses`.`id` in (1788) and `courses`.`deleted_at` is null",
+          "ms": 0.3
+        },
+        {
+          "sql": "select `id`, `name`, `email` from `users` where `users`.`id` in (4698, 4701, 4704, 4707, 4710, 4713, 4716, 4719, 4722, 4725, 4728, 4731, 4734, 4737, 4740, 4743, 4746, 4749, 4752, 4755, 4758, 4761, 4764, 4767, 4770, 4773, 4776, 4779, 4782, 4785, 4788, 4791, 4794, 4797, 4800, 4803, 4806, 4809, 4812, 4815, 4818, 4821, 4824, 4827, 4830, 4833, 4836, 4839, 4842, 4845, 4848, 4851, 4854, 4857, 4860, 4863, 4866, 4869, 4872, 4875, 4878, 4881, 4884, 4887, 4890, 4893, 4896, 4899, 4902, 4905, 4908, 4911, 4914, 4917, 4920, 4923, 4926, 4929, 4932, 4935, 4938, 4941, 4944, 4947, 4950, 4953, 4956, 4959, 4962, 4965, 4968, 4971, 4974, 4977, 4980, 4983, 4986, 4989, 4992, 4995)",
+          "ms": 0.54
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.35
+        }
+      ],
+      "explain": [
+        {
+          "sql_template": "select `enrollments`.*, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at`, (select `lessons`.`id` from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and not exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `enrollments`.`withdrawn_at` is null and exists (select 1 from `courses` as `available_course` where `available_course`.`id` = `enrollments`.`course_id` and `available_course`.`deleted_at` is null and `available_course`.`published_at` is not null and `available_course`.`published_at` <= ?) and `lessons`.`deleted_at` is null order by `lessons`.`position` asc, `lessons`.`id` asc limit 1) as `next_lesson_id` from `enrollments` where exists (select * from `courses` where `enrollments`.`course_id` = `courses`.`id` and `courses`.`deleted_at` is null) and `withdrawn_at` is null order by `id` desc limit 100 offset 0",
+          "plan": [
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "enrollments",
+              "partitions": null,
+              "type": "index",
+              "possible_keys": "enrollments_course_id_withdrawn_at_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": null,
+              "rows": 200,
+              "filtered": 10,
+              "Extra": "Using where; Backward index scan"
+            },
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "courses",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,courses_deleted_at_published_at_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.course_id",
+              "rows": 1,
+              "filtered": 50,
+              "Extra": "Using where"
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "available_course",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,courses_deleted_at_published_at_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.course_id",
+              "rows": 1,
+              "filtered": 50,
+              "Extra": "Using where; Using temporary; Using filesort"
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_position_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.course_id",
+              "rows": 600,
+              "filtered": 1.0000001192092896,
+              "Extra": "Using where"
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "progress_completion",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "16",
+              "ref": "penguin_academy_test.enrollments.id,penguin_academy_test.lessons.id",
+              "rows": 1,
+              "filtered": 100,
+              "Extra": "Using where; Not exists"
+            },
+            {
+              "id": 5,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 10,
+              "Extra": "Using where"
+            },
+            {
+              "id": 5,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity_lesson",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.activity.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 3,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "progress_completion",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 100,
+              "Extra": "Using where"
+            },
+            {
+              "id": 3,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.progress_completion.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 2,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_deleted_at_is_published_index",
+              "key_len": "14",
+              "ref": "penguin_academy_test.enrollments.course_id,const,const",
+              "rows": 600,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "admin",
+      "uri": "/api/v1/reports/overview?per_page=1",
+      "status": 200,
+      "duration_ms": 480.359,
+      "query_count": 17,
+      "business_read_query_count": 8,
+      "query_ms": 435.05,
+      "peak_php_memory_bytes": 29360128,
+      "response_bytes": 2576,
+      "returned_rows": 1,
+      "query_templates": [
+        {
+          "sql": "select * from `personal_access_tokens` where `personal_access_tokens`.`id` = ? limit 1",
+          "ms": 1.85
+        },
+        {
+          "sql": "select * from `users` where `users`.`id` = ? limit 1",
+          "ms": 0.81
+        },
+        {
+          "sql": "update `personal_access_tokens` set `last_used_at` = ?, `personal_access_tokens`.`updated_at` = ? where `id` = ?",
+          "ms": 1.45
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.95
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.25
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.14
+        },
+        {
+          "sql": "select * from `cache` where `key` = ? limit 1 for update",
+          "ms": 0.16
+        },
+        {
+          "sql": "update `cache` set `value` = ? where `key` = ?",
+          "ms": 0.12
+        },
+        {
+          "sql": "select COUNT(*) AS current_enrollments, COALESCE(SUM(eligible_lessons_count), 0) AS eligible_assignments, COALESCE(SUM(completed_lessons_count), 0) AS completed_lessons, COALESCE(SUM(CASE WHEN eligible_lessons_count > 0 AND completed_lessons_count = eligible_lessons_count THEN 1 ELSE 0 END), 0) AS completed_enrollments, COALESCE(ROUND(AVG(CASE WHEN eligible_lessons_count > 0 THEN LEAST(100, completed_lessons_count * 100.0 / eligible_lessons_count) ELSE 0 END), 2), 0) AS average_progress, MAX(last_completed_at) AS last_completed_at from (select `enrollments`.`id`, `enrollments`.`course_id`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `courses`.`deleted_at` is null)) as `learning_rows` limit 1",
+          "ms": 155.36
+        },
+        {
+          "sql": "select count(distinct `student_id`) as `aggregate` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `courses`.`deleted_at` is null) and exists (select * from `users` where `enrollments`.`student_id` = `users`.`id` and `role` = ? and `is_active` = ?)",
+          "ms": 4.77
+        },
+        {
+          "sql": "select count(*) as `aggregate` from `courses` where `published_at` is not null and `published_at` <= ? and `courses`.`deleted_at` is null",
+          "ms": 0.31
+        },
+        {
+          "sql": "select count(*) as `aggregate` from `courses` where (`published_at` is null or `published_at` > ?) and `courses`.`deleted_at` is null",
+          "ms": 0.28
+        },
+        {
+          "sql": "select count(*) as `aggregate` from `users` where `role` = ? and `is_active` = ?",
+          "ms": 0.48
+        },
+        {
+          "sql": "select count(*) as `aggregate` from `users` where `role` = ? and `is_active` = ?",
+          "ms": 0.17
+        },
+        {
+          "sql": "select count(*) as `aggregate` from `courses` left join (select COUNT(*) AS current_enrollments, COALESCE(SUM(eligible_lessons_count), 0) AS eligible_assignments, COALESCE(SUM(completed_lessons_count), 0) AS completed_lessons, COALESCE(SUM(CASE WHEN eligible_lessons_count > 0 AND completed_lessons_count = eligible_lessons_count THEN 1 ELSE 0 END), 0) AS completed_enrollments, COALESCE(ROUND(AVG(CASE WHEN eligible_lessons_count > 0 THEN LEAST(100, completed_lessons_count * 100.0 / eligible_lessons_count) ELSE 0 END), 2), 0) AS average_progress, MAX(last_completed_at) AS last_completed_at, `course_id` from (select `enrollments`.`id`, `enrollments`.`course_id`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `courses`.`deleted_at` is null)) as `learning_rows` group by `course_id`) as `course_learning` on `course_learning`.`course_id` = `courses`.`id` where `courses`.`deleted_at` is null",
+          "ms": 133.31
+        },
+        {
+          "sql": "select `courses`.*, (select count(*) from `lessons` where `courses`.`id` = `lessons`.`course_id` and `lessons`.`deleted_at` is null) as `lessons_count`, (select count(*) from `lessons` where `courses`.`id` = `lessons`.`course_id` and `is_published` = ? and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, COALESCE(course_learning.current_enrollments, 0) AS enrollments_count, COALESCE(course_learning.completed_lessons, 0) AS completed_lessons_count, COALESCE(course_learning.completed_enrollments, 0) AS completed_enrollments_count, COALESCE(course_learning.average_progress, 0) AS average_progress, CASE WHEN course_learning.current_enrollments > 0 THEN ROUND(course_learning.completed_enrollments * 100.0 / course_learning.current_enrollments, 2) ELSE 0 END AS completion_rate, `course_learning`.`last_completed_at` from `courses` left join (select COUNT(*) AS current_enrollments, COALESCE(SUM(eligible_lessons_count), 0) AS eligible_assignments, COALESCE(SUM(completed_lessons_count), 0) AS completed_lessons, COALESCE(SUM(CASE WHEN eligible_lessons_count > 0 AND completed_lessons_count = eligible_lessons_count THEN 1 ELSE 0 END), 0) AS completed_enrollments, COALESCE(ROUND(AVG(CASE WHEN eligible_lessons_count > 0 THEN LEAST(100, completed_lessons_count * 100.0 / eligible_lessons_count) ELSE 0 END), 2), 0) AS average_progress, MAX(last_completed_at) AS last_completed_at, `course_id` from (select `enrollments`.`id`, `enrollments`.`course_id`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `courses`.`deleted_at` is null)) as `learning_rows` group by `course_id`) as `course_learning` on `course_learning`.`course_id` = `courses`.`id` where `courses`.`deleted_at` is null order by `courses`.`id` desc limit 1 offset 0",
+          "ms": 134.21
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.43
+        }
+      ],
+      "explain": [
+        {
+          "sql_template": "select COUNT(*) AS current_enrollments, COALESCE(SUM(eligible_lessons_count), 0) AS eligible_assignments, COALESCE(SUM(completed_lessons_count), 0) AS completed_lessons, COALESCE(SUM(CASE WHEN eligible_lessons_count > 0 AND completed_lessons_count = eligible_lessons_count THEN 1 ELSE 0 END), 0) AS completed_enrollments, COALESCE(ROUND(AVG(CASE WHEN eligible_lessons_count > 0 THEN LEAST(100, completed_lessons_count * 100.0 / eligible_lessons_count) ELSE 0 END), 2), 0) AS average_progress, MAX(last_completed_at) AS last_completed_at from (select `enrollments`.`id`, `enrollments`.`course_id`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `courses`.`deleted_at` is null)) as `learning_rows` limit 1",
+          "plan": [
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "<derived2>",
+              "partitions": null,
+              "type": "ALL",
+              "possible_keys": null,
+              "key": null,
+              "key_len": null,
+              "ref": null,
+              "rows": 150,
+              "filtered": 100,
+              "Extra": null
+            },
+            {
+              "id": 2,
+              "select_type": "DERIVED",
+              "table": "enrollments",
+              "partitions": null,
+              "type": "index",
+              "possible_keys": "enrollments_course_id_withdrawn_at_index",
+              "key": "enrollments_course_id_withdrawn_at_index",
+              "key_len": "13",
+              "ref": null,
+              "rows": 3000,
+              "filtered": 10,
+              "Extra": "Using where; Using index"
+            },
+            {
+              "id": 2,
+              "select_type": "DERIVED",
+              "table": "courses",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,courses_deleted_at_published_at_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.course_id",
+              "rows": 1,
+              "filtered": 50,
+              "Extra": "Using where"
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 10,
+              "Extra": "Using where"
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity_lesson",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.activity.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 4,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "progress_completion",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 100,
+              "Extra": "Using where"
+            },
+            {
+              "id": 4,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.progress_completion.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 3,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_deleted_at_is_published_index",
+              "key_len": "14",
+              "ref": "penguin_academy_test.enrollments.course_id,const,const",
+              "rows": 600,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            }
+          ]
+        },
+        {
+          "sql_template": "select count(*) as `aggregate` from `courses` left join (select COUNT(*) AS current_enrollments, COALESCE(SUM(eligible_lessons_count), 0) AS eligible_assignments, COALESCE(SUM(completed_lessons_count), 0) AS completed_lessons, COALESCE(SUM(CASE WHEN eligible_lessons_count > 0 AND completed_lessons_count = eligible_lessons_count THEN 1 ELSE 0 END), 0) AS completed_enrollments, COALESCE(ROUND(AVG(CASE WHEN eligible_lessons_count > 0 THEN LEAST(100, completed_lessons_count * 100.0 / eligible_lessons_count) ELSE 0 END), 2), 0) AS average_progress, MAX(last_completed_at) AS last_completed_at, `course_id` from (select `enrollments`.`id`, `enrollments`.`course_id`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `courses`.`deleted_at` is null)) as `learning_rows` group by `course_id`) as `course_learning` on `course_learning`.`course_id` = `courses`.`id` where `courses`.`deleted_at` is null",
+          "plan": [
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "courses",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "courses_deleted_at_published_at_index",
+              "key": "courses_deleted_at_published_at_index",
+              "key_len": "5",
+              "ref": "const",
+              "rows": 30,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            },
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "<derived2>",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "<auto_key0>",
+              "key": "<auto_key0>",
+              "key_len": "9",
+              "ref": "penguin_academy_test.courses.id",
+              "rows": 10,
+              "filtered": 100,
+              "Extra": null
+            },
+            {
+              "id": 2,
+              "select_type": "DERIVED",
+              "table": "<derived3>",
+              "partitions": null,
+              "type": "ALL",
+              "possible_keys": null,
+              "key": null,
+              "key_len": null,
+              "ref": null,
+              "rows": 150,
+              "filtered": 100,
+              "Extra": "Using temporary"
+            },
+            {
+              "id": 3,
+              "select_type": "DERIVED",
+              "table": "enrollments",
+              "partitions": null,
+              "type": "index",
+              "possible_keys": "enrollments_course_id_withdrawn_at_index",
+              "key": "enrollments_course_id_withdrawn_at_index",
+              "key_len": "13",
+              "ref": null,
+              "rows": 3000,
+              "filtered": 10,
+              "Extra": "Using where; Using index"
+            },
+            {
+              "id": 3,
+              "select_type": "DERIVED",
+              "table": "courses",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,courses_deleted_at_published_at_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.course_id",
+              "rows": 1,
+              "filtered": 50,
+              "Extra": "Using where"
+            },
+            {
+              "id": 7,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 10,
+              "Extra": "Using where"
+            },
+            {
+              "id": 7,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity_lesson",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.activity.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 5,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "progress_completion",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 100,
+              "Extra": "Using where"
+            },
+            {
+              "id": 5,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.progress_completion.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 4,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_deleted_at_is_published_index",
+              "key_len": "14",
+              "ref": "penguin_academy_test.enrollments.course_id,const,const",
+              "rows": 600,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            }
+          ]
+        },
+        {
+          "sql_template": "select `courses`.*, (select count(*) from `lessons` where `courses`.`id` = `lessons`.`course_id` and `lessons`.`deleted_at` is null) as `lessons_count`, (select count(*) from `lessons` where `courses`.`id` = `lessons`.`course_id` and `is_published` = ? and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, COALESCE(course_learning.current_enrollments, 0) AS enrollments_count, COALESCE(course_learning.completed_lessons, 0) AS completed_lessons_count, COALESCE(course_learning.completed_enrollments, 0) AS completed_enrollments_count, COALESCE(course_learning.average_progress, 0) AS average_progress, CASE WHEN course_learning.current_enrollments > 0 THEN ROUND(course_learning.completed_enrollments * 100.0 / course_learning.current_enrollments, 2) ELSE 0 END AS completion_rate, `course_learning`.`last_completed_at` from `courses` left join (select COUNT(*) AS current_enrollments, COALESCE(SUM(eligible_lessons_count), 0) AS eligible_assignments, COALESCE(SUM(completed_lessons_count), 0) AS completed_lessons, COALESCE(SUM(CASE WHEN eligible_lessons_count > 0 AND completed_lessons_count = eligible_lessons_count THEN 1 ELSE 0 END), 0) AS completed_enrollments, COALESCE(ROUND(AVG(CASE WHEN eligible_lessons_count > 0 THEN LEAST(100, completed_lessons_count * 100.0 / eligible_lessons_count) ELSE 0 END), 2), 0) AS average_progress, MAX(last_completed_at) AS last_completed_at, `course_id` from (select `enrollments`.`id`, `enrollments`.`course_id`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `courses`.`deleted_at` is null)) as `learning_rows` group by `course_id`) as `course_learning` on `course_learning`.`course_id` = `courses`.`id` where `courses`.`deleted_at` is null order by `courses`.`id` desc limit 1 offset 0",
+          "plan": [
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "courses",
+              "partitions": null,
+              "type": "index",
+              "possible_keys": "courses_deleted_at_published_at_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": null,
+              "rows": 2,
+              "filtered": 50,
+              "Extra": "Using where; Backward index scan"
+            },
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "<derived4>",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "<auto_key0>",
+              "key": "<auto_key0>",
+              "key_len": "9",
+              "ref": "penguin_academy_test.courses.id",
+              "rows": 10,
+              "filtered": 100,
+              "Extra": null
+            },
+            {
+              "id": 4,
+              "select_type": "DERIVED",
+              "table": "<derived5>",
+              "partitions": null,
+              "type": "ALL",
+              "possible_keys": null,
+              "key": null,
+              "key_len": null,
+              "ref": null,
+              "rows": 150,
+              "filtered": 100,
+              "Extra": "Using temporary"
+            },
+            {
+              "id": 5,
+              "select_type": "DERIVED",
+              "table": "enrollments",
+              "partitions": null,
+              "type": "index",
+              "possible_keys": "enrollments_course_id_withdrawn_at_index",
+              "key": "enrollments_course_id_withdrawn_at_index",
+              "key_len": "13",
+              "ref": null,
+              "rows": 3000,
+              "filtered": 10,
+              "Extra": "Using where; Using index"
+            },
+            {
+              "id": 5,
+              "select_type": "DERIVED",
+              "table": "courses",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,courses_deleted_at_published_at_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.course_id",
+              "rows": 1,
+              "filtered": 50,
+              "Extra": "Using where"
+            },
+            {
+              "id": 9,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 10,
+              "Extra": "Using where"
+            },
+            {
+              "id": 9,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity_lesson",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.activity.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 7,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "progress_completion",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 100,
+              "Extra": "Using where"
+            },
+            {
+              "id": 7,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.progress_completion.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_deleted_at_is_published_index",
+              "key_len": "14",
+              "ref": "penguin_academy_test.enrollments.course_id,const,const",
+              "rows": 600,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            },
+            {
+              "id": 3,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_deleted_at_is_published_index",
+              "key_len": "14",
+              "ref": "penguin_academy_test.courses.id,const,const",
+              "rows": 600,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            },
+            {
+              "id": 2,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_deleted_at_is_published_index",
+              "key_len": "13",
+              "ref": "penguin_academy_test.courses.id,const",
+              "rows": 600,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "admin",
+      "uri": "/api/v1/reports/overview?per_page=100",
+      "status": 200,
+      "duration_ms": 480.09,
+      "query_count": 16,
+      "business_read_query_count": 8,
+      "query_ms": 438.98,
+      "peak_php_memory_bytes": 29360128,
+      "response_bytes": 8865,
+      "returned_rows": 30,
+      "query_templates": [
+        {
+          "sql": "select * from `personal_access_tokens` where `personal_access_tokens`.`id` = ? limit 1",
+          "ms": 1.6
+        },
+        {
+          "sql": "select * from `users` where `users`.`id` = ? limit 1",
+          "ms": 0.32
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.24
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.18
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.15
+        },
+        {
+          "sql": "select * from `cache` where `key` = ? limit 1 for update",
+          "ms": 0.16
+        },
+        {
+          "sql": "update `cache` set `value` = ? where `key` = ?",
+          "ms": 0.16
+        },
+        {
+          "sql": "select COUNT(*) AS current_enrollments, COALESCE(SUM(eligible_lessons_count), 0) AS eligible_assignments, COALESCE(SUM(completed_lessons_count), 0) AS completed_lessons, COALESCE(SUM(CASE WHEN eligible_lessons_count > 0 AND completed_lessons_count = eligible_lessons_count THEN 1 ELSE 0 END), 0) AS completed_enrollments, COALESCE(ROUND(AVG(CASE WHEN eligible_lessons_count > 0 THEN LEAST(100, completed_lessons_count * 100.0 / eligible_lessons_count) ELSE 0 END), 2), 0) AS average_progress, MAX(last_completed_at) AS last_completed_at from (select `enrollments`.`id`, `enrollments`.`course_id`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `courses`.`deleted_at` is null)) as `learning_rows` limit 1",
+          "ms": 146.4
+        },
+        {
+          "sql": "select count(distinct `student_id`) as `aggregate` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `courses`.`deleted_at` is null) and exists (select * from `users` where `enrollments`.`student_id` = `users`.`id` and `role` = ? and `is_active` = ?)",
+          "ms": 4.72
+        },
+        {
+          "sql": "select count(*) as `aggregate` from `courses` where `published_at` is not null and `published_at` <= ? and `courses`.`deleted_at` is null",
+          "ms": 0.39
+        },
+        {
+          "sql": "select count(*) as `aggregate` from `courses` where (`published_at` is null or `published_at` > ?) and `courses`.`deleted_at` is null",
+          "ms": 0.34
+        },
+        {
+          "sql": "select count(*) as `aggregate` from `users` where `role` = ? and `is_active` = ?",
+          "ms": 0.33
+        },
+        {
+          "sql": "select count(*) as `aggregate` from `users` where `role` = ? and `is_active` = ?",
+          "ms": 0.24
+        },
+        {
+          "sql": "select count(*) as `aggregate` from `courses` left join (select COUNT(*) AS current_enrollments, COALESCE(SUM(eligible_lessons_count), 0) AS eligible_assignments, COALESCE(SUM(completed_lessons_count), 0) AS completed_lessons, COALESCE(SUM(CASE WHEN eligible_lessons_count > 0 AND completed_lessons_count = eligible_lessons_count THEN 1 ELSE 0 END), 0) AS completed_enrollments, COALESCE(ROUND(AVG(CASE WHEN eligible_lessons_count > 0 THEN LEAST(100, completed_lessons_count * 100.0 / eligible_lessons_count) ELSE 0 END), 2), 0) AS average_progress, MAX(last_completed_at) AS last_completed_at, `course_id` from (select `enrollments`.`id`, `enrollments`.`course_id`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `courses`.`deleted_at` is null)) as `learning_rows` group by `course_id`) as `course_learning` on `course_learning`.`course_id` = `courses`.`id` where `courses`.`deleted_at` is null",
+          "ms": 145.82
+        },
+        {
+          "sql": "select `courses`.*, (select count(*) from `lessons` where `courses`.`id` = `lessons`.`course_id` and `lessons`.`deleted_at` is null) as `lessons_count`, (select count(*) from `lessons` where `courses`.`id` = `lessons`.`course_id` and `is_published` = ? and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, COALESCE(course_learning.current_enrollments, 0) AS enrollments_count, COALESCE(course_learning.completed_lessons, 0) AS completed_lessons_count, COALESCE(course_learning.completed_enrollments, 0) AS completed_enrollments_count, COALESCE(course_learning.average_progress, 0) AS average_progress, CASE WHEN course_learning.current_enrollments > 0 THEN ROUND(course_learning.completed_enrollments * 100.0 / course_learning.current_enrollments, 2) ELSE 0 END AS completion_rate, `course_learning`.`last_completed_at` from `courses` left join (select COUNT(*) AS current_enrollments, COALESCE(SUM(eligible_lessons_count), 0) AS eligible_assignments, COALESCE(SUM(completed_lessons_count), 0) AS completed_lessons, COALESCE(SUM(CASE WHEN eligible_lessons_count > 0 AND completed_lessons_count = eligible_lessons_count THEN 1 ELSE 0 END), 0) AS completed_enrollments, COALESCE(ROUND(AVG(CASE WHEN eligible_lessons_count > 0 THEN LEAST(100, completed_lessons_count * 100.0 / eligible_lessons_count) ELSE 0 END), 2), 0) AS average_progress, MAX(last_completed_at) AS last_completed_at, `course_id` from (select `enrollments`.`id`, `enrollments`.`course_id`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `courses`.`deleted_at` is null)) as `learning_rows` group by `course_id`) as `course_learning` on `course_learning`.`course_id` = `courses`.`id` where `courses`.`deleted_at` is null order by `courses`.`id` desc limit 100 offset 0",
+          "ms": 137.52
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.41
+        }
+      ],
+      "explain": [
+        {
+          "sql_template": "select COUNT(*) AS current_enrollments, COALESCE(SUM(eligible_lessons_count), 0) AS eligible_assignments, COALESCE(SUM(completed_lessons_count), 0) AS completed_lessons, COALESCE(SUM(CASE WHEN eligible_lessons_count > 0 AND completed_lessons_count = eligible_lessons_count THEN 1 ELSE 0 END), 0) AS completed_enrollments, COALESCE(ROUND(AVG(CASE WHEN eligible_lessons_count > 0 THEN LEAST(100, completed_lessons_count * 100.0 / eligible_lessons_count) ELSE 0 END), 2), 0) AS average_progress, MAX(last_completed_at) AS last_completed_at from (select `enrollments`.`id`, `enrollments`.`course_id`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `courses`.`deleted_at` is null)) as `learning_rows` limit 1",
+          "plan": [
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "<derived2>",
+              "partitions": null,
+              "type": "ALL",
+              "possible_keys": null,
+              "key": null,
+              "key_len": null,
+              "ref": null,
+              "rows": 150,
+              "filtered": 100,
+              "Extra": null
+            },
+            {
+              "id": 2,
+              "select_type": "DERIVED",
+              "table": "enrollments",
+              "partitions": null,
+              "type": "index",
+              "possible_keys": "enrollments_course_id_withdrawn_at_index",
+              "key": "enrollments_course_id_withdrawn_at_index",
+              "key_len": "13",
+              "ref": null,
+              "rows": 3000,
+              "filtered": 10,
+              "Extra": "Using where; Using index"
+            },
+            {
+              "id": 2,
+              "select_type": "DERIVED",
+              "table": "courses",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,courses_deleted_at_published_at_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.course_id",
+              "rows": 1,
+              "filtered": 50,
+              "Extra": "Using where"
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 10,
+              "Extra": "Using where"
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity_lesson",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.activity.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 4,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "progress_completion",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 100,
+              "Extra": "Using where"
+            },
+            {
+              "id": 4,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.progress_completion.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 3,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_deleted_at_is_published_index",
+              "key_len": "14",
+              "ref": "penguin_academy_test.enrollments.course_id,const,const",
+              "rows": 600,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            }
+          ]
+        },
+        {
+          "sql_template": "select count(*) as `aggregate` from `courses` left join (select COUNT(*) AS current_enrollments, COALESCE(SUM(eligible_lessons_count), 0) AS eligible_assignments, COALESCE(SUM(completed_lessons_count), 0) AS completed_lessons, COALESCE(SUM(CASE WHEN eligible_lessons_count > 0 AND completed_lessons_count = eligible_lessons_count THEN 1 ELSE 0 END), 0) AS completed_enrollments, COALESCE(ROUND(AVG(CASE WHEN eligible_lessons_count > 0 THEN LEAST(100, completed_lessons_count * 100.0 / eligible_lessons_count) ELSE 0 END), 2), 0) AS average_progress, MAX(last_completed_at) AS last_completed_at, `course_id` from (select `enrollments`.`id`, `enrollments`.`course_id`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `courses`.`deleted_at` is null)) as `learning_rows` group by `course_id`) as `course_learning` on `course_learning`.`course_id` = `courses`.`id` where `courses`.`deleted_at` is null",
+          "plan": [
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "courses",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "courses_deleted_at_published_at_index",
+              "key": "courses_deleted_at_published_at_index",
+              "key_len": "5",
+              "ref": "const",
+              "rows": 30,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            },
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "<derived2>",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "<auto_key0>",
+              "key": "<auto_key0>",
+              "key_len": "9",
+              "ref": "penguin_academy_test.courses.id",
+              "rows": 10,
+              "filtered": 100,
+              "Extra": null
+            },
+            {
+              "id": 2,
+              "select_type": "DERIVED",
+              "table": "<derived3>",
+              "partitions": null,
+              "type": "ALL",
+              "possible_keys": null,
+              "key": null,
+              "key_len": null,
+              "ref": null,
+              "rows": 150,
+              "filtered": 100,
+              "Extra": "Using temporary"
+            },
+            {
+              "id": 3,
+              "select_type": "DERIVED",
+              "table": "enrollments",
+              "partitions": null,
+              "type": "index",
+              "possible_keys": "enrollments_course_id_withdrawn_at_index",
+              "key": "enrollments_course_id_withdrawn_at_index",
+              "key_len": "13",
+              "ref": null,
+              "rows": 3000,
+              "filtered": 10,
+              "Extra": "Using where; Using index"
+            },
+            {
+              "id": 3,
+              "select_type": "DERIVED",
+              "table": "courses",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,courses_deleted_at_published_at_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.course_id",
+              "rows": 1,
+              "filtered": 50,
+              "Extra": "Using where"
+            },
+            {
+              "id": 7,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 10,
+              "Extra": "Using where"
+            },
+            {
+              "id": 7,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity_lesson",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.activity.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 5,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "progress_completion",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 100,
+              "Extra": "Using where"
+            },
+            {
+              "id": 5,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.progress_completion.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 4,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_deleted_at_is_published_index",
+              "key_len": "14",
+              "ref": "penguin_academy_test.enrollments.course_id,const,const",
+              "rows": 600,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            }
+          ]
+        },
+        {
+          "sql_template": "select `courses`.*, (select count(*) from `lessons` where `courses`.`id` = `lessons`.`course_id` and `lessons`.`deleted_at` is null) as `lessons_count`, (select count(*) from `lessons` where `courses`.`id` = `lessons`.`course_id` and `is_published` = ? and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, COALESCE(course_learning.current_enrollments, 0) AS enrollments_count, COALESCE(course_learning.completed_lessons, 0) AS completed_lessons_count, COALESCE(course_learning.completed_enrollments, 0) AS completed_enrollments_count, COALESCE(course_learning.average_progress, 0) AS average_progress, CASE WHEN course_learning.current_enrollments > 0 THEN ROUND(course_learning.completed_enrollments * 100.0 / course_learning.current_enrollments, 2) ELSE 0 END AS completion_rate, `course_learning`.`last_completed_at` from `courses` left join (select COUNT(*) AS current_enrollments, COALESCE(SUM(eligible_lessons_count), 0) AS eligible_assignments, COALESCE(SUM(completed_lessons_count), 0) AS completed_lessons, COALESCE(SUM(CASE WHEN eligible_lessons_count > 0 AND completed_lessons_count = eligible_lessons_count THEN 1 ELSE 0 END), 0) AS completed_enrollments, COALESCE(ROUND(AVG(CASE WHEN eligible_lessons_count > 0 THEN LEAST(100, completed_lessons_count * 100.0 / eligible_lessons_count) ELSE 0 END), 2), 0) AS average_progress, MAX(last_completed_at) AS last_completed_at, `course_id` from (select `enrollments`.`id`, `enrollments`.`course_id`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `courses`.`deleted_at` is null)) as `learning_rows` group by `course_id`) as `course_learning` on `course_learning`.`course_id` = `courses`.`id` where `courses`.`deleted_at` is null order by `courses`.`id` desc limit 100 offset 0",
+          "plan": [
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "courses",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "courses_deleted_at_published_at_index",
+              "key": "courses_deleted_at_published_at_index",
+              "key_len": "5",
+              "ref": "const",
+              "rows": 30,
+              "filtered": 100,
+              "Extra": "Using index condition; Using filesort"
+            },
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "<derived4>",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "<auto_key0>",
+              "key": "<auto_key0>",
+              "key_len": "9",
+              "ref": "penguin_academy_test.courses.id",
+              "rows": 10,
+              "filtered": 100,
+              "Extra": null
+            },
+            {
+              "id": 4,
+              "select_type": "DERIVED",
+              "table": "<derived5>",
+              "partitions": null,
+              "type": "ALL",
+              "possible_keys": null,
+              "key": null,
+              "key_len": null,
+              "ref": null,
+              "rows": 150,
+              "filtered": 100,
+              "Extra": "Using temporary"
+            },
+            {
+              "id": 5,
+              "select_type": "DERIVED",
+              "table": "enrollments",
+              "partitions": null,
+              "type": "index",
+              "possible_keys": "enrollments_course_id_withdrawn_at_index",
+              "key": "enrollments_course_id_withdrawn_at_index",
+              "key_len": "13",
+              "ref": null,
+              "rows": 3000,
+              "filtered": 10,
+              "Extra": "Using where; Using index"
+            },
+            {
+              "id": 5,
+              "select_type": "DERIVED",
+              "table": "courses",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,courses_deleted_at_published_at_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.course_id",
+              "rows": 1,
+              "filtered": 50,
+              "Extra": "Using where"
+            },
+            {
+              "id": 9,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 10,
+              "Extra": "Using where"
+            },
+            {
+              "id": 9,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity_lesson",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.activity.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 7,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "progress_completion",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 100,
+              "Extra": "Using where"
+            },
+            {
+              "id": 7,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.progress_completion.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_deleted_at_is_published_index",
+              "key_len": "14",
+              "ref": "penguin_academy_test.enrollments.course_id,const,const",
+              "rows": 600,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            },
+            {
+              "id": 3,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_deleted_at_is_published_index",
+              "key_len": "14",
+              "ref": "penguin_academy_test.courses.id,const,const",
+              "rows": 600,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            },
+            {
+              "id": 2,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_deleted_at_is_published_index",
+              "key_len": "13",
+              "ref": "penguin_academy_test.courses.id,const",
+              "rows": 600,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "teacher0",
+      "uri": "/api/v1/reports/overview?per_page=100",
+      "status": 200,
+      "duration_ms": 141.321,
+      "query_count": 17,
+      "business_read_query_count": 6,
+      "query_ms": 104.12,
+      "peak_php_memory_bytes": 29360128,
+      "response_bytes": 2458,
+      "returned_rows": 6,
+      "query_templates": [
+        {
+          "sql": "select * from `personal_access_tokens` where `personal_access_tokens`.`id` = ? limit 1",
+          "ms": 1.42
+        },
+        {
+          "sql": "select * from `users` where `users`.`id` = ? limit 1",
+          "ms": 0.33
+        },
+        {
+          "sql": "update `personal_access_tokens` set `last_used_at` = ?, `personal_access_tokens`.`updated_at` = ? where `id` = ?",
+          "ms": 1.15
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.29
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.14
+        },
+        {
+          "sql": "insert ignore into `cache` (`key`, `value`, `expiration`) values (?, ?, ?)",
+          "ms": 0.79
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.13
+        },
+        {
+          "sql": "insert ignore into `cache` (`key`, `value`, `expiration`) values (?, ?, ?)",
+          "ms": 0.61
+        },
+        {
+          "sql": "select * from `cache` where `key` = ? limit 1 for update",
+          "ms": 0.16
+        },
+        {
+          "sql": "update `cache` set `value` = ? where `key` = ?",
+          "ms": 0.13
+        },
+        {
+          "sql": "select COUNT(*) AS current_enrollments, COALESCE(SUM(eligible_lessons_count), 0) AS eligible_assignments, COALESCE(SUM(completed_lessons_count), 0) AS completed_lessons, COALESCE(SUM(CASE WHEN eligible_lessons_count > 0 AND completed_lessons_count = eligible_lessons_count THEN 1 ELSE 0 END), 0) AS completed_enrollments, COALESCE(ROUND(AVG(CASE WHEN eligible_lessons_count > 0 THEN LEAST(100, completed_lessons_count * 100.0 / eligible_lessons_count) ELSE 0 END), 2), 0) AS average_progress, MAX(last_completed_at) AS last_completed_at from (select `enrollments`.`id`, `enrollments`.`course_id`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `teacher_id` = ? and `courses`.`deleted_at` is null)) as `learning_rows` limit 1",
+          "ms": 33.04
+        },
+        {
+          "sql": "select count(distinct `student_id`) as `aggregate` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `teacher_id` = ? and `courses`.`deleted_at` is null) and exists (select * from `users` where `enrollments`.`student_id` = `users`.`id` and `role` = ? and `is_active` = ?)",
+          "ms": 2.25
+        },
+        {
+          "sql": "select count(*) as `aggregate` from `courses` where `teacher_id` = ? and `published_at` is not null and `published_at` <= ? and `courses`.`deleted_at` is null",
+          "ms": 0.31
+        },
+        {
+          "sql": "select count(*) as `aggregate` from `courses` where `teacher_id` = ? and (`published_at` is null or `published_at` > ?) and `courses`.`deleted_at` is null",
+          "ms": 0.32
+        },
+        {
+          "sql": "select count(*) as `aggregate` from `courses` left join (select COUNT(*) AS current_enrollments, COALESCE(SUM(eligible_lessons_count), 0) AS eligible_assignments, COALESCE(SUM(completed_lessons_count), 0) AS completed_lessons, COALESCE(SUM(CASE WHEN eligible_lessons_count > 0 AND completed_lessons_count = eligible_lessons_count THEN 1 ELSE 0 END), 0) AS completed_enrollments, COALESCE(ROUND(AVG(CASE WHEN eligible_lessons_count > 0 THEN LEAST(100, completed_lessons_count * 100.0 / eligible_lessons_count) ELSE 0 END), 2), 0) AS average_progress, MAX(last_completed_at) AS last_completed_at, `course_id` from (select `enrollments`.`id`, `enrollments`.`course_id`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `teacher_id` = ? and `courses`.`deleted_at` is null)) as `learning_rows` group by `course_id`) as `course_learning` on `course_learning`.`course_id` = `courses`.`id` where `teacher_id` = ? and `courses`.`deleted_at` is null",
+          "ms": 31.42
+        },
+        {
+          "sql": "select `courses`.*, (select count(*) from `lessons` where `courses`.`id` = `lessons`.`course_id` and `lessons`.`deleted_at` is null) as `lessons_count`, (select count(*) from `lessons` where `courses`.`id` = `lessons`.`course_id` and `is_published` = ? and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, COALESCE(course_learning.current_enrollments, 0) AS enrollments_count, COALESCE(course_learning.completed_lessons, 0) AS completed_lessons_count, COALESCE(course_learning.completed_enrollments, 0) AS completed_enrollments_count, COALESCE(course_learning.average_progress, 0) AS average_progress, CASE WHEN course_learning.current_enrollments > 0 THEN ROUND(course_learning.completed_enrollments * 100.0 / course_learning.current_enrollments, 2) ELSE 0 END AS completion_rate, `course_learning`.`last_completed_at` from `courses` left join (select COUNT(*) AS current_enrollments, COALESCE(SUM(eligible_lessons_count), 0) AS eligible_assignments, COALESCE(SUM(completed_lessons_count), 0) AS completed_lessons, COALESCE(SUM(CASE WHEN eligible_lessons_count > 0 AND completed_lessons_count = eligible_lessons_count THEN 1 ELSE 0 END), 0) AS completed_enrollments, COALESCE(ROUND(AVG(CASE WHEN eligible_lessons_count > 0 THEN LEAST(100, completed_lessons_count * 100.0 / eligible_lessons_count) ELSE 0 END), 2), 0) AS average_progress, MAX(last_completed_at) AS last_completed_at, `course_id` from (select `enrollments`.`id`, `enrollments`.`course_id`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `teacher_id` = ? and `courses`.`deleted_at` is null)) as `learning_rows` group by `course_id`) as `course_learning` on `course_learning`.`course_id` = `courses`.`id` where `teacher_id` = ? and `courses`.`deleted_at` is null order by `courses`.`id` desc limit 100 offset 0",
+          "ms": 31.27
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.36
+        }
+      ],
+      "explain": [
+        {
+          "sql_template": "select COUNT(*) AS current_enrollments, COALESCE(SUM(eligible_lessons_count), 0) AS eligible_assignments, COALESCE(SUM(completed_lessons_count), 0) AS completed_lessons, COALESCE(SUM(CASE WHEN eligible_lessons_count > 0 AND completed_lessons_count = eligible_lessons_count THEN 1 ELSE 0 END), 0) AS completed_enrollments, COALESCE(ROUND(AVG(CASE WHEN eligible_lessons_count > 0 THEN LEAST(100, completed_lessons_count * 100.0 / eligible_lessons_count) ELSE 0 END), 2), 0) AS average_progress, MAX(last_completed_at) AS last_completed_at from (select `enrollments`.`id`, `enrollments`.`course_id`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `teacher_id` = ? and `courses`.`deleted_at` is null)) as `learning_rows` limit 1",
+          "plan": [
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "<derived2>",
+              "partitions": null,
+              "type": "ALL",
+              "possible_keys": null,
+              "key": null,
+              "key_len": null,
+              "ref": null,
+              "rows": 30,
+              "filtered": 100,
+              "Extra": null
+            },
+            {
+              "id": 2,
+              "select_type": "DERIVED",
+              "table": "enrollments",
+              "partitions": null,
+              "type": "index",
+              "possible_keys": "enrollments_course_id_withdrawn_at_index",
+              "key": "enrollments_course_id_withdrawn_at_index",
+              "key_len": "13",
+              "ref": null,
+              "rows": 3000,
+              "filtered": 10,
+              "Extra": "Using where; Using index"
+            },
+            {
+              "id": 2,
+              "select_type": "DERIVED",
+              "table": "courses",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,courses_teacher_id_deleted_at_published_at_index,courses_deleted_at_published_at_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.course_id",
+              "rows": 1,
+              "filtered": 10,
+              "Extra": "Using where"
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 10,
+              "Extra": "Using where"
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity_lesson",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.activity.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 4,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "progress_completion",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 100,
+              "Extra": "Using where"
+            },
+            {
+              "id": 4,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.progress_completion.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 3,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_deleted_at_is_published_index",
+              "key_len": "14",
+              "ref": "penguin_academy_test.enrollments.course_id,const,const",
+              "rows": 600,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            }
+          ]
+        },
+        {
+          "sql_template": "select count(*) as `aggregate` from `courses` left join (select COUNT(*) AS current_enrollments, COALESCE(SUM(eligible_lessons_count), 0) AS eligible_assignments, COALESCE(SUM(completed_lessons_count), 0) AS completed_lessons, COALESCE(SUM(CASE WHEN eligible_lessons_count > 0 AND completed_lessons_count = eligible_lessons_count THEN 1 ELSE 0 END), 0) AS completed_enrollments, COALESCE(ROUND(AVG(CASE WHEN eligible_lessons_count > 0 THEN LEAST(100, completed_lessons_count * 100.0 / eligible_lessons_count) ELSE 0 END), 2), 0) AS average_progress, MAX(last_completed_at) AS last_completed_at, `course_id` from (select `enrollments`.`id`, `enrollments`.`course_id`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `teacher_id` = ? and `courses`.`deleted_at` is null)) as `learning_rows` group by `course_id`) as `course_learning` on `course_learning`.`course_id` = `courses`.`id` where `teacher_id` = ? and `courses`.`deleted_at` is null",
+          "plan": [
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "courses",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "courses_teacher_id_deleted_at_published_at_index,courses_deleted_at_published_at_index",
+              "key": "courses_teacher_id_deleted_at_published_at_index",
+              "key_len": "14",
+              "ref": "const,const",
+              "rows": 6,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            },
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "<derived2>",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "<auto_key0>",
+              "key": "<auto_key0>",
+              "key_len": "9",
+              "ref": "penguin_academy_test.courses.id",
+              "rows": 3,
+              "filtered": 100,
+              "Extra": null
+            },
+            {
+              "id": 2,
+              "select_type": "DERIVED",
+              "table": "<derived3>",
+              "partitions": null,
+              "type": "ALL",
+              "possible_keys": null,
+              "key": null,
+              "key_len": null,
+              "ref": null,
+              "rows": 30,
+              "filtered": 100,
+              "Extra": "Using temporary"
+            },
+            {
+              "id": 3,
+              "select_type": "DERIVED",
+              "table": "enrollments",
+              "partitions": null,
+              "type": "index",
+              "possible_keys": "enrollments_course_id_withdrawn_at_index",
+              "key": "enrollments_course_id_withdrawn_at_index",
+              "key_len": "13",
+              "ref": null,
+              "rows": 3000,
+              "filtered": 10,
+              "Extra": "Using where; Using index"
+            },
+            {
+              "id": 3,
+              "select_type": "DERIVED",
+              "table": "courses",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,courses_teacher_id_deleted_at_published_at_index,courses_deleted_at_published_at_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.course_id",
+              "rows": 1,
+              "filtered": 10,
+              "Extra": "Using where"
+            },
+            {
+              "id": 7,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 10,
+              "Extra": "Using where"
+            },
+            {
+              "id": 7,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity_lesson",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.activity.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 5,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "progress_completion",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 100,
+              "Extra": "Using where"
+            },
+            {
+              "id": 5,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.progress_completion.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 4,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_deleted_at_is_published_index",
+              "key_len": "14",
+              "ref": "penguin_academy_test.enrollments.course_id,const,const",
+              "rows": 600,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            }
+          ]
+        },
+        {
+          "sql_template": "select `courses`.*, (select count(*) from `lessons` where `courses`.`id` = `lessons`.`course_id` and `lessons`.`deleted_at` is null) as `lessons_count`, (select count(*) from `lessons` where `courses`.`id` = `lessons`.`course_id` and `is_published` = ? and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, COALESCE(course_learning.current_enrollments, 0) AS enrollments_count, COALESCE(course_learning.completed_lessons, 0) AS completed_lessons_count, COALESCE(course_learning.completed_enrollments, 0) AS completed_enrollments_count, COALESCE(course_learning.average_progress, 0) AS average_progress, CASE WHEN course_learning.current_enrollments > 0 THEN ROUND(course_learning.completed_enrollments * 100.0 / course_learning.current_enrollments, 2) ELSE 0 END AS completion_rate, `course_learning`.`last_completed_at` from `courses` left join (select COUNT(*) AS current_enrollments, COALESCE(SUM(eligible_lessons_count), 0) AS eligible_assignments, COALESCE(SUM(completed_lessons_count), 0) AS completed_lessons, COALESCE(SUM(CASE WHEN eligible_lessons_count > 0 AND completed_lessons_count = eligible_lessons_count THEN 1 ELSE 0 END), 0) AS completed_enrollments, COALESCE(ROUND(AVG(CASE WHEN eligible_lessons_count > 0 THEN LEAST(100, completed_lessons_count * 100.0 / eligible_lessons_count) ELSE 0 END), 2), 0) AS average_progress, MAX(last_completed_at) AS last_completed_at, `course_id` from (select `enrollments`.`id`, `enrollments`.`course_id`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at` from `enrollments` where `withdrawn_at` is null and `enrollments`.`course_id` in (select `courses`.`id` from `courses` where `teacher_id` = ? and `courses`.`deleted_at` is null)) as `learning_rows` group by `course_id`) as `course_learning` on `course_learning`.`course_id` = `courses`.`id` where `teacher_id` = ? and `courses`.`deleted_at` is null order by `courses`.`id` desc limit 100 offset 0",
+          "plan": [
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "courses",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "courses_teacher_id_deleted_at_published_at_index,courses_deleted_at_published_at_index",
+              "key": "courses_teacher_id_deleted_at_published_at_index",
+              "key_len": "14",
+              "ref": "const,const",
+              "rows": 6,
+              "filtered": 100,
+              "Extra": "Using index condition; Using filesort"
+            },
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "<derived4>",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "<auto_key0>",
+              "key": "<auto_key0>",
+              "key_len": "9",
+              "ref": "penguin_academy_test.courses.id",
+              "rows": 3,
+              "filtered": 100,
+              "Extra": null
+            },
+            {
+              "id": 4,
+              "select_type": "DERIVED",
+              "table": "<derived5>",
+              "partitions": null,
+              "type": "ALL",
+              "possible_keys": null,
+              "key": null,
+              "key_len": null,
+              "ref": null,
+              "rows": 30,
+              "filtered": 100,
+              "Extra": "Using temporary"
+            },
+            {
+              "id": 5,
+              "select_type": "DERIVED",
+              "table": "enrollments",
+              "partitions": null,
+              "type": "index",
+              "possible_keys": "enrollments_course_id_withdrawn_at_index",
+              "key": "enrollments_course_id_withdrawn_at_index",
+              "key_len": "13",
+              "ref": null,
+              "rows": 3000,
+              "filtered": 10,
+              "Extra": "Using where; Using index"
+            },
+            {
+              "id": 5,
+              "select_type": "DERIVED",
+              "table": "courses",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,courses_teacher_id_deleted_at_published_at_index,courses_deleted_at_published_at_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.course_id",
+              "rows": 1,
+              "filtered": 10,
+              "Extra": "Using where"
+            },
+            {
+              "id": 9,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 10,
+              "Extra": "Using where"
+            },
+            {
+              "id": 9,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity_lesson",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.activity.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 7,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "progress_completion",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 100,
+              "Extra": "Using where"
+            },
+            {
+              "id": 7,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.progress_completion.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_deleted_at_is_published_index",
+              "key_len": "14",
+              "ref": "penguin_academy_test.enrollments.course_id,const,const",
+              "rows": 600,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            },
+            {
+              "id": 3,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_deleted_at_is_published_index",
+              "key_len": "14",
+              "ref": "penguin_academy_test.courses.id,const,const",
+              "rows": 600,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            },
+            {
+              "id": 2,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_deleted_at_is_published_index",
+              "key_len": "13",
+              "ref": "penguin_academy_test.courses.id,const",
+              "rows": 600,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "student0",
+      "uri": "/api/v1/enrollments?per_page=100",
+      "status": 200,
+      "duration_ms": 47.541,
+      "query_count": 15,
+      "business_read_query_count": 4,
+      "query_ms": 9.8,
+      "peak_php_memory_bytes": 31457280,
+      "response_bytes": 4920,
+      "returned_rows": 10,
+      "query_templates": [
+        {
+          "sql": "select * from `personal_access_tokens` where `personal_access_tokens`.`id` = ? limit 1",
+          "ms": 1.42
+        },
+        {
+          "sql": "select * from `users` where `users`.`id` = ? limit 1",
+          "ms": 0.63
+        },
+        {
+          "sql": "update `personal_access_tokens` set `last_used_at` = ?, `personal_access_tokens`.`updated_at` = ? where `id` = ?",
+          "ms": 1.04
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.26
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.27
+        },
+        {
+          "sql": "insert ignore into `cache` (`key`, `value`, `expiration`) values (?, ?, ?)",
+          "ms": 0.74
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.15
+        },
+        {
+          "sql": "insert ignore into `cache` (`key`, `value`, `expiration`) values (?, ?, ?)",
+          "ms": 0.45
+        },
+        {
+          "sql": "select * from `cache` where `key` = ? limit 1 for update",
+          "ms": 0.27
+        },
+        {
+          "sql": "update `cache` set `value` = ? where `key` = ?",
+          "ms": 0.12
+        },
+        {
+          "sql": "select count(*) as `aggregate` from `enrollments` where exists (select * from `courses` where `enrollments`.`course_id` = `courses`.`id` and `courses`.`deleted_at` is null) and `student_id` = ? and `withdrawn_at` is null",
+          "ms": 1.02
+        },
+        {
+          "sql": "select `enrollments`.*, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at`, (select `lessons`.`id` from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and not exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `enrollments`.`withdrawn_at` is null and exists (select 1 from `courses` as `available_course` where `available_course`.`id` = `enrollments`.`course_id` and `available_course`.`deleted_at` is null and `available_course`.`published_at` is not null and `available_course`.`published_at` <= ?) and `lessons`.`deleted_at` is null order by `lessons`.`position` asc, `lessons`.`id` asc limit 1) as `next_lesson_id` from `enrollments` where exists (select * from `courses` where `enrollments`.`course_id` = `courses`.`id` and `courses`.`deleted_at` is null) and `student_id` = ? and `withdrawn_at` is null order by `id` desc limit 100 offset 0",
+          "ms": 1.8
+        },
+        {
+          "sql": "select `id`, `title`, `published_at` from `courses` where `courses`.`id` in (1759, 1762, 1765, 1768, 1771, 1774, 1777, 1780, 1783, 1786) and `courses`.`deleted_at` is null",
+          "ms": 0.32
+        },
+        {
+          "sql": "select `id`, `name`, `email` from `users` where `users`.`id` in (4696)",
+          "ms": 0.76
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.55
+        }
+      ],
+      "explain": [
+        {
+          "sql_template": "select `enrollments`.*, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at`, (select `lessons`.`id` from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and not exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `enrollments`.`withdrawn_at` is null and exists (select 1 from `courses` as `available_course` where `available_course`.`id` = `enrollments`.`course_id` and `available_course`.`deleted_at` is null and `available_course`.`published_at` is not null and `available_course`.`published_at` <= ?) and `lessons`.`deleted_at` is null order by `lessons`.`position` asc, `lessons`.`id` asc limit 1) as `next_lesson_id` from `enrollments` where exists (select * from `courses` where `enrollments`.`course_id` = `courses`.`id` and `courses`.`deleted_at` is null) and `student_id` = ? and `withdrawn_at` is null order by `id` desc limit 100 offset 0",
+          "plan": [
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "enrollments",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "enrollments_student_id_course_id_unique,enrollments_course_id_withdrawn_at_index,enrollments_student_id_withdrawn_at_index",
+              "key": "enrollments_student_id_course_id_unique",
+              "key_len": "8",
+              "ref": "const",
+              "rows": 10,
+              "filtered": 10,
+              "Extra": "Using index condition; Using where; Using filesort"
+            },
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "courses",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,courses_deleted_at_published_at_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.course_id",
+              "rows": 1,
+              "filtered": 50,
+              "Extra": "Using where"
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "available_course",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,courses_deleted_at_published_at_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.course_id",
+              "rows": 1,
+              "filtered": 50,
+              "Extra": "Using where; Using temporary; Using filesort"
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_position_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.course_id",
+              "rows": 600,
+              "filtered": 1.0000001192092896,
+              "Extra": "Using where"
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "progress_completion",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "16",
+              "ref": "penguin_academy_test.enrollments.id,penguin_academy_test.lessons.id",
+              "rows": 1,
+              "filtered": 100,
+              "Extra": "Using where; Not exists"
+            },
+            {
+              "id": 5,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 10,
+              "Extra": "Using where"
+            },
+            {
+              "id": 5,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity_lesson",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.activity.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 3,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "progress_completion",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "penguin_academy_test.enrollments.id",
+              "rows": 303,
+              "filtered": 100,
+              "Extra": "Using where"
+            },
+            {
+              "id": 3,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.progress_completion.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 2,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_deleted_at_is_published_index",
+              "key_len": "14",
+              "ref": "penguin_academy_test.enrollments.course_id,const,const",
+              "rows": 600,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "student0",
+      "uri": "/api/v1/enrollments/4389/progress",
+      "status": 200,
+      "duration_ms": 30.846,
+      "query_count": 11,
+      "business_read_query_count": 3,
+      "query_ms": 5.09,
+      "peak_php_memory_bytes": 29360128,
+      "response_bytes": 130,
+      "returned_rows": null,
+      "query_templates": [
+        {
+          "sql": "select * from `personal_access_tokens` where `personal_access_tokens`.`id` = ? limit 1",
+          "ms": 1.58
+        },
+        {
+          "sql": "select * from `users` where `users`.`id` = ? limit 1",
+          "ms": 0.41
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.22
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.2
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.14
+        },
+        {
+          "sql": "select * from `cache` where `key` = ? limit 1 for update",
+          "ms": 0.34
+        },
+        {
+          "sql": "update `cache` set `value` = ? where `key` = ?",
+          "ms": 0.2
+        },
+        {
+          "sql": "select * from `enrollments` where `id` = ? limit 1",
+          "ms": 0.24
+        },
+        {
+          "sql": "select * from `courses` where `courses`.`id` = ? and `courses`.`deleted_at` is null limit 1",
+          "ms": 0.33
+        },
+        {
+          "sql": "select `enrollments`.*, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at`, (select `lessons`.`id` from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and not exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `enrollments`.`withdrawn_at` is null and exists (select 1 from `courses` as `available_course` where `available_course`.`id` = `enrollments`.`course_id` and `available_course`.`deleted_at` is null and `available_course`.`published_at` is not null and `available_course`.`published_at` <= ?) and `lessons`.`deleted_at` is null order by `lessons`.`position` asc, `lessons`.`id` asc limit 1) as `next_lesson_id` from `enrollments` where `enrollments`.`id` = ? limit 1",
+          "ms": 0.99
+        },
+        {
+          "sql": "select * from `cache` where `key` in (?)",
+          "ms": 0.44
+        }
+      ],
+      "explain": [
+        {
+          "sql_template": "select `enrollments`.*, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and `lessons`.`deleted_at` is null) as `eligible_lessons_count`, (select COUNT(*) from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `lessons`.`deleted_at` is null) as `completed_lessons_count`, (select MAX(activity.completed_at) from `lesson_completions` as `activity` inner join `lessons` as `activity_lesson` on `activity_lesson`.`id` = `activity`.`lesson_id` and `activity_lesson`.`course_id` = `activity`.`course_id` where `activity`.`enrollment_id` = `enrollments`.`id` and `activity`.`course_id` = `enrollments`.`course_id` and `activity_lesson`.`is_published` = ? and `activity_lesson`.`deleted_at` is null) as `last_completed_at`, (select `lessons`.`id` from `lessons` where `lessons`.`is_published` = ? and `lessons`.`course_id` = `enrollments`.`course_id` and not exists (select 1 from `lesson_completions` as `progress_completion` where `progress_completion`.`enrollment_id` = `enrollments`.`id` and `progress_completion`.`lesson_id` = `lessons`.`id` and `progress_completion`.`course_id` = `lessons`.`course_id`) and `enrollments`.`withdrawn_at` is null and exists (select 1 from `courses` as `available_course` where `available_course`.`id` = `enrollments`.`course_id` and `available_course`.`deleted_at` is null and `available_course`.`published_at` is not null and `available_course`.`published_at` <= ?) and `lessons`.`deleted_at` is null order by `lessons`.`position` asc, `lessons`.`id` asc limit 1) as `next_lesson_id` from `enrollments` where `enrollments`.`id` = ? limit 1",
+          "plan": [
+            {
+              "id": 1,
+              "select_type": "PRIMARY",
+              "table": "enrollments",
+              "partitions": null,
+              "type": "const",
+              "possible_keys": "PRIMARY,enrollments_id_course_id_unique",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "const",
+              "rows": 1,
+              "filtered": 100,
+              "Extra": null
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "available_course",
+              "partitions": null,
+              "type": "const",
+              "possible_keys": "PRIMARY,courses_deleted_at_published_at_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "const",
+              "rows": 1,
+              "filtered": 100,
+              "Extra": null
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_position_unique",
+              "key_len": "8",
+              "ref": "const",
+              "rows": 20,
+              "filtered": 1.0000001192092896,
+              "Extra": "Using where"
+            },
+            {
+              "id": 6,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "progress_completion",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "16",
+              "ref": "const,penguin_academy_test.lessons.id",
+              "rows": 1,
+              "filtered": 100,
+              "Extra": "Using where; Not exists"
+            },
+            {
+              "id": 5,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "const",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 5,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "activity_lesson",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.activity.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 3,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "progress_completion",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lesson_completions_enrollment_id_lesson_id_unique,completion_enrollment_course_fk,completion_lesson_course_fk,lesson_completions_course_id_index",
+              "key": "lesson_completions_enrollment_id_lesson_id_unique",
+              "key_len": "8",
+              "ref": "const",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 3,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "eq_ref",
+              "possible_keys": "PRIMARY,lessons_course_id_position_unique,lessons_id_course_id_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "PRIMARY",
+              "key_len": "8",
+              "ref": "penguin_academy_test.progress_completion.lesson_id",
+              "rows": 1,
+              "filtered": 5,
+              "Extra": "Using where"
+            },
+            {
+              "id": 2,
+              "select_type": "DEPENDENT SUBQUERY",
+              "table": "lessons",
+              "partitions": null,
+              "type": "ref",
+              "possible_keys": "lessons_course_id_position_unique,lessons_course_id_is_published_index,lessons_course_id_deleted_at_is_published_index",
+              "key": "lessons_course_id_deleted_at_is_published_index",
+              "key_len": "14",
+              "ref": "const,const,const",
+              "rows": 20,
+              "filtered": 100,
+              "Extra": "Using where; Using index"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "http": [
+    {
+      "role": "admin",
+      "uri": "/api/v1/reports/overview?per_page=20",
+      "warmup": {
+        "status": 200,
+        "ms": 454.45
+      },
+      "sequential": {
+        "samples": 20,
+        "min_ms": 435.94,
+        "p50_ms": 447.31,
+        "p95_ms": 486.29,
+        "max_ms": 492.25
+      },
+      "concurrent_four": {
+        "samples": 20,
+        "min_ms": 564.06,
+        "p50_ms": 647.29,
+        "p95_ms": 1530.2,
+        "max_ms": 1597.86
+      },
+      "status_counts": {
+        "200": 40
+      },
+      "failures": 0
+    },
+    {
+      "role": "teacher0",
+      "uri": "/api/v1/reports/overview?per_page=20",
+      "warmup": {
+        "status": 200,
+        "ms": 118.76
+      },
+      "sequential": {
+        "samples": 20,
+        "min_ms": 108.13,
+        "p50_ms": 115.49,
+        "p95_ms": 147.53,
+        "max_ms": 172.55
+      },
+      "concurrent_four": {
+        "samples": 20,
+        "min_ms": 114.8,
+        "p50_ms": 170.6,
+        "p95_ms": 335.6,
+        "max_ms": 452.12
+      },
+      "status_counts": {
+        "200": 40
+      },
+      "failures": 0
+    },
+    {
+      "role": "student0",
+      "uri": "/api/v1/enrollments?per_page=20",
+      "warmup": {
+        "status": 200,
+        "ms": 28.28
+      },
+      "sequential": {
+        "samples": 20,
+        "min_ms": 20.05,
+        "p50_ms": 21.52,
+        "p95_ms": 25.11,
+        "max_ms": 25.18
+      },
+      "concurrent_four": {
+        "samples": 20,
+        "min_ms": 19.91,
+        "p50_ms": 23.95,
+        "p95_ms": 76.24,
+        "max_ms": 89.19
+      },
+      "status_counts": {
+        "200": 40
+      },
+      "failures": 0
+    }
+  ],
+  "fixture": {
+    "counts": {
+      "admins": 1,
+      "teachers": 5,
+      "students": 300,
+      "courses": 30,
+      "lessons": 600,
+      "enrollments": 3000,
+      "completions": 28800
+    },
+    "admin_id": 4690,
+    "course_id": 1759,
+    "teacher_id": 4691,
+    "student_id": 4696,
+    "enrollment_id": 4389
+  },
+  "outcome": "passed",
+  "integrity_violations": {
+    "lessons_without_course": 0,
+    "courses_with_wrong_teacher_role": 0,
+    "enrollments_without_course_or_student_role": 0,
+    "completions_with_missing_or_cross_course_parents": 0,
+    "duplicate_enrollment_pairs": 0,
+    "duplicate_completion_pairs": 0,
+    "duplicate_lesson_positions": 0
+  },
+  "cleanup": {
+    "database": "penguin_academy_test",
+    "cleanup": "Only this run’s synthetic users and course records removed."
+  },
+  "finished_at": "2026-10-23T19:24:28.564Z"
+}

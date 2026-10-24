@@ -1,0 +1,386 @@
+{
+    "database": "penguin_academy_test",
+    "server": {
+        "version": "8.4.13",
+        "time_zone": "+00:00"
+    },
+    "rows": {
+        "users": 0,
+        "courses": 0,
+        "lessons": 0,
+        "enrollments": 0,
+        "lesson_completions": 0
+    },
+    "violations": {
+        "lessons_without_course": 0,
+        "courses_with_wrong_teacher_role": 0,
+        "enrollments_without_course_or_student_role": 0,
+        "completions_with_missing_or_cross_course_parents": 0,
+        "duplicate_enrollment_pairs": 0,
+        "duplicate_completion_pairs": 0,
+        "duplicate_lesson_positions": 0
+    },
+    "tables": [
+        {
+            "table_name": "courses",
+            "engine": "InnoDB",
+            "collation": "utf8mb4_unicode_ci"
+        },
+        {
+            "table_name": "enrollments",
+            "engine": "InnoDB",
+            "collation": "utf8mb4_unicode_ci"
+        },
+        {
+            "table_name": "lesson_completions",
+            "engine": "InnoDB",
+            "collation": "utf8mb4_unicode_ci"
+        },
+        {
+            "table_name": "lessons",
+            "engine": "InnoDB",
+            "collation": "utf8mb4_unicode_ci"
+        },
+        {
+            "table_name": "users",
+            "engine": "InnoDB",
+            "collation": "utf8mb4_unicode_ci"
+        }
+    ],
+    "new_columns": [
+        {
+            "table_name": "courses",
+            "column_name": "lesson_order_version",
+            "column_type": "bigint unsigned",
+            "nullable": "NO",
+            "default_value": "0"
+        },
+        {
+            "table_name": "lessons",
+            "column_name": "deleted_at",
+            "column_type": "timestamp",
+            "nullable": "YES",
+            "default_value": null
+        }
+    ],
+    "indexes": [
+        {
+            "table_name": "courses",
+            "index_name": "courses_deleted_at_published_at_index",
+            "non_unique": 1,
+            "sequence": 1,
+            "column_name": "deleted_at"
+        },
+        {
+            "table_name": "courses",
+            "index_name": "courses_deleted_at_published_at_index",
+            "non_unique": 1,
+            "sequence": 2,
+            "column_name": "published_at"
+        },
+        {
+            "table_name": "courses",
+            "index_name": "courses_slug_unique",
+            "non_unique": 0,
+            "sequence": 1,
+            "column_name": "slug"
+        },
+        {
+            "table_name": "courses",
+            "index_name": "courses_teacher_id_deleted_at_published_at_index",
+            "non_unique": 1,
+            "sequence": 1,
+            "column_name": "teacher_id"
+        },
+        {
+            "table_name": "courses",
+            "index_name": "courses_teacher_id_deleted_at_published_at_index",
+            "non_unique": 1,
+            "sequence": 2,
+            "column_name": "deleted_at"
+        },
+        {
+            "table_name": "courses",
+            "index_name": "courses_teacher_id_deleted_at_published_at_index",
+            "non_unique": 1,
+            "sequence": 3,
+            "column_name": "published_at"
+        },
+        {
+            "table_name": "courses",
+            "index_name": "PRIMARY",
+            "non_unique": 0,
+            "sequence": 1,
+            "column_name": "id"
+        },
+        {
+            "table_name": "enrollments",
+            "index_name": "enrollments_course_id_withdrawn_at_index",
+            "non_unique": 1,
+            "sequence": 1,
+            "column_name": "course_id"
+        },
+        {
+            "table_name": "enrollments",
+            "index_name": "enrollments_course_id_withdrawn_at_index",
+            "non_unique": 1,
+            "sequence": 2,
+            "column_name": "withdrawn_at"
+        },
+        {
+            "table_name": "enrollments",
+            "index_name": "enrollments_id_course_id_unique",
+            "non_unique": 0,
+            "sequence": 1,
+            "column_name": "id"
+        },
+        {
+            "table_name": "enrollments",
+            "index_name": "enrollments_id_course_id_unique",
+            "non_unique": 0,
+            "sequence": 2,
+            "column_name": "course_id"
+        },
+        {
+            "table_name": "enrollments",
+            "index_name": "enrollments_student_id_course_id_unique",
+            "non_unique": 0,
+            "sequence": 1,
+            "column_name": "student_id"
+        },
+        {
+            "table_name": "enrollments",
+            "index_name": "enrollments_student_id_course_id_unique",
+            "non_unique": 0,
+            "sequence": 2,
+            "column_name": "course_id"
+        },
+        {
+            "table_name": "enrollments",
+            "index_name": "enrollments_student_id_withdrawn_at_index",
+            "non_unique": 1,
+            "sequence": 1,
+            "column_name": "student_id"
+        },
+        {
+            "table_name": "enrollments",
+            "index_name": "enrollments_student_id_withdrawn_at_index",
+            "non_unique": 1,
+            "sequence": 2,
+            "column_name": "withdrawn_at"
+        },
+        {
+            "table_name": "enrollments",
+            "index_name": "PRIMARY",
+            "non_unique": 0,
+            "sequence": 1,
+            "column_name": "id"
+        },
+        {
+            "table_name": "lesson_completions",
+            "index_name": "completion_enrollment_course_fk",
+            "non_unique": 1,
+            "sequence": 1,
+            "column_name": "enrollment_id"
+        },
+        {
+            "table_name": "lesson_completions",
+            "index_name": "completion_enrollment_course_fk",
+            "non_unique": 1,
+            "sequence": 2,
+            "column_name": "course_id"
+        },
+        {
+            "table_name": "lesson_completions",
+            "index_name": "completion_lesson_course_fk",
+            "non_unique": 1,
+            "sequence": 1,
+            "column_name": "lesson_id"
+        },
+        {
+            "table_name": "lesson_completions",
+            "index_name": "completion_lesson_course_fk",
+            "non_unique": 1,
+            "sequence": 2,
+            "column_name": "course_id"
+        },
+        {
+            "table_name": "lesson_completions",
+            "index_name": "lesson_completions_course_id_index",
+            "non_unique": 1,
+            "sequence": 1,
+            "column_name": "course_id"
+        },
+        {
+            "table_name": "lesson_completions",
+            "index_name": "lesson_completions_enrollment_id_lesson_id_unique",
+            "non_unique": 0,
+            "sequence": 1,
+            "column_name": "enrollment_id"
+        },
+        {
+            "table_name": "lesson_completions",
+            "index_name": "lesson_completions_enrollment_id_lesson_id_unique",
+            "non_unique": 0,
+            "sequence": 2,
+            "column_name": "lesson_id"
+        },
+        {
+            "table_name": "lesson_completions",
+            "index_name": "PRIMARY",
+            "non_unique": 0,
+            "sequence": 1,
+            "column_name": "id"
+        },
+        {
+            "table_name": "lessons",
+            "index_name": "lessons_course_id_deleted_at_is_published_index",
+            "non_unique": 1,
+            "sequence": 1,
+            "column_name": "course_id"
+        },
+        {
+            "table_name": "lessons",
+            "index_name": "lessons_course_id_deleted_at_is_published_index",
+            "non_unique": 1,
+            "sequence": 2,
+            "column_name": "deleted_at"
+        },
+        {
+            "table_name": "lessons",
+            "index_name": "lessons_course_id_deleted_at_is_published_index",
+            "non_unique": 1,
+            "sequence": 3,
+            "column_name": "is_published"
+        },
+        {
+            "table_name": "lessons",
+            "index_name": "lessons_course_id_is_published_index",
+            "non_unique": 1,
+            "sequence": 1,
+            "column_name": "course_id"
+        },
+        {
+            "table_name": "lessons",
+            "index_name": "lessons_course_id_is_published_index",
+            "non_unique": 1,
+            "sequence": 2,
+            "column_name": "is_published"
+        },
+        {
+            "table_name": "lessons",
+            "index_name": "lessons_course_id_position_unique",
+            "non_unique": 0,
+            "sequence": 1,
+            "column_name": "course_id"
+        },
+        {
+            "table_name": "lessons",
+            "index_name": "lessons_course_id_position_unique",
+            "non_unique": 0,
+            "sequence": 2,
+            "column_name": "position"
+        },
+        {
+            "table_name": "lessons",
+            "index_name": "lessons_id_course_id_unique",
+            "non_unique": 0,
+            "sequence": 1,
+            "column_name": "id"
+        },
+        {
+            "table_name": "lessons",
+            "index_name": "lessons_id_course_id_unique",
+            "non_unique": 0,
+            "sequence": 2,
+            "column_name": "course_id"
+        },
+        {
+            "table_name": "lessons",
+            "index_name": "PRIMARY",
+            "non_unique": 0,
+            "sequence": 1,
+            "column_name": "id"
+        }
+    ],
+    "foreign_keys": [
+        {
+            "table_name": "courses",
+            "constraint_name": "courses_teacher_id_foreign",
+            "column_name": "teacher_id",
+            "parent_table": "users",
+            "parent_column": "id"
+        },
+        {
+            "table_name": "enrollments",
+            "constraint_name": "enrollments_course_id_foreign",
+            "column_name": "course_id",
+            "parent_table": "courses",
+            "parent_column": "id"
+        },
+        {
+            "table_name": "enrollments",
+            "constraint_name": "enrollments_student_id_foreign",
+            "column_name": "student_id",
+            "parent_table": "users",
+            "parent_column": "id"
+        },
+        {
+            "table_name": "lesson_completions",
+            "constraint_name": "completion_enrollment_course_fk",
+            "column_name": "enrollment_id",
+            "parent_table": "enrollments",
+            "parent_column": "id"
+        },
+        {
+            "table_name": "lesson_completions",
+            "constraint_name": "completion_enrollment_course_fk",
+            "column_name": "course_id",
+            "parent_table": "enrollments",
+            "parent_column": "course_id"
+        },
+        {
+            "table_name": "lesson_completions",
+            "constraint_name": "completion_lesson_course_fk",
+            "column_name": "lesson_id",
+            "parent_table": "lessons",
+            "parent_column": "id"
+        },
+        {
+            "table_name": "lesson_completions",
+            "constraint_name": "completion_lesson_course_fk",
+            "column_name": "course_id",
+            "parent_table": "lessons",
+            "parent_column": "course_id"
+        },
+        {
+            "table_name": "lessons",
+            "constraint_name": "lessons_course_id_foreign",
+            "column_name": "course_id",
+            "parent_table": "courses",
+            "parent_column": "id"
+        }
+    ],
+    "migrations": [
+        {
+            "migration": "0001_01_01_000000_create_users_table",
+            "batch": 1
+        },
+        {
+            "migration": "0001_01_01_000001_create_cache_table",
+            "batch": 1
+        },
+        {
+            "migration": "0001_01_01_000002_create_jobs_table",
+            "batch": 1
+        },
+        {
+            "migration": "2026_10_21_001334_create_academy_schema",
+            "batch": 2
+        },
+        {
+            "migration": "2026_10_21_133758_add_lesson_soft_deletes_and_order_version",
+            "batch": 3
+        }
+    ]
+}

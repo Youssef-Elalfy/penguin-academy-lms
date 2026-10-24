@@ -1,0 +1,1282 @@
+{
+  "run": "m6-551cfe8c3c3a",
+  "started_at": "2026-10-23T12:15:01.163Z",
+  "base_url": "http://127.0.0.1:4174",
+  "database": "penguin_academy_test",
+  "browser": {
+    "engine": "153.0.8010.0",
+    "playwright": "1.62.1",
+    "implementation": "Real local Chromium with fresh isolated contexts; all sign-in through Fortify forms."
+  },
+  "cases": [
+    {
+      "name": "Administrator login and dashboard",
+      "status": "passed",
+      "duration_ms": 1254
+    },
+    {
+      "name": "Administrator creates two teacher accounts through protected forms",
+      "status": "passed",
+      "duration_ms": 2506
+    },
+    {
+      "name": "Administrator course creation, edit, teacher assignment and publication",
+      "status": "passed",
+      "duration_ms": 4938
+    },
+    {
+      "name": "Teacher login enforces password change and redirects to teacher dashboard",
+      "status": "passed",
+      "duration_ms": 1983
+    },
+    {
+      "name": "Teacher assignment scope and cross-course/admin rejection",
+      "status": "passed",
+      "duration_ms": 2659
+    },
+    {
+      "name": "Teacher creates and edits own course",
+      "status": "passed",
+      "duration_ms": 2451
+    },
+    {
+      "name": "Teacher creates, edits, publishes and reorders lessons",
+      "status": "passed",
+      "duration_ms": 8116
+    },
+    {
+      "name": "Student registration, logout, login and role redirect",
+      "status": "passed",
+      "duration_ms": 3073
+    },
+    {
+      "name": "Student catalog and denial before enrollment or for staff/draft content",
+      "status": "passed",
+      "duration_ms": 2699
+    },
+    {
+      "name": "Student enrolls and reads published lesson with escaped content",
+      "status": "passed",
+      "duration_ms": 2354
+    },
+    {
+      "name": "Completion, 50 percent progress and persistence after refresh",
+      "status": "passed",
+      "duration_ms": 1391
+    },
+    {
+      "name": "Undo completion and complete again",
+      "status": "passed",
+      "duration_ms": 1475
+    },
+    {
+      "name": "Withdrawal blocks lessons; re-enrollment retains progress and enrollment identity",
+      "status": "passed",
+      "duration_ms": 3150
+    },
+    {
+      "name": "Teacher roster, learner report and course report",
+      "status": "passed",
+      "duration_ms": 1704
+    },
+    {
+      "name": "Administrator enrollment and progress reports",
+      "status": "passed",
+      "duration_ms": 1672
+    },
+    {
+      "name": "Server-side form validation focuses accessible error summary",
+      "status": "passed",
+      "duration_ms": 1198
+    },
+    {
+      "name": "admin responsive layouts at 375, 768 and 1440 pixels",
+      "status": "passed",
+      "duration_ms": 13656
+    },
+    {
+      "name": "admin mobile navigation and keyboard focus",
+      "status": "passed",
+      "duration_ms": 726
+    },
+    {
+      "name": "teacher responsive layouts at 375, 768 and 1440 pixels",
+      "status": "passed",
+      "duration_ms": 11886
+    },
+    {
+      "name": "teacher mobile navigation and keyboard focus",
+      "status": "passed",
+      "duration_ms": 668
+    },
+    {
+      "name": "student responsive layouts at 375, 768 and 1440 pixels",
+      "status": "passed",
+      "duration_ms": 8662
+    },
+    {
+      "name": "student mobile navigation and keyboard focus",
+      "status": "passed",
+      "duration_ms": 642
+    },
+    {
+      "name": "Administrator archival preserves learning history and revokes student access",
+      "status": "passed",
+      "duration_ms": 2382
+    },
+    {
+      "name": "Administrator and teacher logout block dashboard access",
+      "status": "passed",
+      "duration_ms": 1283
+    }
+  ],
+  "layouts": [
+    {
+      "role": "admin",
+      "route": "/admin/dashboard",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/teachers",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/teachers/create",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses/create",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses/1697/edit",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/enrollments",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses/1697/progress",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/dashboard",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/teachers",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/teachers/create",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses/create",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses/1697/edit",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/enrollments",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses/1697/progress",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/dashboard",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/teachers",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/teachers/create",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses/create",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses/1697/edit",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/admin/enrollments",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "admin",
+      "route": "/courses/1697/progress",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/teacher/dashboard",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697/lessons/create",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697/lessons/order",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697/enrollments",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697/progress",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697/enrollments/1384/progress",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/teacher/dashboard",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697/lessons/create",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697/lessons/order",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697/enrollments",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697/progress",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697/enrollments/1384/progress",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/teacher/dashboard",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697/lessons/create",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697/lessons/order",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697/enrollments",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697/progress",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697/enrollments/1384/progress",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/student/dashboard",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/courses",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/courses/1697",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/courses/1697/lessons/1247",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/my-courses",
+      "width": 375,
+      "viewport": 375,
+      "document": 375,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/student/dashboard",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/courses",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/courses/1697",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/courses/1697/lessons/1247",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/my-courses",
+      "width": 768,
+      "viewport": 768,
+      "document": 768,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/student/dashboard",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/courses",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/courses/1697",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/courses/1697/lessons/1247",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    },
+    {
+      "role": "student",
+      "route": "/my-courses",
+      "width": 1440,
+      "viewport": 1440,
+      "document": 1440,
+      "horizontalOverflow": false,
+      "h1": 1,
+      "unlabeled": [],
+      "brokenImages": 0,
+      "status": "passed"
+    }
+  ],
+  "accessibility": [
+    {
+      "role": "admin",
+      "route": "/admin/dashboard",
+      "passes": 22,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "admin",
+      "route": "/admin/teachers",
+      "passes": 25,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 5
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "admin",
+      "route": "/admin/teachers/create",
+      "passes": 20,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 5
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "admin",
+      "route": "/courses",
+      "passes": 26,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 8
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "admin",
+      "route": "/courses/create",
+      "passes": 21,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "admin",
+      "route": "/courses/1697/edit",
+      "passes": 21,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "admin",
+      "route": "/admin/enrollments",
+      "passes": 25,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "admin",
+      "route": "/courses/1697/progress",
+      "passes": 25,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "nodes": [
+            {
+              "target": [
+                ".btn-sm"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "teacher",
+      "route": "/teacher/dashboard",
+      "passes": 22,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 3
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697",
+      "passes": 18,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "div > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.28 (foreground color: #55796c, background color: #edf3e9, font size: 8.0pt (10.72px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697/lessons/create",
+      "passes": 19,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 3
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697/lessons/order",
+      "passes": 19,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 10
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "nodes": 6
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697/enrollments",
+      "passes": 26,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 5
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697/progress",
+      "passes": 25,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 4
+        }
+      ],
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "nodes": [
+            {
+              "target": [
+                ".btn-sm"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "teacher",
+      "route": "/courses/1697/enrollments/1384/progress",
+      "passes": 22,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 3
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "student",
+      "route": "/student/dashboard",
+      "passes": 18,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 4
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "student",
+      "route": "/courses",
+      "passes": 20,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 5
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "student",
+      "route": "/courses/1697",
+      "passes": 18,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "div > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.28 (foreground color: #55796c, background color: #edf3e9, font size: 8.0pt (10.72px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "student",
+      "route": "/courses/1697/lessons/1247",
+      "passes": 17,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 4
+        }
+      ],
+      "violations": []
+    },
+    {
+      "role": "student",
+      "route": "/my-courses",
+      "passes": 20,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 5
+        }
+      ],
+      "violations": []
+    }
+  ],
+  "screenshots": [
+    "admin-375.png",
+    "admin-768.png",
+    "admin-1440.png",
+    "teacher-375.png",
+    "teacher-768.png",
+    "teacher-1440.png",
+    "student-375.png",
+    "student-768.png",
+    "student-1440.png"
+  ],
+  "console_errors": [],
+  "persistence": [
+    {
+      "label": "Administrator provisioned through existing secure command",
+      "status": "passed",
+      "course_rows": 0,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    },
+    {
+      "label": "Teachers have Teacher role and mandatory password change",
+      "status": "passed",
+      "course_rows": 0,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    },
+    {
+      "label": "Course title, teacher and publication persisted",
+      "status": "passed",
+      "course_rows": 1,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    },
+    {
+      "label": "Mandatory password change cleared after supported form",
+      "status": "passed",
+      "course_rows": 2,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    },
+    {
+      "label": "Teacher-created course assigns current teacher",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    },
+    {
+      "label": "Lesson publication and order persist",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    },
+    {
+      "label": "Registration creates active Student only",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 0,
+      "completion_rows": 0
+    },
+    {
+      "label": "One active persisted enrollment",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 1,
+      "completion_rows": 0
+    },
+    {
+      "label": "Completion row persisted",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 1,
+      "completion_rows": 1
+    },
+    {
+      "label": "Undo removes only current completion",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 1,
+      "completion_rows": 0
+    },
+    {
+      "label": "Re-completion creates one unique row",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 1,
+      "completion_rows": 1
+    },
+    {
+      "label": "Withdrawn enrollment and historical completion retained",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 1,
+      "completion_rows": 1
+    },
+    {
+      "label": "Original enrollment reactivated with history",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 1,
+      "completion_rows": 1
+    },
+    {
+      "label": "Archived course preserves enrollment and completion",
+      "status": "passed",
+      "course_rows": 3,
+      "enrollment_rows": 1,
+      "completion_rows": 1
+    }
+  ],
+  "outcome": "completed",
+  "finished_at": "2026-10-23T12:16:41.067Z",
+  "summary": {
+    "passed": 24,
+    "failed": 0,
+    "layouts": 60,
+    "accessibility_scans": 20,
+    "accessibility_violations": 4
+  },
+  "cleanup": {
+    "database": "penguin_academy_test",
+    "cleanup": "Only this run’s synthetic users and course records removed."
+  }
+}

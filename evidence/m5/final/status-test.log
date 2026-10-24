@@ -1,0 +1,8 @@
+
+  Migration name .............................................. Batch / Status  
+  0001_01_01_000000_create_users_table ............................... [1] Ran  
+  0001_01_01_000001_create_cache_table ............................... [1] Ran  
+  0001_01_01_000002_create_jobs_table ................................ [1] Ran  
+  2026_10_21_001334_create_academy_schema ............................ [2] Ran  
+  2026_10_21_133758_add_lesson_soft_deletes_and_order_version ........ [3] Ran  
+

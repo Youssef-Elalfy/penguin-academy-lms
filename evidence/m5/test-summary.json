@@ -1,0 +1,461 @@
+[
+  {
+    "name": "Tests\\Feature\\AcademyConcurrencyTest",
+    "tests": "3",
+    "assertions": "27",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "1.560095"
+  },
+  {
+    "name": "Tests\\Feature\\AdministratorProvisioningTest",
+    "tests": "4",
+    "assertions": "17",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.170437"
+  },
+  {
+    "name": "Tests\\Feature\\ApiContractTest",
+    "tests": "54",
+    "assertions": "308",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "2.438638"
+  },
+  {
+    "name": "Tests\\Feature\\ApiContractTest::test_every_protected_endpoint_requires_a_bearer_token",
+    "tests": "23",
+    "assertions": "92",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.587667"
+  },
+  {
+    "name": "Tests\\Feature\\ApiContractTest::test_every_protected_endpoint_requires_its_explicit_ability",
+    "tests": "23",
+    "assertions": "46",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.696454"
+  },
+  {
+    "name": "Tests\\Feature\\ApiContractTest::test_invalid_filters_return_safe_consistent_validation_errors",
+    "tests": "5",
+    "assertions": "25",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.157786"
+  },
+  {
+    "name": "Tests\\Feature\\ApiCourseTest",
+    "tests": "16",
+    "assertions": "105",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "23.194626"
+  },
+  {
+    "name": "Tests\\Feature\\ApiCourseTest::test_student_cannot_mutate_courses_even_with_a_privileged_token",
+    "tests": "3",
+    "assertions": "12",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "1.348555"
+  },
+  {
+    "name": "Tests\\Feature\\ApiCourseTest::test_invalid_course_payload_returns_422_without_persistence",
+    "tests": "6",
+    "assertions": "24",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "5.592042"
+  },
+  {
+    "name": "Tests\\Feature\\ApiEnrollmentTest",
+    "tests": "8",
+    "assertions": "64",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "4.148082"
+  },
+  {
+    "name": "Tests\\Feature\\ApiEnrollmentTest::test_authorized_staff_enroll_and_withdraw_students",
+    "tests": "2",
+    "assertions": "10",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.456332"
+  },
+  {
+    "name": "Tests\\Feature\\ApiLessonTest",
+    "tests": "9",
+    "assertions": "64",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.721855"
+  },
+  {
+    "name": "Tests\\Feature\\ApiLessonTest::test_cross_course_nested_lesson_requests_return_404",
+    "tests": "3",
+    "assertions": "6",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.110706"
+  },
+  {
+    "name": "Tests\\Feature\\ApiLessonTest::test_unassigned_users_cannot_manage_lessons",
+    "tests": "2",
+    "assertions": "12",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.158999"
+  },
+  {
+    "name": "Tests\\Feature\\ApiProgressTest",
+    "tests": "11",
+    "assertions": "71",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.682636"
+  },
+  {
+    "name": "Tests\\Feature\\ApiProgressTest::test_cross_course_and_cross_student_completion_requests_are_rejected",
+    "tests": "2",
+    "assertions": "8",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.117830"
+  },
+  {
+    "name": "Tests\\Feature\\ApiProgressTest::test_inaccessible_content_cannot_change_history",
+    "tests": "4",
+    "assertions": "12",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.170940"
+  },
+  {
+    "name": "Tests\\Feature\\ApiReportingTest",
+    "tests": "3",
+    "assertions": "47",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.365376"
+  },
+  {
+    "name": "Tests\\Feature\\ApiTokenTest",
+    "tests": "25",
+    "assertions": "214",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "4.121475"
+  },
+  {
+    "name": "Tests\\Feature\\ApiTokenTest::test_returns_generic_401_for_invalid_credentials",
+    "tests": "3",
+    "assertions": "9",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.696813"
+  },
+  {
+    "name": "Tests\\Feature\\ApiTokenTest::test_returns_422_for_invalid_token_requests",
+    "tests": "8",
+    "assertions": "32",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.570886"
+  },
+  {
+    "name": "Tests\\Feature\\ApiTokenTest::test_returns_401_for_unusable_tokens",
+    "tests": "5",
+    "assertions": "5",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.090540"
+  },
+  {
+    "name": "Tests\\Feature\\AuthenticationTest",
+    "tests": "18",
+    "assertions": "111",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.445854"
+  },
+  {
+    "name": "Tests\\Feature\\AuthenticationTest::test_registration_rejects_privilege_fields",
+    "tests": "6",
+    "assertions": "30",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.101714"
+  },
+  {
+    "name": "Tests\\Feature\\AuthenticationTest::test_each_role_can_login_and_is_routed_to_its_dashboard",
+    "tests": "3",
+    "assertions": "24",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.110096"
+  },
+  {
+    "name": "Tests\\Feature\\AuthorizationTest",
+    "tests": "9",
+    "assertions": "46",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.218841"
+  },
+  {
+    "name": "Tests\\Feature\\AuthorizationTest::test_roles_cannot_open_each_others_dashboards",
+    "tests": "3",
+    "assertions": "6",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.053597"
+  },
+  {
+    "name": "Tests\\Feature\\CompletionConcurrencyTest",
+    "tests": "5",
+    "assertions": "37",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "1.893298"
+  },
+  {
+    "name": "Tests\\Feature\\CompletionConcurrencyTest::test_withdrawal_before_queued_completion_mutations_prevents_changes",
+    "tests": "2",
+    "assertions": "12",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.598330"
+  },
+  {
+    "name": "Tests\\Feature\\CourseManagementTest",
+    "tests": "21",
+    "assertions": "173",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.773900"
+  },
+  {
+    "name": "Tests\\Feature\\CourseManagementTest::test_course_writes_reject_ineligible_teacher_accounts",
+    "tests": "3",
+    "assertions": "30",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.105292"
+  },
+  {
+    "name": "Tests\\Feature\\CourseManagementTest::test_protected_course_fields_are_rejected",
+    "tests": "6",
+    "assertions": "24",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.138948"
+  },
+  {
+    "name": "Tests\\Feature\\DashboardTest",
+    "tests": "4",
+    "assertions": "15",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.198450"
+  },
+  {
+    "name": "Tests\\Feature\\DatabaseIntegrityTest",
+    "tests": "11",
+    "assertions": "27",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.241788"
+  },
+  {
+    "name": "Tests\\Feature\\EnrollmentManagementTest",
+    "tests": "18",
+    "assertions": "194",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "1.167420"
+  },
+  {
+    "name": "Tests\\Feature\\EnrollmentManagementTest::test_staff_can_enroll_withdraw_and_reenroll_eligible_students",
+    "tests": "2",
+    "assertions": "18",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.112056"
+  },
+  {
+    "name": "Tests\\Feature\\EnrollmentManagementTest::test_managers_cannot_enroll_nonstudents_or_inactive_students",
+    "tests": "3",
+    "assertions": "12",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.083095"
+  },
+  {
+    "name": "Tests\\Feature\\FoundationTest",
+    "tests": "7",
+    "assertions": "16",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.099348"
+  },
+  {
+    "name": "Tests\\Feature\\LearningProgressTest",
+    "tests": "10",
+    "assertions": "33",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.272225"
+  },
+  {
+    "name": "Tests\\Feature\\LearningProgressTest::test_percentage_stays_between_zero_and_one_hundred",
+    "tests": "4",
+    "assertions": "4",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.039354"
+  },
+  {
+    "name": "Tests\\Feature\\LearningReportsTest",
+    "tests": "10",
+    "assertions": "102",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.817235"
+  },
+  {
+    "name": "Tests\\Feature\\LessonCompletionTest",
+    "tests": "25",
+    "assertions": "197",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "1.544807"
+  },
+  {
+    "name": "Tests\\Feature\\LessonCompletionTest::test_non_enrolled_actors_cannot_change_student_progress",
+    "tests": "3",
+    "assertions": "18",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.104814"
+  },
+  {
+    "name": "Tests\\Feature\\LessonCompletionTest::test_forged_progress_fields_are_rejected_without_writes",
+    "tests": "8",
+    "assertions": "48",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.243332"
+  },
+  {
+    "name": "Tests\\Feature\\LessonCompletionTest::test_inaccessible_curriculum_blocks_completion_and_undo_and_retains_history",
+    "tests": "5",
+    "assertions": "20",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.202099"
+  },
+  {
+    "name": "Tests\\Feature\\LessonManagementTest",
+    "tests": "13",
+    "assertions": "128",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.745637"
+  },
+  {
+    "name": "Tests\\Feature\\ReviewCorrectionsTest",
+    "tests": "10",
+    "assertions": "29",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.181111"
+  },
+  {
+    "name": "Tests\\Feature\\ReviewCorrectionsTest::test_wrong_roles_and_inactive_accounts_fail_eligibility",
+    "tests": "6",
+    "assertions": "6",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.093673"
+  },
+  {
+    "name": "Tests\\Feature\\SessionSecurityTest",
+    "tests": "9",
+    "assertions": "54",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.238496"
+  },
+  {
+    "name": "Tests\\Feature\\TeacherManagementTest",
+    "tests": "10",
+    "assertions": "62",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.341795"
+  },
+  {
+    "name": "Tests\\Feature\\TeacherManagementTest::test_non_admins_cannot_manage_teachers",
+    "tests": "2",
+    "assertions": "14",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.058817"
+  }
+]

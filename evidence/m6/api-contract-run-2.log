@@ -1,0 +1,13 @@
+Private MySQL connection verified.
+PASS Accounts provisioned through administrator, Fortify and teacher-management flows
+PASS Token issuance uses role-limited abilities and explicit expiry
+PASS Course CRUD, teacher assignment, filtering and pagination match the contract
+PASS Lesson CRUD, publication, ordering and conflicting versions
+PASS Enrollment is idempotent; own learning access and data remain scoped
+PASS Concurrent completion requests persist one row; undo, withdrawal and re-enrollment retain expected history
+PASS All protected operations reject absent bearer authentication
+PASS Token abilities and live policies reject cross-course, forged and invalid requests
+PASS Staff reports are scoped; archival preserves historical relationships
+PASS Token listing excludes secrets, owned revocation and current revocation take effect
+PASS All 24 documented operations executed with a successful real HTTP response
+{"passed":11,"failed":0,"responses":92}

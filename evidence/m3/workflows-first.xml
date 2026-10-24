@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="CLI Arguments" tests="52" assertions="488" errors="0" failures="1" skipped="0" time="2.141628">
+    <testsuite name="Tests\Feature\CourseManagementTest" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" tests="21" assertions="173" errors="0" failures="0" skipped="0" time="0.976850">
+      <testcase name="test_admin_creates_edits_and_publishes_a_persisted_course" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="23" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="16" time="0.256790"/>
+      <testcase name="test_teacher_course_creation_assigns_signed_in_teacher_and_permits_own_editing" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="44" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="8" time="0.043583"/>
+      <testcase name="test_teacher_cannot_forge_assignment_on_create_or_update" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="58" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="9" time="0.026830"/>
+      <testcase name="test_students_cannot_create_or_modify_courses_and_guests_are_redirected" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="70" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="12" time="0.036992"/>
+      <testcase name="test_teacher_cannot_access_or_change_another_teachers_course" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="86" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="8" time="0.046716"/>
+      <testcase name="test_admin_reassignment_immediately_removes_previous_teacher_access" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="99" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="4" time="0.047401"/>
+      <testsuite name="Tests\Feature\CourseManagementTest::test_course_writes_reject_ineligible_teacher_accounts" tests="3" assertions="30" errors="0" failures="0" skipped="0" time="0.083536">
+        <testcase name="test_course_writes_reject_ineligible_teacher_accounts with data set &quot;student&quot;" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="116" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="10" time="0.025959"/>
+        <testcase name="test_course_writes_reject_ineligible_teacher_accounts with data set &quot;administrator&quot;" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="116" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="10" time="0.026359"/>
+        <testcase name="test_course_writes_reject_ineligible_teacher_accounts with data set &quot;inactive teacher&quot;" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="116" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="10" time="0.031218"/>
+      </testsuite>
+      <testcase name="test_missing_teacher_and_invalid_publication_are_validation_errors" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="127" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="7" time="0.030993"/>
+      <testcase name="test_publishing_requires_an_active_teacher_and_removal_requires_unpublishing" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="136" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="13" time="0.047224"/>
+      <testcase name="test_archiving_preserves_learning_records_hides_routes_and_reserves_slug" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="151" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="11" time="0.054826"/>
+      <testsuite name="Tests\Feature\CourseManagementTest::test_protected_course_fields_are_rejected" tests="6" assertions="24" errors="0" failures="0" skipped="0" time="0.176406">
+        <testcase name="test_protected_course_fields_are_rejected with data set &quot;role&quot;" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="171" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="4" time="0.022566"/>
+        <testcase name="test_protected_course_fields_are_rejected with data set &quot;identity&quot;" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="171" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="4" time="0.036160"/>
+        <testcase name="test_protected_course_fields_are_rejected with data set &quot;primary key&quot;" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="171" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="4" time="0.024383"/>
+        <testcase name="test_protected_course_fields_are_rejected with data set &quot;publication&quot;" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="171" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="4" time="0.029442"/>
+        <testcase name="test_protected_course_fields_are_rejected with data set &quot;archive&quot;" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="171" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="4" time="0.039900"/>
+        <testcase name="test_protected_course_fields_are_rejected with data set &quot;ordering version&quot;" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="171" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="4" time="0.023957"/>
+      </testsuite>
+      <testcase name="test_course_validation_rejects_missing_malformed_duplicate_and_oversized_values" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="177" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="14" time="0.037092"/>
+      <testcase name="test_catalog_hides_drafts_scheduled_and_archived_courses_and_scopes_pagination" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="186" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="10" time="0.050666"/>
+      <testcase name="test_admin_filters_and_course_text_are_escaped" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/CourseManagementTest.php" line="201" class="Tests\Feature\CourseManagementTest" classname="Tests.Feature.CourseManagementTest" assertions="7" time="0.037794"/>
+    </testsuite>
+    <testsuite name="Tests\Feature\LessonManagementTest" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/LessonManagementTest.php" tests="13" assertions="128" errors="0" failures="0" skipped="0" time="0.502154">
+      <testcase name="test_teacher_creates_edits_and_publishes_a_lesson_with_server_assigned_position" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/LessonManagementTest.php" line="18" class="Tests\Feature\LessonManagementTest" classname="Tests.Feature.LessonManagementTest" assertions="13" time="0.060563"/>
+      <testcase name="test_admin_can_manage_lessons_in_any_course" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/LessonManagementTest.php" line="36" class="Tests\Feature\LessonManagementTest" classname="Tests.Feature.LessonManagementTest" assertions="5" time="0.040226"/>
+      <testcase name="test_students_and_other_teachers_cannot_write_lessons" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/LessonManagementTest.php" line="46" class="Tests\Feature\LessonManagementTest" classname="Tests.Feature.LessonManagementTest" assertions="18" time="0.064073"/>
+      <testcase name="test_cross_course_lesson_routes_return_404_even_for_administrators" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/LessonManagementTest.php" line="65" class="Tests\Feature\LessonManagementTest" classname="Tests.Feature.LessonManagementTest" assertions="6" time="0.031537"/>
+      <testcase name="test_student_read_access_requires_active_enrollment_and_both_publication_flags" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/LessonManagementTest.php" line="78" class="Tests\Feature\LessonManagementTest" classname="Tests.Feature.LessonManagementTest" assertions="6" time="0.042442"/>
+      <testcase name="test_soft_delete_keeps_completions_and_reserved_positions_but_removes_lesson_access" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/LessonManagementTest.php" line="97" class="Tests\Feature\LessonManagementTest" classname="Tests.Feature.LessonManagementTest" assertions="13" time="0.058122"/>
+      <testcase name="test_reordering_swaps_unique_positions_without_touching_archived_lesson_history" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/LessonManagementTest.php" line="115" class="Tests\Feature\LessonManagementTest" classname="Tests.Feature.LessonManagementTest" assertions="10" time="0.029355"/>
+      <testcase name="test_stale_order_returns_conflict_and_preserves_the_newer_order" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/LessonManagementTest.php" line="130" class="Tests\Feature\LessonManagementTest" classname="Tests.Feature.LessonManagementTest" assertions="6" time="0.032623"/>
+      <testcase name="test_reorder_rejects_duplicates_missing_ids_and_foreign_lessons_without_writes" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/LessonManagementTest.php" line="141" class="Tests\Feature\LessonManagementTest" classname="Tests.Feature.LessonManagementTest" assertions="9" time="0.035581"/>
+      <testcase name="test_adding_and_archiving_lessons_invalidates_open_order_forms" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/LessonManagementTest.php" line="156" class="Tests\Feature\LessonManagementTest" classname="Tests.Feature.LessonManagementTest" assertions="4" time="0.030060"/>
+      <testcase name="test_lesson_validation_and_protected_fields_prevent_invalid_writes" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/LessonManagementTest.php" line="166" class="Tests\Feature\LessonManagementTest" classname="Tests.Feature.LessonManagementTest" assertions="27" time="0.036940"/>
+      <testcase name="test_lesson_content_is_escaped_and_student_navigation_skips_unpublished_lessons" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/LessonManagementTest.php" line="177" class="Tests\Feature\LessonManagementTest" classname="Tests.Feature.LessonManagementTest" assertions="6" time="0.024503"/>
+      <testcase name="test_position_exhaustion_is_a_validation_error_without_partial_writes" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/LessonManagementTest.php" line="187" class="Tests\Feature\LessonManagementTest" classname="Tests.Feature.LessonManagementTest" assertions="5" time="0.016129"/>
+    </testsuite>
+    <testsuite name="Tests\Feature\EnrollmentManagementTest" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/EnrollmentManagementTest.php" tests="18" assertions="187" errors="0" failures="1" skipped="0" time="0.662623">
+      <testcase name="test_student_self_enrolls_and_duplicate_requests_reuse_one_record" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/EnrollmentManagementTest.php" line="21" class="Tests\Feature\EnrollmentManagementTest" classname="Tests.Feature.EnrollmentManagementTest" assertions="11" time="0.033949"/>
+      <testcase name="test_withdrawal_and_reenrollment_preserve_completion_history_and_original_join_date" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/EnrollmentManagementTest.php" line="35" class="Tests\Feature\EnrollmentManagementTest" classname="Tests.Feature.EnrollmentManagementTest" assertions="13" time="0.047271"/>
+      <testsuite name="Tests\Feature\EnrollmentManagementTest::test_staff_can_enroll_withdraw_and_reenroll_eligible_students" tests="2" assertions="18" errors="0" failures="0" skipped="0" time="0.075702">
+        <testcase name="test_staff_can_enroll_withdraw_and_reenroll_eligible_students with data set &quot;admin&quot;" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/EnrollmentManagementTest.php" line="62" class="Tests\Feature\EnrollmentManagementTest" classname="Tests.Feature.EnrollmentManagementTest" assertions="9" time="0.039076"/>
+        <testcase name="test_staff_can_enroll_withdraw_and_reenroll_eligible_students with data set &quot;assigned teacher&quot;" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/EnrollmentManagementTest.php" line="62" class="Tests\Feature\EnrollmentManagementTest" classname="Tests.Feature.EnrollmentManagementTest" assertions="9" time="0.036626"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\EnrollmentManagementTest::test_managers_cannot_enroll_nonstudents_or_inactive_students" tests="3" assertions="12" errors="0" failures="0" skipped="0" time="0.046136">
+        <testcase name="test_managers_cannot_enroll_nonstudents_or_inactive_students with data set &quot;teacher&quot;" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/EnrollmentManagementTest.php" line="83" class="Tests\Feature\EnrollmentManagementTest" classname="Tests.Feature.EnrollmentManagementTest" assertions="4" time="0.014667"/>
+        <testcase name="test_managers_cannot_enroll_nonstudents_or_inactive_students with data set &quot;admin&quot;" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/EnrollmentManagementTest.php" line="83" class="Tests\Feature\EnrollmentManagementTest" classname="Tests.Feature.EnrollmentManagementTest" assertions="4" time="0.015991"/>
+        <testcase name="test_managers_cannot_enroll_nonstudents_or_inactive_students with data set &quot;inactive student&quot;" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/EnrollmentManagementTest.php" line="83" class="Tests\Feature\EnrollmentManagementTest" classname="Tests.Feature.EnrollmentManagementTest" assertions="4" time="0.015478"/>
+      </testsuite>
+      <testcase name="test_manager_missing_and_forged_student_ids_are_validation_errors" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/EnrollmentManagementTest.php" line="91" class="Tests\Feature\EnrollmentManagementTest" classname="Tests.Feature.EnrollmentManagementTest" assertions="10" time="0.018955"/>
+      <testcase name="test_students_cannot_supply_identity_or_privileged_fields" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/EnrollmentManagementTest.php" line="100" class="Tests\Feature\EnrollmentManagementTest" classname="Tests.Feature.EnrollmentManagementTest" assertions="17" time="0.026584"/>
+      <testcase name="test_other_students_and_unassigned_teachers_cannot_change_or_view_the_roster" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/EnrollmentManagementTest.php" line="113" class="Tests\Feature\EnrollmentManagementTest" classname="Tests.Feature.EnrollmentManagementTest" assertions="8" time="0.029082"/>
+      <testcase name="test_nested_enrollment_binding_prevents_cross_course_withdrawal_even_for_admins" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/EnrollmentManagementTest.php" line="127" class="Tests\Feature\EnrollmentManagementTest" classname="Tests.Feature.EnrollmentManagementTest" assertions="2" time="0.019273"/>
+      <testcase name="test_unpublished_scheduled_and_archived_courses_cannot_receive_enrollments" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/EnrollmentManagementTest.php" line="135" class="Tests\Feature\EnrollmentManagementTest" classname="Tests.Feature.EnrollmentManagementTest" assertions="5" time="0.029023"/>
+      <testcase name="test_withdrawal_is_allowed_when_a_course_becomes_unpublished" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/EnrollmentManagementTest.php" line="149" class="Tests\Feature\EnrollmentManagementTest" classname="Tests.Feature.EnrollmentManagementTest" assertions="5" time="0.030797"/>
+      <testcase name="test_roster_filters_pagination_and_overview_use_real_scoped_records" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/EnrollmentManagementTest.php" line="160" class="Tests\Feature\EnrollmentManagementTest" classname="Tests.Feature.EnrollmentManagementTest" assertions="3" time="0.044712">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\EnrollmentManagementTest::test_roster_filters_pagination_and_overview_use_real_scoped_records
+Failed asserting that '&lt;!doctype html&gt;\n
+&lt;html lang="en"&gt;\n
+&lt;head&gt;\n
+    &lt;meta charset="utf-8"&gt;&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;\n
+    &lt;meta name="robots" content="noindex,nofollow"&gt;\n
+    &lt;title&gt;Student roster · Penguin Academy&lt;/title&gt;\n
+    &lt;link rel="preload" as="style" href="http://127.0.0.1:8000/build/assets/app-7uvl2oni.css" /&gt;&lt;link rel="modulepreload" as="script" href="http://127.0.0.1:8000/build/assets/app-B2XyD8x1.js" /&gt;&lt;link rel="stylesheet" href="http://127.0.0.1:8000/build/assets/app-7uvl2oni.css" /&gt;&lt;script type="module" src="http://127.0.0.1:8000/build/assets/app-B2XyD8x1.js"&gt;&lt;/script&gt;&lt;/head&gt;\n
+&lt;body&gt;\n
+&lt;a class="skip-link" href="#main-content"&gt;Skip to content&lt;/a&gt;\n
+&lt;div class="app-layout"&gt;\n
+    &lt;aside class="academy-sidebar offcanvas-lg offcanvas-start" tabindex="-1" id="academy-navigation" aria-labelledby="navigation-title"&gt;\n
+        &lt;div class="offcanvas-header"&gt;&lt;h2 id="navigation-title" class="h5 mb-0"&gt;Navigation&lt;/h2&gt;&lt;button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" data-bs-target="#academy-navigation" aria-label="Close navigation"&gt;&lt;/button&gt;&lt;/div&gt;\n
+        &lt;div class="offcanvas-body"&gt;\n
+            &lt;a class="brand-link sidebar-brand" href="http://127.0.0.1:8000/dashboard"&gt;&lt;span class="brand-lockup"&gt;\n
+    &lt;svg viewBox="0 0 40 40" width="38" height="38" aria-hidden="true" focusable="false"&gt;&lt;rect width="40" height="40" rx="12" fill="#d8f3ea"/&gt;&lt;ellipse cx="20" cy="22" rx="10" ry="13" fill="#173f49"/&gt;&lt;ellipse cx="20" cy="25" rx="6.5" ry="9" fill="#fff"/&gt;&lt;circle cx="16.5" cy="15" r="1.5" fill="#fff"/&gt;&lt;circle cx="23.5" cy="15" r="1.5" fill="#fff"/&gt;&lt;path d="m17 19 3 3 3-3Z" fill="#dca747"/&gt;&lt;/svg&gt;\n
+    &lt;span&gt;Penguin&lt;span class="brand-subtitle"&gt;ACADEMY&lt;/span&gt;&lt;/span&gt;\n
+&lt;/span&gt;\n
+&lt;/a&gt;\n
+            &lt;p class="nav-section-label"&gt;Teacher workspace&lt;/p&gt;\n
+            &lt;nav class="academy-nav" aria-label="Main navigation"&gt;\n
+                &lt;a href="http://127.0.0.1:8000/dashboard" class="" &gt;&lt;span aria-hidden="true"&gt;▦&lt;/span&gt; Overview&lt;/a&gt;\n
+                &lt;a href="http://127.0.0.1:8000/courses" class="active"  aria-current="page" &gt;&lt;span aria-hidden="true"&gt;▤&lt;/span&gt; Courses&lt;/a&gt;\n
+                                                                &lt;a href="http://127.0.0.1:8000/account/password" class="" &gt;&lt;span aria-hidden="true"&gt;◇&lt;/span&gt; Account security&lt;/a&gt;\n
+            &lt;/nav&gt;\n
+            &lt;div class="sidebar-bottom"&gt;\n
+                &lt;div class="profile-chip"&gt;&lt;span class="avatar"&gt;M&lt;/span&gt;&lt;div class="text-truncate"&gt;&lt;strong&gt;Martine Smitham&lt;/strong&gt;&lt;span&gt;Teacher&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;\n
+                &lt;form method="POST" action="http://127.0.0.1:8000/logout" data-submit&gt;&lt;input type="hidden" name="_token" value="5JzLsbkphnSQZrCzyQZPgQKyY4VJ0sH96ofx5zgA" autocomplete="off"&gt;&lt;button class="btn sidebar-logout w-100" type="submit"&gt;Sign out &lt;span aria-hidden="true"&gt;↗&lt;/span&gt;&lt;/button&gt;&lt;/form&gt;\n
+            &lt;/div&gt;\n
+        &lt;/div&gt;\n
+    &lt;/aside&gt;\n
+    &lt;div class="workspace"&gt;\n
+        &lt;header class="workspace-header"&gt;\n
+            &lt;button class="btn btn-outline-secondary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#academy-navigation" aria-controls="academy-navigation" aria-label="Open navigation"&gt;Menu&lt;/button&gt;\n
+            &lt;span class="workspace-breadcrumb"&gt;Workspace &lt;span aria-hidden="true"&gt;/&lt;/span&gt; &lt;strong&gt;Student roster&lt;/strong&gt;&lt;/span&gt;\n
+            &lt;span class="role-badge"&gt;Teacher&lt;/span&gt;\n
+        &lt;/header&gt;\n
+        &lt;main id="main-content" class="workspace-main"&gt;\n
+                        &lt;a class="back-link" href="http://127.0.0.1:8000/courses/121"&gt;← Ex odit inventore nisi iure.&lt;/a&gt;\n
+&lt;div class="page-heading"&gt;&lt;p class="eyebrow"&gt;LEARNING TOGETHER&lt;/p&gt;&lt;h1&gt;Student roster&lt;span class="accent-dot"&gt;.&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;Ex odit inventore nisi iure. · 16 active · 1 withdrawn&lt;/p&gt;&lt;/div&gt;&lt;div class="row g-4"&gt;&lt;div class="col-xl-8"&gt;&lt;section class="surface"&gt;\n
+&lt;form method="GET" action="http://127.0.0.1:8000/courses/121/enrollments" class="filter-bar"&gt;&lt;div class="filter-search"&gt;&lt;label for="q" class="form-label"&gt;Search students&lt;/label&gt;&lt;input id="q" name="q" value="" class="form-control" maxlength="120" placeholder="Student name or email…"&gt;&lt;/div&gt;\n
+&lt;div&gt;&lt;label for="status" class="form-label"&gt;Enrollment status&lt;/label&gt;&lt;select id="status" name="status" class="form-select"&gt;&lt;option value="active" selected&gt;Active&lt;/option&gt;&lt;option value="withdrawn" &gt;Withdrawn&lt;/option&gt;&lt;option value="all" &gt;All enrollments&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;\n
+&lt;div class="filter-actions"&gt;&lt;button class="btn btn-primary" type="submit"&gt;Filter roster&lt;/button&gt;&lt;a class="btn btn-outline-secondary" href="http://127.0.0.1:8000/courses/121/enrollments"&gt;Reset&lt;/a&gt;&lt;/div&gt;&lt;/form&gt;\n
+&lt;div class="table-responsive"&gt;&lt;table class="table academy-table mb-0"&gt;&lt;caption class="visually-hidden"&gt;Students enrolled in Ex odit inventore nisi iure.&lt;/caption&gt;&lt;thead&gt;&lt;tr&gt;&lt;th scope="col"&gt;Student&lt;/th&gt;&lt;th scope="col"&gt;First joined&lt;/th&gt;&lt;th scope="col"&gt;Status&lt;/th&gt;&lt;th scope="col"&gt;Action&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;\n
+&lt;tr&gt;&lt;td&gt;&lt;span class="table-name"&gt;Emmie Jacobson&lt;/span&gt;&lt;span class="table-secondary"&gt;stoltenberg.erick@example.org&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Oct 21, 2026&lt;/td&gt;&lt;td&gt;&lt;span class="status-pill "&gt;Active&lt;/span&gt;&lt;/td&gt;&lt;td&gt;\n
+&lt;form action="http://127.0.0.1:8000/courses/121/enrollments/75" method="POST" data-submit data-confirm="Withdraw this student? Their learning history will be preserved."&gt;&lt;input type="hidden" name="_token" value="5JzLsbkphnSQZrCzyQZPgQKyY4VJ0sH96ofx5zgA" autocomplete="off"&gt; &lt;input type="hidden" name="_method" value="DELETE"&gt;&lt;button type="submit" class="btn btn-outline-secondary btn-sm" aria-label="Withdraw Emmie Jacobson"&gt;Withdraw&lt;/button&gt;&lt;/form&gt;\n
+&lt;/td&gt;&lt;/tr&gt;\n
+&lt;tr&gt;&lt;td&gt;&lt;span class="table-name"&gt;Jennie Rutherford&lt;/span&gt;&lt;span class="table-secondary"&gt;wava.ullrich@example.org&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Oct 21, 2026&lt;/td&gt;&lt;td&gt;&lt;span class="status-pill "&gt;Active&lt;/span&gt;&lt;/td&gt;&lt;td&gt;\n
+&lt;form action="http://127.0.0.1:8000/courses/121/enrollments/74" method="POST" data-submit data-confirm="Withdraw this student? Their learning history will be preserved."&gt;&lt;input type="hidden" name="_token" value="5JzLsbkphnSQZrCzyQZPgQKyY4VJ0sH96ofx5zgA" autocomplete="off"&gt; &lt;input type="hidden" name="_method" value="DELETE"&gt;&lt;button type="submit" class="btn btn-outline-secondary btn-sm" aria-label="Withdraw Jennie Rutherford"&gt;Withdraw&lt;/button&gt;&lt;/form&gt;\n
+&lt;/td&gt;&lt;/tr&gt;\n
+&lt;tr&gt;&lt;td&gt;&lt;span class="table-name"&gt;Tillman Nicolas&lt;/span&gt;&lt;span class="table-secondary"&gt;stephon.kulas@example.org&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Oct 21, 2026&lt;/td&gt;&lt;td&gt;&lt;span class="status-pill "&gt;Active&lt;/span&gt;&lt;/td&gt;&lt;td&gt;\n
+&lt;form action="http://127.0.0.1:8000/courses/121/enrollments/73" method="POST" data-submit data-confirm="Withdraw this student? Their learning history will be preserved."&gt;&lt;input type="hidden" name="_token" value="5JzLsbkphnSQZrCzyQZPgQKyY4VJ0sH96ofx5zgA" autocomplete="off"&gt; &lt;input type="hidden" name="_method" value="DELETE"&gt;&lt;button type="submit" class="btn btn-outline-secondary btn-sm" aria-label="Withdraw Tillman Nicolas"&gt;Withdraw&lt;/button&gt;&lt;/form&gt;\n
+&lt;/td&gt;&lt;/tr&gt;\n
+&lt;tr&gt;&lt;td&gt;&lt;span class="table-name"&gt;Raina Frami&lt;/span&gt;&lt;span class="table-secondary"&gt;otreutel@example.net&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Oct 21, 2026&lt;/td&gt;&lt;td&gt;&lt;span class="status-pill "&gt;Active&lt;/span&gt;&lt;/td&gt;&lt;td&gt;\n
+&lt;form action="http://127.0.0.1:8000/courses/121/enrollments/72" method="POST" data-submit data-confirm="Withdraw this student? Their learning history will be preserved."&gt;&lt;input type="hidden" name="_token" value="5JzLsbkphnSQZrCzyQZPgQKyY4VJ0sH96ofx5zgA" autocomplete="off"&gt; &lt;input type="hidden" name="_method" value="DELETE"&gt;&lt;button type="submit" class="btn btn-outline-secondary btn-sm" aria-label="Withdraw Raina Frami"&gt;Withdraw&lt;/button&gt;&lt;/form&gt;\n
+&lt;/td&gt;&lt;/tr&gt;\n
+&lt;tr&gt;&lt;td&gt;&lt;span class="table-name"&gt;Barbara Powlowski&lt;/span&gt;&lt;span class="table-secondary"&gt;dooley.britney@example.net&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Oct 21, 2026&lt;/td&gt;&lt;td&gt;&lt;span class="status-pill "&gt;Active&lt;/span&gt;&lt;/td&gt;&lt;td&gt;\n
+&lt;form action="http://127.0.0.1:8000/courses/121/enrollments/71" method="POST" data-submit data-confirm="Withdraw this student? Their learning history will be preserved."&gt;&lt;input type="hidden" name="_token" value="5JzLsbkphnSQZrCzyQZPgQKyY4VJ0sH96ofx5zgA" autocomplete="off"&gt; &lt;input type="hidden" name="_method" value="DELETE"&gt;&lt;button type="submit" class="btn btn-outline-secondary btn-sm" aria-label="Withdraw Barbara Powlowski"&gt;Withdraw&lt;/button&gt;&lt;/form&gt;\n
+&lt;/td&gt;&lt;/tr&gt;\n
+&lt;tr&gt;&lt;td&gt;&lt;span class="table-name"&gt;Mr. Jayde Feest&lt;/span&gt;&lt;span class="table-secondary"&gt;obogisich@example.org&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Oct 21, 2026&lt;/td&gt;&lt;td&gt;&lt;span class="status-pill "&gt;Active&lt;/span&gt;&lt;/td&gt;&lt;td&gt;\n
+&lt;form action="http://127.0.0.1:8000/courses/121/enrollments/70" method="POST" data-submit data-confirm="Withdraw this student? Their learning history will be preserved."&gt;&lt;input type="hidden" name="_token" value="5JzLsbkphnSQZrCzyQZPgQKyY4VJ0sH96ofx5zgA" autocomplete="off"&gt; &lt;input type="hidden" name="_method" value="DELETE"&gt;&lt;button type="submit" class="btn btn-outline-secondary btn-sm" aria-label="Withdraw Mr. Jayde Feest"&gt;Withdraw&lt;/button&gt;&lt;/form&gt;\n
+&lt;/td&gt;&lt;/tr&gt;\n
+&lt;tr&gt;&lt;td&gt;&lt;span class="table-name"&gt;Lela Kunze&lt;/span&gt;&lt;span class="table-secondary"&gt;delta.vandervort@example.org&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Oct 21, 2026&lt;/td&gt;&lt;td&gt;&lt;span class="status-pill "&gt;Active&lt;/span&gt;&lt;/td&gt;&lt;td&gt;\n
+&lt;form action="http://127.0.0.1:8000/courses/121/enrollments/69" method="POST" data-submit data-confirm="Withdraw this student? Their learning history will be preserved."&gt;&lt;input type="hidden" name="_token" value="5JzLsbkphnSQZrCzyQZPgQKyY4VJ0sH96ofx5zgA" autocomplete="off"&gt; &lt;input type="hidden" name="_method" value="DELETE"&gt;&lt;button type="submit" class="btn btn-outline-secondary btn-sm" aria-label="Withdraw Lela Kunze"&gt;Withdraw&lt;/button&gt;&lt;/form&gt;\n
+&lt;/td&gt;&lt;/tr&gt;\n
+&lt;tr&gt;&lt;td&gt;&lt;span class="table-name"&gt;Retta Homenick&lt;/span&gt;&lt;span class="table-secondary"&gt;antoinette76@example.com&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Oct 21, 2026&lt;/td&gt;&lt;td&gt;&lt;span class="status-pill "&gt;Active&lt;/span&gt;&lt;/td&gt;&lt;td&gt;\n
+&lt;form action="http://127.0.0.1:8000/courses/121/enrollments/68" method="POST" data-submit data-confirm="Withdraw this student? Their learning history will be preserved."&gt;&lt;input type="hidden" name="_token" value="5JzLsbkphnSQZrCzyQZPgQKyY4VJ0sH96ofx5zgA" autocomplete="off"&gt; &lt;input type="hidden" name="_method" value="DELETE"&gt;&lt;button type="submit" class="btn btn-outline-secondary btn-sm" aria-label="Withdraw Retta Homenick"&gt;Withdraw&lt;/button&gt;&lt;/form&gt;\n
+&lt;/td&gt;&lt;/tr&gt;\n
+&lt;tr&gt;&lt;td&gt;&lt;span class="table-name"&gt;Kurt Lowe&lt;/span&gt;&lt;span class="table-secondary"&gt;edd.prohaska@example.com&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Oct 21, 2026&lt;/td&gt;&lt;td&gt;&lt;span class="status-pill "&gt;Active&lt;/span&gt;&lt;/td&gt;&lt;td&gt;\n
+&lt;form action="http://127.0.0.1:8000/courses/121/enrollments/67" method="POST" data-submit data-confirm="Withdraw this student? Their learning history will be preserved."&gt;&lt;input type="hidden" name="_token" value="5JzLsbkphnSQZrCzyQZPgQKyY4VJ0sH96ofx5zgA" autocomplete="off"&gt; &lt;input type="hidden" name="_method" value="DELETE"&gt;&lt;button type="submit" class="btn btn-outline-secondary btn-sm" aria-label="Withdraw Kurt Lowe"&gt;Withdraw&lt;/button&gt;&lt;/form&gt;\n
+&lt;/td&gt;&lt;/tr&gt;\n
+&lt;tr&gt;&lt;td&gt;&lt;span class="table-name"&gt;Cameron Paucek V&lt;/span&gt;&lt;span class="table-secondary"&gt;ritchie.norma@example.net&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Oct 21, 2026&lt;/td&gt;&lt;td&gt;&lt;span class="status-pill "&gt;Active&lt;/span&gt;&lt;/td&gt;&lt;td&gt;\n
+&lt;form action="http://127.0.0.1:8000/courses/121/enrollments/66" method="POST" data-submit data-confirm="Withdraw this student? Their learning history will be preserved."&gt;&lt;input type="hidden" name="_token" value="5JzLsbkphnSQZrCzyQZPgQKyY4VJ0sH96ofx5zgA" autocomplete="off"&gt; &lt;input type="hidden" name="_method" value="DELETE"&gt;&lt;button type="submit" class="btn btn-outline-secondary btn-sm" aria-label="Withdraw Cameron Paucek V"&gt;Withdraw&lt;/button&gt;&lt;/form&gt;\n
+&lt;/td&gt;&lt;/tr&gt;\n
+&lt;tr&gt;&lt;td&gt;&lt;span class="table-name"&gt;Joana Nicolas&lt;/span&gt;&lt;span class="table-secondary"&gt;cstark@example.org&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Oct 21, 2026&lt;/td&gt;&lt;td&gt;&lt;span class="status-pill "&gt;Active&lt;/span&gt;&lt;/td&gt;&lt;td&gt;\n
+&lt;form action="http://127.0.0.1:8000/courses/121/enrollments/65" method="POST" data-submit data-confirm="Withdraw this student? Their learning history will be preserved."&gt;&lt;input type="hidden" name="_token" value="5JzLsbkphnSQZrCzyQZPgQKyY4VJ0sH96ofx5zgA" autocomplete="off"&gt; &lt;input type="hidden" name="_method" value="DELETE"&gt;&lt;button type="submit" class="btn btn-outline-secondary btn-sm" aria-label="Withdraw Joana Nicolas"&gt;Withdraw&lt;/button&gt;&lt;/form&gt;\n
+&lt;/td&gt;&lt;/tr&gt;\n
+&lt;tr&gt;&lt;td&gt;&lt;span class="table-name"&gt;Russ Grimes&lt;/span&gt;&lt;span class="table-secondary"&gt;schimmel.nelson@example.com&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Oct 21, 2026&lt;/td&gt;&lt;td&gt;&lt;span class="status-pill "&gt;Active&lt;/span&gt;&lt;/td&gt;&lt;td&gt;\n
+&lt;form action="http://127.0.0.1:8000/courses/121/enrollments/64" method="POST" data-submit data-confirm="Withdraw this student? Their learning history will be preserved."&gt;&lt;input type="hidden" name="_token" value="5JzLsbkphnSQZrCzyQZPgQKyY4VJ0sH96ofx5zgA" autocomplete="off"&gt; &lt;input type="hidden" name="_method" value="DELETE"&gt;&lt;button type="submit" class="btn btn-outline-secondary btn-sm" aria-label="Withdraw Russ Grimes"&gt;Withdraw&lt;/button&gt;&lt;/form&gt;\n
+&lt;/td&gt;&lt;/tr&gt;\n
+&lt;tr&gt;&lt;td&gt;&lt;span class="table-name"&gt;Maximus Casper&lt;/span&gt;&lt;span class="table-secondary"&gt;melissa25@example.com&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Oct 21, 2026&lt;/td&gt;&lt;td&gt;&lt;span class="status-pill "&gt;Active&lt;/span&gt;&lt;/td&gt;&lt;td&gt;\n
+&lt;form action="http://127.0.0.1:8000/courses/121/enrollments/63" method="POST" data-submit data-confirm="Withdraw this student? Their learning history will be preserved."&gt;&lt;input type="hidden" name="_token" value="5JzLsbkphnSQZrCzyQZPgQKyY4VJ0sH96ofx5zgA" autocomplete="off"&gt; &lt;input type="hidden" name="_method" value="DELETE"&gt;&lt;button type="submit" class="btn btn-outline-secondary btn-sm" aria-label="Withdraw Maximus Casper"&gt;Withdraw&lt;/button&gt;&lt;/form&gt;\n
+&lt;/td&gt;&lt;/tr&gt;\n
+&lt;tr&gt;&lt;td&gt;&lt;span class="table-name"&gt;Vladimir Oberbrunner&lt;/span&gt;&lt;span class="table-secondary"&gt;gwillms@example.org&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Oct 21, 2026&lt;/td&gt;&lt;td&gt;&lt;span class="status-pill "&gt;Active&lt;/span&gt;&lt;/td&gt;&lt;td&gt;\n
+&lt;form action="http://127.0.0.1:8000/courses/121/enrollments/62" method="POST" data-submit data-confirm="Withdraw this student? Their learning history will be preserved."&gt;&lt;input type="hidden" name="_token" value="5JzLsbkphnSQZrCzyQZPgQKyY4VJ0sH96ofx5zgA" autocomplete="off"&gt; &lt;input type="hidden" name="_method" value="DELETE"&gt;&lt;button type="submit" class="btn btn-outline-secondary btn-sm" aria-label="Withdraw Vladimir Oberbrunner"&gt;Withdraw&lt;/button&gt;&lt;/form&gt;\n
+&lt;/td&gt;&lt;/tr&gt;\n
+&lt;tr&gt;&lt;td&gt;&lt;span class="table-name"&gt;Gerardo Cartwright&lt;/span&gt;&lt;span class="table-secondary"&gt;brown.isom@example.org&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Oct 21, 2026&lt;/td&gt;&lt;td&gt;&lt;span class="status-pill "&gt;Active&lt;/span&gt;&lt;/td&gt;&lt;td&gt;\n
+&lt;form action="http://127.0.0.1:8000/courses/121/enrollments/61" method="POST" data-submit data-confirm="Withdraw this student? Their learning history will be preserved."&gt;&lt;input type="hidden" name="_token" value="5JzLsbkphnSQZrCzyQZPgQKyY4VJ0sH96ofx5zgA" autocomplete="off"&gt; &lt;input type="hidden" name="_method" value="DELETE"&gt;&lt;button type="submit" class="btn btn-outline-secondary btn-sm" aria-label="Withdraw Gerardo Cartwright"&gt;Withdraw&lt;/button&gt;&lt;/form&gt;\n
+&lt;/td&gt;&lt;/tr&gt;\n
+&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;div class="pagination-wrap"&gt;&lt;nav class="d-flex justify-items-center justify-content-between"&gt;\n
+        &lt;div class="d-flex justify-content-between flex-fill d-sm-none"&gt;\n
+            &lt;ul class="pagination"&gt;\n
+                \n
+                                    &lt;li class="page-item disabled" aria-disabled="true"&gt;\n
+                        &lt;span class="page-link"&gt;&amp;laquo; Previous&lt;/span&gt;\n
+                    &lt;/li&gt;\n
+                \n
+                \n
+                                    &lt;li class="page-item"&gt;\n
+                        &lt;a class="page-link" href="http://127.0.0.1:8000/courses/121/enrollments?page=2" rel="next"&gt;Next &amp;raquo;&lt;/a&gt;\n
+                    &lt;/li&gt;\n
+                            &lt;/ul&gt;\n
+        &lt;/div&gt;\n
+\n
+        &lt;div class="d-none flex-sm-fill d-sm-flex align-items-sm-center justify-content-sm-between"&gt;\n
+            &lt;div class="small text-muted"&gt;\n
+                Showing\n
+                &lt;span class="fw-semibold"&gt;1&lt;/span&gt;\n
+                to\n
+                &lt;span class="fw-semibold"&gt;15&lt;/span&gt;\n
+                of\n
+                &lt;span class="fw-semibold"&gt;16&lt;/span&gt;\n
+                results\n
+            &lt;/div&gt;\n
+\n
+            &lt;div&gt;\n
+                &lt;ul class="pagination"&gt;\n
+                    \n
+                                            &lt;li class="page-item disabled" aria-disabled="true" aria-label="&amp;laquo; Previous"&gt;\n
+                            &lt;span class="page-link" aria-hidden="true"&gt;&amp;lsaquo;&lt;/span&gt;\n
+                        &lt;/li&gt;\n
+                    \n
+                    \n
+                                            \n
+                        \n
+                        \n
+                                                                                                                        &lt;li class="page-item active" aria-current="page"&gt;&lt;span class="page-link"&gt;1&lt;/span&gt;&lt;/li&gt;\n
+                                                                                                                                &lt;li class="page-item"&gt;&lt;a class="page-link" href="http://127.0.0.1:8000/courses/121/enrollments?page=2"&gt;2&lt;/a&gt;&lt;/li&gt;\n
+                                                                                                        \n
+                    \n
+                                            &lt;li class="page-item"&gt;\n
+                            &lt;a class="page-link" href="http://127.0.0.1:8000/courses/121/enrollments?page=2" rel="next" aria-label="Next &amp;raquo;"&gt;&amp;rsaquo;&lt;/a&gt;\n
+                        &lt;/li&gt;\n
+                                    &lt;/ul&gt;\n
+            &lt;/div&gt;\n
+        &lt;/div&gt;\n
+    &lt;/nav&gt;\n
+&lt;/div&gt;&lt;/section&gt;&lt;/div&gt;\n
+&lt;div class="col-xl-4"&gt;&lt;section class="surface p-4"&gt;&lt;p class="eyebrow"&gt;INVITE A NEW CHAPTER&lt;/p&gt;&lt;h2 class="h5"&gt;Enroll a student&lt;/h2&gt;\n
+&lt;p class="small text-secondary"&gt;Choose an active student account. Returning students keep their original enrollment and learning history.&lt;/p&gt;\n
+&lt;form method="GET" action="http://127.0.0.1:8000/courses/121/enrollments" class="mb-3"&gt;&lt;label class="form-label" for="student_search"&gt;Find a student&lt;/label&gt;&lt;div class="input-group"&gt;&lt;input name="student_search" id="student_search" class="form-control" maxlength="120" value="" placeholder="Name or email"&gt;&lt;button class="btn btn-outline-primary" type="submit"&gt;Search&lt;/button&gt;&lt;/div&gt;&lt;/form&gt;\n
+&lt;form method="POST" action="http://127.0.0.1:8000/courses/121/enrollments" data-submit&gt;&lt;input type="hidden" name="_token" value="5JzLsbkphnSQZrCzyQZPgQKyY4VJ0sH96ofx5zgA" autocomplete="off"&gt;&lt;label for="student_id" class="form-label"&gt;Student account&lt;/label&gt;&lt;select id="student_id" name="student_id" class="form-select" required&gt;&lt;option value=""&gt;Choose a student&lt;/option&gt;&lt;option value="330" &gt;Andres Corkery — davin.mraz@example.org&lt;/option&gt;&lt;option value="324" &gt;Barbara Powlowski — dooley.britney@example.net&lt;/option&gt;&lt;option value="319" &gt;Cameron Paucek V — ritchie.norma@example.net&lt;/option&gt;&lt;option value="328" &gt;Emmie Jacobson — stoltenberg.erick@example.org&lt;/option&gt;&lt;option value="314" &gt;Gerardo Cartwright — brown.isom@example.org&lt;/option&gt;&lt;option value="329" &gt;Gracie Bauch — savanna.abernathy@example.net&lt;/option&gt;&lt;option value="327" &gt;Jennie Rutherford — wava.ullrich@example.org&lt;/option&gt;&lt;option value="318" &gt;Joana Nicolas — cstark@example.org&lt;/option&gt;&lt;option value="320" &gt;Kurt Lowe — edd.prohaska@example.com&lt;/option&gt;&lt;option value="322" &gt;Lela Kunze — delta.vandervort@example.org&lt;/option&gt;&lt;option value="316" &gt;Maximus Casper — melissa25@example.com&lt;/option&gt;&lt;option value="323" &gt;Mr. Jayde Feest — obogisich@example.org&lt;/option&gt;&lt;option value="313" &gt;Presley Tremblay — wnolan@example.net&lt;/option&gt;&lt;option value="325" &gt;Raina Frami — otreutel@example.net&lt;/option&gt;&lt;option value="321" &gt;Retta Homenick — antoinette76@example.com&lt;/option&gt;&lt;option value="317" &gt;Russ Grimes — schimmel.nelson@example.com&lt;/option&gt;&lt;option value="326" &gt;Tillman Nicolas — stephon.kulas@example.org&lt;/option&gt;&lt;option value="315" &gt;Vladimir Oberbrunner — gwillms@example.org&lt;/option&gt;&lt;/select&gt;&lt;p class="form-text"&gt;Showing up to 25 matches. Refine the search if needed.&lt;/p&gt;&lt;button class="btn btn-primary w-100" type="submit"&gt;Enroll student&lt;/button&gt;&lt;/form&gt;\n
+&lt;/section&gt;&lt;/div&gt;&lt;/div&gt;\n
+        &lt;/main&gt;\n
+        &lt;footer class="workspace-footer"&gt;Penguin Academy &lt;span&gt;Learning, thoughtfully connected.&lt;/span&gt;&lt;/footer&gt;\n
+    &lt;/div&gt;\n
+&lt;/div&gt;\n
+&lt;/body&gt;\n
+&lt;/html&gt;\n
+' [UTF-8](length: 19968) does not contain "davin.mraz@example.org" [ASCII](length: 22).
+
+/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:46
+/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:812
+/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/EnrollmentManagementTest.php:166</failure>
+      </testcase>
+      <testcase name="test_archived_course_history_is_visible_only_in_its_students_course_list" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/EnrollmentManagementTest.php" line="173" class="Tests\Feature\EnrollmentManagementTest" classname="Tests.Feature.EnrollmentManagementTest" assertions="5" time="0.027391"/>
+      <testcase name="test_actions_recheck_assignment_after_course_was_loaded" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/EnrollmentManagementTest.php" line="181" class="Tests\Feature\EnrollmentManagementTest" classname="Tests.Feature.EnrollmentManagementTest" assertions="1" time="0.015355"/>
+      <testcase name="test_guests_cannot_enroll_withdraw_or_open_new_workspaces" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/EnrollmentManagementTest.php" line="191" class="Tests\Feature\EnrollmentManagementTest" classname="Tests.Feature.EnrollmentManagementTest" assertions="13" time="0.019070"/>
+      <testcase name="test_new_workflow_writes_enforce_csrf_and_throttling" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/EnrollmentManagementTest.php" line="203" class="Tests\Feature\EnrollmentManagementTest" classname="Tests.Feature.EnrollmentManagementTest" assertions="64" time="0.199322"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,31 @@
+{
+    "database": "penguin_academy_test",
+    "username": "penguin_test",
+    "tables": {
+        "users": {
+            "rows": 0,
+            "original_rows": 0,
+            "original_rows_unchanged": true
+        },
+        "courses": {
+            "rows": 0,
+            "original_rows": 0,
+            "original_rows_unchanged": true
+        },
+        "lessons": {
+            "rows": 0,
+            "original_rows": 0,
+            "original_rows_unchanged": true
+        },
+        "enrollments": {
+            "rows": 0,
+            "original_rows": 0,
+            "original_rows_unchanged": true
+        },
+        "lesson_completions": {
+            "rows": 0,
+            "original_rows": 0,
+            "original_rows_unchanged": true
+        }
+    }
+}

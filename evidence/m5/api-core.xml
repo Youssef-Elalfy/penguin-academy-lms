@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="CLI Arguments" tests="49" assertions="376" errors="0" failures="1" skipped="0" time="6.275313">
+    <testsuite name="Tests\Feature\ApiTokenTest" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" tests="24" assertions="210" errors="0" failures="0" skipped="0" time="4.784988">
+      <testcase name="test_issues_a_hashed_expiring_token_and_authenticates_real_bearer_requests" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="22" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="10" time="0.793646"/>
+      <testsuite name="Tests\Feature\ApiTokenTest::test_returns_generic_401_for_invalid_credentials" tests="3" assertions="9" errors="0" failures="0" skipped="0" time="0.718789">
+        <testcase name="test_returns_generic_401_for_invalid_credentials with data set #0" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="42" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="3" time="0.226621"/>
+        <testcase name="test_returns_generic_401_for_invalid_credentials with data set #1" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="42" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="3" time="0.239093"/>
+        <testcase name="test_returns_generic_401_for_invalid_credentials with data set #2" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="42" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="3" time="0.253075"/>
+      </testsuite>
+      <testcase name="test_returns_403_for_temporary_password_and_existing_tokens_after_account_changes" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="60" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="3" time="0.257091"/>
+      <testsuite name="Tests\Feature\ApiTokenTest::test_returns_422_for_invalid_token_requests" tests="8" assertions="32" errors="0" failures="0" skipped="0" time="0.612622">
+        <testcase name="test_returns_422_for_invalid_token_requests with data set #0" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="79" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="4" time="0.051301"/>
+        <testcase name="test_returns_422_for_invalid_token_requests with data set #1" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="79" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="4" time="0.024660"/>
+        <testcase name="test_returns_422_for_invalid_token_requests with data set #2" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="79" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="4" time="0.232704"/>
+        <testcase name="test_returns_422_for_invalid_token_requests with data set #3" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="79" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="4" time="0.227515"/>
+        <testcase name="test_returns_422_for_invalid_token_requests with data set #4" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="79" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="4" time="0.022126"/>
+        <testcase name="test_returns_422_for_invalid_token_requests with data set #5" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="79" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="4" time="0.018817"/>
+        <testcase name="test_returns_422_for_invalid_token_requests with data set #6" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="79" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="4" time="0.018449"/>
+        <testcase name="test_returns_422_for_invalid_token_requests with data set #7" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="79" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="4" time="0.017050"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\ApiTokenTest::test_returns_401_for_unusable_tokens" tests="5" assertions="5" errors="0" failures="0" skipped="0" time="0.101409">
+        <testcase name="test_returns_401_for_unusable_tokens with data set #0" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="93" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="1" time="0.021609"/>
+        <testcase name="test_returns_401_for_unusable_tokens with data set #1" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="93" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="1" time="0.019298"/>
+        <testcase name="test_returns_401_for_unusable_tokens with data set #2" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="93" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="1" time="0.017172"/>
+        <testcase name="test_returns_401_for_unusable_tokens with data set #3" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="93" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="1" time="0.024315"/>
+        <testcase name="test_returns_401_for_unusable_tokens with data set #4" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="93" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="1" time="0.019014"/>
+      </testsuite>
+      <testcase name="test_rejects_session_and_query_authentication_and_requires_abilities" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="110" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="4" time="0.024603"/>
+      <testcase name="test_revokes_only_owned_tokens_and_current_token_immediately" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="120" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="9" time="0.050923"/>
+      <testcase name="test_limits_active_tokens_and_does_not_count_expired_tokens" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="136" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="5" time="0.431478"/>
+      <testcase name="test_token_does_not_preserve_previous_role_permissions" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="149" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="2" time="0.031768"/>
+      <testcase name="test_token_issuance_throttles_repeated_failures" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="160" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="9" time="1.042852"/>
+      <testcase name="test_authenticated_api_throttle_is_shared_between_tokens_for_the_same_user" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiTokenTest.php" line="172" class="Tests\Feature\ApiTokenTest" classname="Tests.Feature.ApiTokenTest" assertions="122" time="0.719808"/>
+    </testsuite>
+    <testsuite name="Tests\Feature\ApiCourseTest" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiCourseTest.php" tests="16" assertions="102" errors="0" failures="1" skipped="0" time="0.879645">
+      <testcase name="test_teacher_creates_edits_publishes_and_unpublishes_own_course" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiCourseTest.php" line="14" class="Tests\Feature\ApiCourseTest" classname="Tests.Feature.ApiCourseTest" assertions="13" time="0.081742"/>
+      <testcase name="test_admin_reassigns_eligible_teachers_and_archives_without_removing_history" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiCourseTest.php" line="32" class="Tests\Feature\ApiCourseTest" classname="Tests.Feature.ApiCourseTest" assertions="10" time="0.071475"/>
+      <testcase name="test_teachers_cannot_access_other_courses_reassign_teachers_or_archive" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiCourseTest.php" line="50" class="Tests\Feature\ApiCourseTest" classname="Tests.Feature.ApiCourseTest" assertions="9" time="0.044014"/>
+      <testsuite name="Tests\Feature\ApiCourseTest::test_student_cannot_mutate_courses_even_with_a_privileged_token" tests="3" assertions="9" errors="0" failures="1" skipped="0" time="0.113881">
+        <testcase name="test_student_cannot_mutate_courses_even_with_a_privileged_token with data set #0" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiCourseTest.php" line="69" class="Tests\Feature\ApiCourseTest" classname="Tests.Feature.ApiCourseTest" assertions="4" time="0.034673"/>
+        <testcase name="test_student_cannot_mutate_courses_even_with_a_privileged_token with data set #1" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiCourseTest.php" line="69" class="Tests\Feature\ApiCourseTest" classname="Tests.Feature.ApiCourseTest" assertions="4" time="0.046165"/>
+        <testcase name="test_student_cannot_mutate_courses_even_with_a_privileged_token with data set #2" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiCourseTest.php" line="69" class="Tests\Feature\ApiCourseTest" classname="Tests.Feature.ApiCourseTest" assertions="1" time="0.033043">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\ApiCourseTest::test_student_cannot_mutate_courses_even_with_a_privileged_token with data set #2
+Expected response status code [403] but received 422.
+Failed asserting that 422 is identical to 403.
+
+The following errors occurred during the last request:
+
+{
+    "message": "The given data was invalid.",
+    "code": "validation_failed",
+    "errors": {
+        "title": [
+            "This field is not accepted."
+        ],
+        "slug": [
+            "This field is not accepted."
+        ]
+    }
+}
+
+/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:46
+/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:183
+/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/vendor/laravel/framework/src/Illuminate/Testing/Concerns/AssertsStatusCodes.php:141
+/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiCourseTest.php:75</failure>
+        </testcase>
+      </testsuite>
+      <testcase name="test_catalog_paginates_filters_and_scopes_without_exposing_account_fields" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiCourseTest.php" line="81" class="Tests\Feature\ApiCourseTest" classname="Tests.Feature.ApiCourseTest" assertions="15" time="0.097161"/>
+      <testcase name="test_staff_catalog_filters_teacher_and_publication" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiCourseTest.php" line="102" class="Tests\Feature\ApiCourseTest" classname="Tests.Feature.ApiCourseTest" assertions="5" time="0.088313"/>
+      <testsuite name="Tests\Feature\ApiCourseTest::test_invalid_course_payload_returns_422_without_persistence" tests="6" assertions="24" errors="0" failures="0" skipped="0" time="0.165932">
+        <testcase name="test_invalid_course_payload_returns_422_without_persistence with data set #0" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiCourseTest.php" line="121" class="Tests\Feature\ApiCourseTest" classname="Tests.Feature.ApiCourseTest" assertions="4" time="0.057437"/>
+        <testcase name="test_invalid_course_payload_returns_422_without_persistence with data set #1" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiCourseTest.php" line="121" class="Tests\Feature\ApiCourseTest" classname="Tests.Feature.ApiCourseTest" assertions="4" time="0.023423"/>
+        <testcase name="test_invalid_course_payload_returns_422_without_persistence with data set #2" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiCourseTest.php" line="121" class="Tests\Feature\ApiCourseTest" classname="Tests.Feature.ApiCourseTest" assertions="4" time="0.020262"/>
+        <testcase name="test_invalid_course_payload_returns_422_without_persistence with data set #3" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiCourseTest.php" line="121" class="Tests\Feature\ApiCourseTest" classname="Tests.Feature.ApiCourseTest" assertions="4" time="0.022184"/>
+        <testcase name="test_invalid_course_payload_returns_422_without_persistence with data set #4" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiCourseTest.php" line="121" class="Tests\Feature\ApiCourseTest" classname="Tests.Feature.ApiCourseTest" assertions="4" time="0.021759"/>
+        <testcase name="test_invalid_course_payload_returns_422_without_persistence with data set #5" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiCourseTest.php" line="121" class="Tests\Feature\ApiCourseTest" classname="Tests.Feature.ApiCourseTest" assertions="4" time="0.020868"/>
+      </testsuite>
+      <testcase name="test_admin_rejects_non_teacher_and_disabled_teacher_assignments" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiCourseTest.php" line="130" class="Tests\Feature\ApiCourseTest" classname="Tests.Feature.ApiCourseTest" assertions="7" time="0.045625"/>
+      <testcase name="test_duplicate_and_archived_slugs_are_reserved_and_teacher_is_required_for_publication" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiCourseTest.php" line="143" class="Tests\Feature\ApiCourseTest" classname="Tests.Feature.ApiCourseTest" assertions="10" time="0.171502"/>
+    </testsuite>
+    <testsuite name="Tests\Feature\ApiLessonTest" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiLessonTest.php" tests="9" assertions="64" errors="0" failures="0" skipped="0" time="0.610680">
+      <testcase name="test_teacher_creates_edits_publishes_orders_and_archives_lessons" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiLessonTest.php" line="16" class="Tests\Feature\ApiLessonTest" classname="Tests.Feature.ApiLessonTest" assertions="17" time="0.103886"/>
+      <testcase name="test_stale_and_invalid_order_requests_preserve_positions" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiLessonTest.php" line="40" class="Tests\Feature\ApiLessonTest" classname="Tests.Feature.ApiLessonTest" assertions="6" time="0.039562"/>
+      <testsuite name="Tests\Feature\ApiLessonTest::test_cross_course_nested_lesson_requests_return_404" tests="3" assertions="6" errors="0" failures="0" skipped="0" time="0.091886">
+        <testcase name="test_cross_course_nested_lesson_requests_return_404 with data set #0" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiLessonTest.php" line="59" class="Tests\Feature\ApiLessonTest" classname="Tests.Feature.ApiLessonTest" assertions="2" time="0.031878"/>
+        <testcase name="test_cross_course_nested_lesson_requests_return_404 with data set #1" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiLessonTest.php" line="59" class="Tests\Feature\ApiLessonTest" classname="Tests.Feature.ApiLessonTest" assertions="2" time="0.024431"/>
+        <testcase name="test_cross_course_nested_lesson_requests_return_404 with data set #2" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiLessonTest.php" line="59" class="Tests\Feature\ApiLessonTest" classname="Tests.Feature.ApiLessonTest" assertions="2" time="0.035577"/>
+      </testsuite>
+      <testcase name="test_student_requires_current_enrollment_and_published_non_archived_content" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiLessonTest.php" line="70" class="Tests\Feature\ApiLessonTest" classname="Tests.Feature.ApiLessonTest" assertions="12" time="0.068147"/>
+      <testsuite name="Tests\Feature\ApiLessonTest::test_unassigned_users_cannot_manage_lessons" tests="2" assertions="12" errors="0" failures="0" skipped="0" time="0.257923">
+        <testcase name="test_unassigned_users_cannot_manage_lessons with data set #0" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiLessonTest.php" line="98" class="Tests\Feature\ApiLessonTest" classname="Tests.Feature.ApiLessonTest" assertions="6" time="0.033631"/>
+        <testcase name="test_unassigned_users_cannot_manage_lessons with data set #1" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiLessonTest.php" line="98" class="Tests\Feature\ApiLessonTest" classname="Tests.Feature.ApiLessonTest" assertions="6" time="0.224292"/>
+      </testsuite>
+      <testcase name="test_forged_lesson_metadata_is_rejected_and_publication_filter_works" file="/workspace/scratch/c2d7cdfd8394/penguin-academy-m1/app/tests/Feature/ApiLessonTest.php" line="113" class="Tests\Feature\ApiLessonTest" classname="Tests.Feature.ApiLessonTest" assertions="11" time="0.049276"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

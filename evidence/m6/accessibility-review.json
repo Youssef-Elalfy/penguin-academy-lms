@@ -1,0 +1,48 @@
+{
+  "method": "Targeted source-palette contrast calculation plus genuine screenshot review; not a screen-reader or full WCAG certification",
+  "pairs": [
+    {
+      "label": "course eyebrow",
+      "foreground": "#46695b",
+      "background": "#edf3e9",
+      "ratio": 5.42
+    },
+    {
+      "label": "light avatar initial",
+      "foreground": "#5f6c3e",
+      "background": "#edf1df",
+      "ratio": 4.93
+    },
+    {
+      "label": "sidebar focus",
+      "foreground": "#b9dccb",
+      "background": "#163e42",
+      "ratio": 7.86
+    },
+    {
+      "label": "normal sidebar text",
+      "foreground": "#d0e2da",
+      "background": "#163e42",
+      "ratio": 8.64
+    },
+    {
+      "label": "active sidebar text",
+      "foreground": "#153d36",
+      "background": "#d7ebdf",
+      "ratio": 9.61
+    }
+  ],
+  "screenshots_visually_reviewed": [
+    "admin-375.png",
+    "admin-768.png",
+    "admin-1440.png",
+    "teacher-375.png",
+    "teacher-768.png",
+    "teacher-1440.png",
+    "student-375.png",
+    "student-768.png",
+    "student-1440.png"
+  ],
+  "table_behavior": "Contained overflow verified by keyboard ArrowRight in both staff dashboards; no document overflow",
+  "axe_incomplete_review": "Decorative navigation glyphs are aria-hidden; avatar initial palette checked explicitly. Raw incomplete entries retained."
+}

@@ -1,0 +1,60 @@
+{
+  "method": "WCAG relative luminance calculation of selected explicit CSS color pairs; not a full rendered accessibility audit.",
+  "pairs": {
+    "body on canvas": {
+      "foreground": "#20383f",
+      "background": "#f6f8f7",
+      "contrast_ratio": 11.59
+    },
+    "secondary on white": {
+      "foreground": "#536b64",
+      "background": "#ffffff",
+      "contrast_ratio": 5.75
+    },
+    "table metadata on white": {
+      "foreground": "#586b61",
+      "background": "#ffffff",
+      "contrast_ratio": 5.69
+    },
+    "primary white label": {
+      "foreground": "#ffffff",
+      "background": "#216858",
+      "contrast_ratio": 6.59
+    },
+    "focus on white": {
+      "foreground": "#277a99",
+      "background": "#ffffff",
+      "contrast_ratio": 4.85
+    },
+    "sidebar focus": {
+      "foreground": "#b9dccb",
+      "background": "#163e42",
+      "contrast_ratio": 7.86
+    },
+    "form boundary on canvas": {
+      "foreground": "#7b9085",
+      "background": "#f6f8f7",
+      "contrast_ratio": 3.19
+    },
+    "catalog summary": {
+      "foreground": "#536b64",
+      "background": "#ffffff",
+      "contrast_ratio": 5.75
+    },
+    "list caption": {
+      "foreground": "#536b64",
+      "background": "#f6f8f7",
+      "contrast_ratio": 5.39
+    },
+    "course hero description": {
+      "foreground": "#536b5d",
+      "background": "#edf3e9",
+      "contrast_ratio": 5.12
+    },
+    "course monogram": {
+      "foreground": "#536937",
+      "background": "#edf1df",
+      "contrast_ratio": 5.3
+    }
+  }
+}
